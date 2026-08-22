@@ -1,0 +1,932 @@
+======================================================================
+UET CHATBOT PROJECT STRUCTURE
+======================================================================
+
+Project path: D:\UET Chatbot
+Total files: 173
+Total folders: 34
+Total size: 73.66 MB
+
+======================================================================
+FOLDER / FILE TREE
+======================================================================
+
+📁 app/
+📁 data/
+📄 main.py (0.79 KB)
+📁 tests/
+    📁 answer/
+    📁 api/
+    📁 crawler/
+    📁 discovery/
+    📁 ingestion/
+    📁 llm/
+    📁 retrieval/
+    📁 streamlit/
+    📄 structure.py (3.31 KB)
+    📁 inventory/
+    📁 merit/
+    📁 retrieval/
+    📁 vectorstore/
+        📄 answer.py (16.11 KB)
+        📄 admissioncrawler.py (0.00 KB)
+        📄 crawler.py (4.66 KB)
+        📁 content crawling/
+        📁 content targeting/
+        📁 Knowledge build/
+        📁 pdf pipeline/
+        📁 sitemapping/
+        📄 ingestion.py (14.67 KB)
+        📄 inspectkb.py (3.83 KB)
+        📁 __pycache__/
+        📄 check_merit.py (4.90 KB)
+        📄 check_merit_pdf.py (8.70 KB)
+        📄 debug_retrieval.py (5.74 KB)
+        📄 merit.py (49.32 KB)
+        📄 retrieval.py (107.61 KB)
+        📄 app.py (23.32 KB)
+        📁 admission/
+        📄 main_sections.json (3.61 KB)
+        📄 latest_merit_list.pdf (220.73 KB)
+        📄 last_retrieval.json (18.29 KB)
+        📁 chroma/
+            📄 extractreviewpages.py (9.38 KB)
+            📄 pagereviewer.py (40.58 KB)
+            📄 contenttargetreview.py (25.08 KB)
+            📄 mapfiilter.py (13.42 KB)
+            📄 mapfilter2.py (11.98 KB)
+            📄 actionbuilder.py (21.42 KB)
+            📄 bookbuilder.py (47.41 KB)
+            📄 knowledgecheck.py (10.57 KB)
+            📄 knowledgemerge.py (13.72 KB)
+            📄 knowledgerefinement.py (24.20 KB)
+            📄 73.py (19.36 KB)
+            📄 85.py (24.54 KB)
+            📄 audit73.py (20.24 KB)
+            📄 audit73_final.py (20.08 KB)
+            📄 audit73_metadata_sources.py (20.58 KB)
+            📄 audit_73_merged.py (20.83 KB)
+            📄 audit_pdf_knowledge.py (15.70 KB)
+            📄 filterexcluded.py (11.73 KB)
+            📄 inspect_pdf_outputs.py (19.71 KB)
+            📄 merge73.py (15.85 KB)
+            📄 ocr85.py (25.78 KB)
+            📄 pdfchecker.py (2.36 KB)
+            📄 pdfdownloader.py (11.78 KB)
+            📄 pdfduplicator.py (15.33 KB)
+            📄 pdfocrchecker.py (12.89 KB)
+            📄 pdfrefinement.py (59.43 KB)
+            📄 pdfreviewer.py (10.73 KB)
+            📄 pdftextextractor.py (23.73 KB)
+            📄 promote73_final.py (16.08 KB)
+            📄 promotefiltered.py (4.22 KB)
+            📄 repair73merged.py (25.10 KB)
+            📄 admissiondiscovery.py (11.24 KB)
+            📄 admissionmap.py (27.52 KB)
+            📄 admissionselection.py (11.11 KB)
+            📄 inspect_navigation.py (2.13 KB)
+            📄 pagechunking.py (14.75 KB)
+            📄 section_discovery.py (7.63 KB)
+            📄 sitemapper.py (16.57 KB)
+            📄 merit.cpython-312.pyc (34.71 KB)
+            📄 retrieval.cpython-312.pyc (32.72 KB)
+            📄 _actions_registry.json (4.82 KB)
+            📄 _content_targets.json (24.68 KB)
+            📄 _content_targets_reviewed.json (33.10 KB)
+            📄 _ingestion_manifest.json (22.66 KB)
+            📄 _knowledge_base.json (2600.89 KB)
+            📄 _knowledge_books.json (29.41 KB)
+            📄 _knowledge_refined.json (348.43 KB)
+            📄 _map.json (2692.82 KB)
+            📄 _map_inspection.txt (247.47 KB)
+            📄 _pages_knowledge_chunks.json (209.93 KB)
+            📄 _pages_reviewed.json (344.06 KB)
+            📄 _pdf_73_metadata_discovery_audit.json (157.52 KB)
+            📄 _pdf_73_metadata_discovery_audit.txt (63.43 KB)
+            📄 _pdf_content.json (2770.26 KB)
+            📄 _pdf_downloads.json (15.10 KB)
+            📄 _pdf_duplicates.json (14.72 KB)
+            📄 _pdf_extraction_skip_summary.json (28.92 KB)
+            📄 _pdf_knowledge_010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.json (27.59 KB)
+            📄 _pdf_knowledge_098eca99-9df5-4ef9-81f0-275861ad27ac.json (31.70 KB)
+            📄 _pdf_knowledge_104495c8-1fd5-4476-9721-66a4d5b653dd.json (3.19 KB)
+            📄 _pdf_knowledge_14a1476c-9fc8-4728-96a7-3c181b0e9c81.json (5.74 KB)
+            📄 _pdf_knowledge_1d111018-7c33-455a-9aa0-662f7c30da9e.json (1258.24 KB)
+            📄 _pdf_knowledge_30097787-4e76-496e-8e19-7b99fdf17347.json (4.07 KB)
+            📄 _pdf_knowledge_429cada0-b8a1-4b15-8c3b-392d9a4f1d50.json (14.53 KB)
+            📄 _pdf_knowledge_43d0e9ac-e1a7-49fe-9c91-a84383fa309a.json (843.00 KB)
+            📄 _pdf_knowledge_4808e934-e5dc-4a3d-b53e-88e72d948ac0.json (4.98 KB)
+            📄 _pdf_knowledge_559fc79c-04b2-4ead-81f2-d7f9af2601a9.json (1304.78 KB)
+            📄 _pdf_knowledge_6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.json (17.17 KB)
+            📄 _pdf_knowledge_7faf8b8c-f607-43dd-ab53-6c5e261f705b.json (2.25 KB)
+            📄 _pdf_knowledge_90166bac-e657-4cee-890f-c34aee652b6c.json (16.59 KB)
+            📄 _pdf_knowledge_91a868d2-dfcb-4974-af21-453f6b6853d0.json (43.08 KB)
+            📄 _pdf_knowledge_937243bf-044d-422e-b0f0-c32b36e04f7d.json (3.47 KB)
+            📄 _pdf_knowledge_a8090b4d-2448-42e7-999a-a948573c7f3b.json (38.94 KB)
+            📄 _pdf_knowledge_a9f1df72-962b-4b2e-aebe-bd624d917953.json (2.54 KB)
+            📄 _pdf_knowledge_admission-guide.json (16.53 KB)
+            📄 _pdf_knowledge_audit.json (7.66 KB)
+            📄 _pdf_knowledge_bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.json (7.07 KB)
+            📄 _pdf_knowledge_c8856fd5-733e-46c8-8271-1ff78cdb9ceb.json (19.29 KB)
+            📄 _pdf_knowledge_chunks.json (2189.62 KB)
+            📄 _pdf_knowledge_chunks_73_merge_audit.json (19.45 KB)
+            📄 _pdf_knowledge_chunks_73_merged.json (4789.24 KB)
+            📄 _pdf_knowledge_chunks_73_merged_audit.json (48.72 KB)
+            📄 _pdf_knowledge_chunks_73_merged_audit.txt (1.50 KB)
+            📄 _pdf_knowledge_chunks_73_merged_final.json (4859.91 KB)
+            📄 _pdf_knowledge_chunks_73_merged_final_audit.json (0.68 KB)
+            📄 _pdf_knowledge_chunks_73_merged_final_audit.txt (1.04 KB)
+            📄 _pdf_knowledge_chunks_73_merged_final_deep_audit.json (1.48 KB)
+            📄 _pdf_knowledge_chunks_73_merged_final_deep_audit.txt (0.76 KB)
+            📄 _pdf_knowledge_chunks_backup_20260819_122306.json (4592.25 KB)
+            📄 _pdf_knowledge_chunks_backup_20260819_124747.json (4859.91 KB)
+            📄 _pdf_knowledge_chunks_filtered.json (2189.62 KB)
+            📄 _pdf_knowledge_chunks_filtered_audit.json (2.40 KB)
+            📄 _pdf_knowledge_chunks_filtered_audit.txt (2.00 KB)
+            📄 _pdf_knowledge_d3f4869b-a8d6-426b-a462-357c0b33ed58.json (5.03 KB)
+            📄 _pdf_knowledge_d94be6f4-4fc6-4789-a525-992014caa653.json (15.05 KB)
+            📄 _pdf_knowledge_dee8172b-0888-4be5-84a3-7b2c3005c880.json (2.91 KB)
+            📄 _pdf_knowledge_f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.json (18.94 KB)
+            📄 _pdf_knowledge_final.json (2314.73 KB)
+            📄 _pdf_knowledge_issues.json (223.70 KB)
+            📄 _pdf_knowledge_MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.json (864.02 KB)
+            📄 _pdf_knowledge_UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.json (1377.16 KB)
+            📄 _pdf_ocr_check.json (2769.24 KB)
+            📄 _pdf_recovered_chunks.json (261.78 KB)
+            📄 _pdf_recovered_native_audit.json (246.32 KB)
+            📄 _pdf_recovered_native_audit.txt (199.04 KB)
+            📄 _pdf_recovered_native_chunks.json (199.60 KB)
+            📄 _pdf_recovered_native_pages.json (352.26 KB)
+            📄 _pdf_recovered_pages.json (376.51 KB)
+            📁 _pdf_skipped_page_audit_images/
+            📄 _pdf_title_review.json (23.44 KB)
+            📄 _phase1_nonocr_content.json (2992.29 KB)
+            📄 _phase2_ocr_content.json (21.10 KB)
+            📄 _review_pages.txt (73.64 KB)
+            📄 _sections.json (1.35 KB)
+            📄 _selected_sections.json (2.76 KB)
+            📄 _skipped_pages_manual_audit.csv (7.67 KB)
+            📄 _skipped_pages_manual_audit.txt (15.45 KB)
+            📄 admission-guide.txt (0.17 KB)
+            📄 avvv.txt (25.80 KB)
+            📄 inspectjsons.py (14.92 KB)
+            📄 jsonstrcutrechecker.py (2.76 KB)
+            📄 kb_inspection.txt (588.33 KB)
+            📁 phase2_ocr_pages/
+            📄 program_inspection.txt (618.72 KB)
+            📄 program_list_only.txt (41.51 KB)
+            📁 c1003845-f4f9-4e70-b028-3f030e2aa31a/
+            📄 chroma.sqlite3 (19956.00 KB)
+            📁 de8bf51f-ee99-4688-a7f7-61cb27f49a6c/
+                📄 MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d__page_0009.png (349.39 KB)
+                📁 90166bac-e657-4cee-890f-c34aee652b6c/
+                📁 admission-guide/
+                📁 bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64/
+                📁 c8856fd5-733e-46c8-8271-1ff78cdb9ceb/
+                📁 d3f4869b-a8d6-426b-a462-357c0b33ed58/
+                📁 d94be6f4-4fc6-4789-a525-992014caa653/
+                📁 f9eba060-e8d2-48a3-8fa5-9c8d58655e9f/
+                📄 data_level0.bin (1636.72 KB)
+                📄 header.bin (0.10 KB)
+                📄 index_metadata.pickle (33.59 KB)
+                📄 length.bin (3.91 KB)
+                📄 link_lists.bin (8.42 KB)
+                📄 data_level0.bin (1636.72 KB)
+                📄 header.bin (0.10 KB)
+                📄 index_metadata.pickle (33.59 KB)
+                📄 length.bin (3.91 KB)
+                📄 link_lists.bin (8.42 KB)
+                    📄 page_0001.txt (0.00 KB)
+                    📄 page_0002.txt (0.00 KB)
+                    📄 page_0003.txt (0.00 KB)
+                    📄 page_0004.txt (0.00 KB)
+                    📄 page_0005.txt (0.00 KB)
+                    📄 page_0006.txt (0.00 KB)
+                    📄 page_0007.txt (0.00 KB)
+                    📄 page_0008.txt (0.00 KB)
+                    📄 page_0001.txt (0.00 KB)
+                    📄 page_0002.txt (0.00 KB)
+                    📄 page_0003.txt (0.00 KB)
+                    📄 page_0004.txt (0.00 KB)
+                    📄 page_0005.txt (0.00 KB)
+                    📄 page_0006.txt (0.00 KB)
+                    📄 page_0007.txt (0.00 KB)
+                    📄 page_0008.txt (0.00 KB)
+                    📄 page_0001.txt (0.00 KB)
+                    📄 page_0002.txt (0.00 KB)
+                    📄 page_0001.txt (0.00 KB)
+                    📄 page_0001.txt (0.00 KB)
+                    📄 page_0001.txt (0.00 KB)
+                    📄 page_0001.txt (0.00 KB)
+
+======================================================================
+FILE TYPES
+======================================================================
+
+.json: 68 files
+.py: 53 files
+.txt: 36 files
+.bin: 8 files
+.pyc: 2 files
+.pickle: 2 files
+.csv: 1 files
+.png: 1 files
+.pdf: 1 files
+.sqlite3: 1 files
+
+======================================================================
+DETAILED FILE LIST
+======================================================================
+
+app\answer\answer.py
+    Size: 16.11 KB
+    Extension: .py
+
+app\crawler\admissioncrawler.py
+    Size: 0.00 KB
+    Extension: .py
+
+app\crawler\crawler.py
+    Size: 4.66 KB
+    Extension: .py
+
+app\discovery\content crawling\extractreviewpages.py
+    Size: 9.38 KB
+    Extension: .py
+
+app\discovery\content crawling\pagereviewer.py
+    Size: 40.58 KB
+    Extension: .py
+
+app\discovery\content targeting\contenttargetreview.py
+    Size: 25.08 KB
+    Extension: .py
+
+app\discovery\content targeting\mapfiilter.py
+    Size: 13.42 KB
+    Extension: .py
+
+app\discovery\content targeting\mapfilter2.py
+    Size: 11.98 KB
+    Extension: .py
+
+app\discovery\Knowledge build\actionbuilder.py
+    Size: 21.42 KB
+    Extension: .py
+
+app\discovery\Knowledge build\bookbuilder.py
+    Size: 47.41 KB
+    Extension: .py
+
+app\discovery\Knowledge build\knowledgecheck.py
+    Size: 10.57 KB
+    Extension: .py
+
+app\discovery\Knowledge build\knowledgemerge.py
+    Size: 13.72 KB
+    Extension: .py
+
+app\discovery\Knowledge build\knowledgerefinement.py
+    Size: 24.20 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\73.py
+    Size: 19.36 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\85.py
+    Size: 24.54 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\audit73.py
+    Size: 20.24 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\audit73_final.py
+    Size: 20.08 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\audit73_metadata_sources.py
+    Size: 20.58 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\audit_73_merged.py
+    Size: 20.83 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\audit_pdf_knowledge.py
+    Size: 15.70 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\filterexcluded.py
+    Size: 11.73 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\inspect_pdf_outputs.py
+    Size: 19.71 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\merge73.py
+    Size: 15.85 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\ocr85.py
+    Size: 25.78 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\pdfchecker.py
+    Size: 2.36 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\pdfdownloader.py
+    Size: 11.78 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\pdfduplicator.py
+    Size: 15.33 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\pdfocrchecker.py
+    Size: 12.89 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\pdfrefinement.py
+    Size: 59.43 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\pdfreviewer.py
+    Size: 10.73 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\pdftextextractor.py
+    Size: 23.73 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\promote73_final.py
+    Size: 16.08 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\promotefiltered.py
+    Size: 4.22 KB
+    Extension: .py
+
+app\discovery\pdf pipeline\repair73merged.py
+    Size: 25.10 KB
+    Extension: .py
+
+app\discovery\sitemapping\admissiondiscovery.py
+    Size: 11.24 KB
+    Extension: .py
+
+app\discovery\sitemapping\admissionmap.py
+    Size: 27.52 KB
+    Extension: .py
+
+app\discovery\sitemapping\admissionselection.py
+    Size: 11.11 KB
+    Extension: .py
+
+app\discovery\sitemapping\inspect_navigation.py
+    Size: 2.13 KB
+    Extension: .py
+
+app\discovery\sitemapping\pagechunking.py
+    Size: 14.75 KB
+    Extension: .py
+
+app\discovery\sitemapping\section_discovery.py
+    Size: 7.63 KB
+    Extension: .py
+
+app\discovery\sitemapping\sitemapper.py
+    Size: 16.57 KB
+    Extension: .py
+
+app\ingestion\ingestion.py
+    Size: 14.67 KB
+    Extension: .py
+
+app\ingestion\inspectkb.py
+    Size: 3.83 KB
+    Extension: .py
+
+app\retrieval\__pycache__\merit.cpython-312.pyc
+    Size: 34.71 KB
+    Extension: .pyc
+
+app\retrieval\__pycache__\retrieval.cpython-312.pyc
+    Size: 32.72 KB
+    Extension: .pyc
+
+app\retrieval\check_merit.py
+    Size: 4.90 KB
+    Extension: .py
+
+app\retrieval\check_merit_pdf.py
+    Size: 8.70 KB
+    Extension: .py
+
+app\retrieval\debug_retrieval.py
+    Size: 5.74 KB
+    Extension: .py
+
+app\retrieval\merit.py
+    Size: 49.32 KB
+    Extension: .py
+
+app\retrieval\retrieval.py
+    Size: 107.61 KB
+    Extension: .py
+
+app\streamlit\app.py
+    Size: 23.32 KB
+    Extension: .py
+
+app\structure.py
+    Size: 3.31 KB
+    Extension: .py
+
+data\inventory\admission\_actions_registry.json
+    Size: 4.82 KB
+    Extension: .json
+
+data\inventory\admission\_content_targets.json
+    Size: 24.68 KB
+    Extension: .json
+
+data\inventory\admission\_content_targets_reviewed.json
+    Size: 33.10 KB
+    Extension: .json
+
+data\inventory\admission\_ingestion_manifest.json
+    Size: 22.66 KB
+    Extension: .json
+
+data\inventory\admission\_knowledge_base.json
+    Size: 2600.89 KB
+    Extension: .json
+
+data\inventory\admission\_knowledge_books.json
+    Size: 29.41 KB
+    Extension: .json
+
+data\inventory\admission\_knowledge_refined.json
+    Size: 348.43 KB
+    Extension: .json
+
+data\inventory\admission\_map.json
+    Size: 2692.82 KB
+    Extension: .json
+
+data\inventory\admission\_map_inspection.txt
+    Size: 247.47 KB
+    Extension: .txt
+
+data\inventory\admission\_pages_knowledge_chunks.json
+    Size: 209.93 KB
+    Extension: .json
+
+data\inventory\admission\_pages_reviewed.json
+    Size: 344.06 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_73_metadata_discovery_audit.json
+    Size: 157.52 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_73_metadata_discovery_audit.txt
+    Size: 63.43 KB
+    Extension: .txt
+
+data\inventory\admission\_pdf_content.json
+    Size: 2770.26 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_downloads.json
+    Size: 15.10 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_duplicates.json
+    Size: 14.72 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_extraction_skip_summary.json
+    Size: 28.92 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.json
+    Size: 27.59 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_098eca99-9df5-4ef9-81f0-275861ad27ac.json
+    Size: 31.70 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_104495c8-1fd5-4476-9721-66a4d5b653dd.json
+    Size: 3.19 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_14a1476c-9fc8-4728-96a7-3c181b0e9c81.json
+    Size: 5.74 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_1d111018-7c33-455a-9aa0-662f7c30da9e.json
+    Size: 1258.24 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_30097787-4e76-496e-8e19-7b99fdf17347.json
+    Size: 4.07 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_429cada0-b8a1-4b15-8c3b-392d9a4f1d50.json
+    Size: 14.53 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_43d0e9ac-e1a7-49fe-9c91-a84383fa309a.json
+    Size: 843.00 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_4808e934-e5dc-4a3d-b53e-88e72d948ac0.json
+    Size: 4.98 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_559fc79c-04b2-4ead-81f2-d7f9af2601a9.json
+    Size: 1304.78 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.json
+    Size: 17.17 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_7faf8b8c-f607-43dd-ab53-6c5e261f705b.json
+    Size: 2.25 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_90166bac-e657-4cee-890f-c34aee652b6c.json
+    Size: 16.59 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_91a868d2-dfcb-4974-af21-453f6b6853d0.json
+    Size: 43.08 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_937243bf-044d-422e-b0f0-c32b36e04f7d.json
+    Size: 3.47 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_a8090b4d-2448-42e7-999a-a948573c7f3b.json
+    Size: 38.94 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_a9f1df72-962b-4b2e-aebe-bd624d917953.json
+    Size: 2.54 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_admission-guide.json
+    Size: 16.53 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_audit.json
+    Size: 7.66 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.json
+    Size: 7.07 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_c8856fd5-733e-46c8-8271-1ff78cdb9ceb.json
+    Size: 19.29 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks.json
+    Size: 2189.62 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merge_audit.json
+    Size: 19.45 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged.json
+    Size: 4789.24 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged_audit.json
+    Size: 48.72 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged_audit.txt
+    Size: 1.50 KB
+    Extension: .txt
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged_final.json
+    Size: 4859.91 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged_final_audit.json
+    Size: 0.68 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged_final_audit.txt
+    Size: 1.04 KB
+    Extension: .txt
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged_final_deep_audit.json
+    Size: 1.48 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_73_merged_final_deep_audit.txt
+    Size: 0.76 KB
+    Extension: .txt
+
+data\inventory\admission\_pdf_knowledge_chunks_backup_20260819_122306.json
+    Size: 4592.25 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_backup_20260819_124747.json
+    Size: 4859.91 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_filtered.json
+    Size: 2189.62 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_filtered_audit.json
+    Size: 2.40 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_chunks_filtered_audit.txt
+    Size: 2.00 KB
+    Extension: .txt
+
+data\inventory\admission\_pdf_knowledge_d3f4869b-a8d6-426b-a462-357c0b33ed58.json
+    Size: 5.03 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_d94be6f4-4fc6-4789-a525-992014caa653.json
+    Size: 15.05 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_dee8172b-0888-4be5-84a3-7b2c3005c880.json
+    Size: 2.91 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.json
+    Size: 18.94 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_final.json
+    Size: 2314.73 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_issues.json
+    Size: 223.70 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.json
+    Size: 864.02 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_knowledge_UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.json
+    Size: 1377.16 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_ocr_check.json
+    Size: 2769.24 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_recovered_chunks.json
+    Size: 261.78 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_recovered_native_audit.json
+    Size: 246.32 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_recovered_native_audit.txt
+    Size: 199.04 KB
+    Extension: .txt
+
+data\inventory\admission\_pdf_recovered_native_chunks.json
+    Size: 199.60 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_recovered_native_pages.json
+    Size: 352.26 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_recovered_pages.json
+    Size: 376.51 KB
+    Extension: .json
+
+data\inventory\admission\_pdf_skipped_page_audit_images\MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d__page_0009.png
+    Size: 349.39 KB
+    Extension: .png
+
+data\inventory\admission\_pdf_title_review.json
+    Size: 23.44 KB
+    Extension: .json
+
+data\inventory\admission\_phase1_nonocr_content.json
+    Size: 2992.29 KB
+    Extension: .json
+
+data\inventory\admission\_phase2_ocr_content.json
+    Size: 21.10 KB
+    Extension: .json
+
+data\inventory\admission\_review_pages.txt
+    Size: 73.64 KB
+    Extension: .txt
+
+data\inventory\admission\_sections.json
+    Size: 1.35 KB
+    Extension: .json
+
+data\inventory\admission\_selected_sections.json
+    Size: 2.76 KB
+    Extension: .json
+
+data\inventory\admission\_skipped_pages_manual_audit.csv
+    Size: 7.67 KB
+    Extension: .csv
+
+data\inventory\admission\_skipped_pages_manual_audit.txt
+    Size: 15.45 KB
+    Extension: .txt
+
+data\inventory\admission\admission-guide.txt
+    Size: 0.17 KB
+    Extension: .txt
+
+data\inventory\admission\avvv.txt
+    Size: 25.80 KB
+    Extension: .txt
+
+data\inventory\admission\inspectjsons.py
+    Size: 14.92 KB
+    Extension: .py
+
+data\inventory\admission\jsonstrcutrechecker.py
+    Size: 2.76 KB
+    Extension: .py
+
+data\inventory\admission\kb_inspection.txt
+    Size: 588.33 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0001.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0002.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0003.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0004.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0005.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0006.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0007.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\90166bac-e657-4cee-890f-c34aee652b6c\page_0008.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0001.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0002.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0003.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0004.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0005.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0006.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0007.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\admission-guide\page_0008.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64\page_0001.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64\page_0002.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\c8856fd5-733e-46c8-8271-1ff78cdb9ceb\page_0001.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\d3f4869b-a8d6-426b-a462-357c0b33ed58\page_0001.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\d94be6f4-4fc6-4789-a525-992014caa653\page_0001.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\phase2_ocr_pages\f9eba060-e8d2-48a3-8fa5-9c8d58655e9f\page_0001.txt
+    Size: 0.00 KB
+    Extension: .txt
+
+data\inventory\admission\program_inspection.txt
+    Size: 618.72 KB
+    Extension: .txt
+
+data\inventory\admission\program_list_only.txt
+    Size: 41.51 KB
+    Extension: .txt
+
+data\inventory\main_sections.json
+    Size: 3.61 KB
+    Extension: .json
+
+data\merit\latest_merit_list.pdf
+    Size: 220.73 KB
+    Extension: .pdf
+
+data\retrieval\last_retrieval.json
+    Size: 18.29 KB
+    Extension: .json
+
+data\vectorstore\chroma\c1003845-f4f9-4e70-b028-3f030e2aa31a\data_level0.bin
+    Size: 1636.72 KB
+    Extension: .bin
+
+data\vectorstore\chroma\c1003845-f4f9-4e70-b028-3f030e2aa31a\header.bin
+    Size: 0.10 KB
+    Extension: .bin
+
+data\vectorstore\chroma\c1003845-f4f9-4e70-b028-3f030e2aa31a\index_metadata.pickle
+    Size: 33.59 KB
+    Extension: .pickle
+
+data\vectorstore\chroma\c1003845-f4f9-4e70-b028-3f030e2aa31a\length.bin
+    Size: 3.91 KB
+    Extension: .bin
+
+data\vectorstore\chroma\c1003845-f4f9-4e70-b028-3f030e2aa31a\link_lists.bin
+    Size: 8.42 KB
+    Extension: .bin
+
+data\vectorstore\chroma\chroma.sqlite3
+    Size: 19956.00 KB
+    Extension: .sqlite3
+
+data\vectorstore\chroma\de8bf51f-ee99-4688-a7f7-61cb27f49a6c\data_level0.bin
+    Size: 1636.72 KB
+    Extension: .bin
+
+data\vectorstore\chroma\de8bf51f-ee99-4688-a7f7-61cb27f49a6c\header.bin
+    Size: 0.10 KB
+    Extension: .bin
+
+data\vectorstore\chroma\de8bf51f-ee99-4688-a7f7-61cb27f49a6c\index_metadata.pickle
+    Size: 33.59 KB
+    Extension: .pickle
+
+data\vectorstore\chroma\de8bf51f-ee99-4688-a7f7-61cb27f49a6c\length.bin
+    Size: 3.91 KB
+    Extension: .bin
+
+data\vectorstore\chroma\de8bf51f-ee99-4688-a7f7-61cb27f49a6c\link_lists.bin
+    Size: 8.42 KB
+    Extension: .bin
+
+main.py
+    Size: 0.79 KB
+    Extension: .py
+

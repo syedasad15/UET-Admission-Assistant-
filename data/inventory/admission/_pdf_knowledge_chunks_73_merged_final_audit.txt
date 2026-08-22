@@ -1,0 +1,34 @@
+==========================================================================================
+FINAL 73-PAGE MERGED KNOWLEDGE BASE AUDIT
+==========================================================================================
+
+Original chunks          : 2866
+Recovered chunks         : 154
+Final chunks             : 3020
+Recovered pages          : 73
+Final unique pages       : 1142
+Newly added pages        : 73
+Duplicate final keys     : 0
+Missing required fields  : 0
+Unresolved records       : 0
+
+Recovered sources:
+   native_text_recovery: 154
+
+Recovered quality flags:
+   ok: 154
+
+STATUS: PASS
+
+Original _pdf_knowledge_chunks.json was NOT modified.
+Per-PDF knowledge files were NOT modified.
+Existing merged files were NOT modified.
+
+Final output:
+D:\UET Chatbot\data\inventory\admission\_pdf_knowledge_chunks_73_merged_final.json
+
+Audit JSON:
+D:\UET Chatbot\data\inventory\admission\_pdf_knowledge_chunks_73_merged_final_audit.json
+
+Audit TXT:
+D:\UET Chatbot\data\inventory\admission\_pdf_knowledge_chunks_73_merged_final_audit.txt

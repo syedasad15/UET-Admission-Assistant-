@@ -1,0 +1,542 @@
+{
+  "phase": 2,
+  "name": "PaddleOCR OCR Extraction + Verification",
+  "created_at": "2026-08-13T15:38:43.946014+00:00",
+  "configuration": {
+    "ocr_engine": "PaddleOCR",
+    "pdf_engine": "PyMuPDF",
+    "ocr_language": "ur",
+    "english_supported": true,
+    "urdu_supported": true,
+    "render_dpi": 220,
+    "min_page_chars": 20,
+    "min_page_nonspace_chars": 5,
+    "onednn_enabled": false,
+    "mkldnn_enabled": false
+  },
+  "input": {
+    "phase1_registry": "D:\\UET Chatbot\\data\\inventory\\admission\\_phase1_nonocr_content.json",
+    "pdf_directory": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs",
+    "source_status": "OCR_REQUIRED_ONLY"
+  },
+  "summary": {
+    "expected_ocr_pdfs": 7,
+    "processed_pdfs": 7,
+    "pass": 0,
+    "review_required": 0,
+    "failed": 7,
+    "missing_documents": []
+  },
+  "documents": [
+    {
+      "phase": 2,
+      "filename": "admission-guide.pdf",
+      "source_pdf": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs\\admission-guide.pdf",
+      "method": "PaddleOCR + PyMuPDF",
+      "ocr_language": "ur",
+      "render_dpi": 220,
+      "started_at": "2026-08-13T15:38:26.799740+00:00",
+      "status": "FAILED",
+      "page_count": 8,
+      "pages": [
+        {
+          "page": 1,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 2,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 3,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 4,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 5,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 6,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 7,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 8,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        }
+      ],
+      "full_text": "[PAGE 1]\n\n\n[PAGE 2]\n\n\n[PAGE 3]\n\n\n[PAGE 4]\n\n\n[PAGE 5]\n\n\n[PAGE 6]\n\n\n[PAGE 7]\n\n\n[PAGE 8]",
+      "total_char_count": 85,
+      "total_nonspace_char_count": 56,
+      "urdu_detected": false,
+      "english_detected": true,
+      "verification": {
+        "sha256_actual": "d59b5f4a1bc68a9301bc2849663ec2f6d56c4ad83eba56a9d4d0d155ca5eedb6",
+        "sha256_expected": "d59b5f4a1bc68a9301bc2849663ec2f6d56c4ad83eba56a9d4d0d155ca5eedb6",
+        "sha256_verified": true,
+        "all_pages_processed": true,
+        "passed_pages": [],
+        "review_pages": [],
+        "failed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "pages_with_urdu": [],
+        "pages_with_english": []
+      },
+      "errors": [],
+      "finished_at": "2026-08-13T15:38:30.836066+00:00"
+    },
+    {
+      "phase": 2,
+      "filename": "bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.pdf",
+      "source_pdf": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs\\bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.pdf",
+      "method": "PaddleOCR + PyMuPDF",
+      "ocr_language": "ur",
+      "render_dpi": 220,
+      "started_at": "2026-08-13T15:38:30.839195+00:00",
+      "status": "FAILED",
+      "page_count": 2,
+      "pages": [
+        {
+          "page": 1,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 2,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        }
+      ],
+      "full_text": "[PAGE 1]\n\n\n[PAGE 2]",
+      "total_char_count": 19,
+      "total_nonspace_char_count": 14,
+      "urdu_detected": false,
+      "english_detected": true,
+      "verification": {
+        "sha256_actual": "4e0e059449b002e30fc9c37426fb229f0847d507dbfac989a2a52c3469cba848",
+        "sha256_expected": "4e0e059449b002e30fc9c37426fb229f0847d507dbfac989a2a52c3469cba848",
+        "sha256_verified": true,
+        "all_pages_processed": true,
+        "passed_pages": [],
+        "review_pages": [],
+        "failed_pages": [
+          1,
+          2
+        ],
+        "pages_with_urdu": [],
+        "pages_with_english": []
+      },
+      "errors": [],
+      "finished_at": "2026-08-13T15:38:31.801069+00:00"
+    },
+    {
+      "phase": 2,
+      "filename": "f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.pdf",
+      "source_pdf": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs\\f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.pdf",
+      "method": "PaddleOCR + PyMuPDF",
+      "ocr_language": "ur",
+      "render_dpi": 220,
+      "started_at": "2026-08-13T15:38:31.804069+00:00",
+      "status": "FAILED",
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        }
+      ],
+      "full_text": "[PAGE 1]",
+      "total_char_count": 8,
+      "total_nonspace_char_count": 7,
+      "urdu_detected": false,
+      "english_detected": true,
+      "verification": {
+        "sha256_actual": "1ea70cc0f23a7f4df1670aba9e7ee2f543fd4ae72a368e36f66bc9dd6aeaf9e7",
+        "sha256_expected": "1ea70cc0f23a7f4df1670aba9e7ee2f543fd4ae72a368e36f66bc9dd6aeaf9e7",
+        "sha256_verified": true,
+        "all_pages_processed": true,
+        "passed_pages": [],
+        "review_pages": [],
+        "failed_pages": [
+          1
+        ],
+        "pages_with_urdu": [],
+        "pages_with_english": []
+      },
+      "errors": [],
+      "finished_at": "2026-08-13T15:38:33.159539+00:00"
+    },
+    {
+      "phase": 2,
+      "filename": "90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "source_pdf": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs\\90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "method": "PaddleOCR + PyMuPDF",
+      "ocr_language": "ur",
+      "render_dpi": 220,
+      "started_at": "2026-08-13T15:38:33.163081+00:00",
+      "status": "FAILED",
+      "page_count": 8,
+      "pages": [
+        {
+          "page": 1,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 2,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 3,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 4,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 5,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 6,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 7,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        },
+        {
+          "page": 8,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        }
+      ],
+      "full_text": "[PAGE 1]\n\n\n[PAGE 2]\n\n\n[PAGE 3]\n\n\n[PAGE 4]\n\n\n[PAGE 5]\n\n\n[PAGE 6]\n\n\n[PAGE 7]\n\n\n[PAGE 8]",
+      "total_char_count": 85,
+      "total_nonspace_char_count": 56,
+      "urdu_detected": false,
+      "english_detected": true,
+      "verification": {
+        "sha256_actual": "1e8e77445b17c3e75ff582758a3297d844b2faa8452d11db5623f8b025b8c6b1",
+        "sha256_expected": "1e8e77445b17c3e75ff582758a3297d844b2faa8452d11db5623f8b025b8c6b1",
+        "sha256_verified": true,
+        "all_pages_processed": true,
+        "passed_pages": [],
+        "review_pages": [],
+        "failed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "pages_with_urdu": [],
+        "pages_with_english": []
+      },
+      "errors": [],
+      "finished_at": "2026-08-13T15:38:37.187458+00:00"
+    },
+    {
+      "phase": 2,
+      "filename": "c8856fd5-733e-46c8-8271-1ff78cdb9ceb.pdf",
+      "source_pdf": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs\\c8856fd5-733e-46c8-8271-1ff78cdb9ceb.pdf",
+      "method": "PaddleOCR + PyMuPDF",
+      "ocr_language": "ur",
+      "render_dpi": 220,
+      "started_at": "2026-08-13T15:38:37.190517+00:00",
+      "status": "FAILED",
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        }
+      ],
+      "full_text": "[PAGE 1]",
+      "total_char_count": 8,
+      "total_nonspace_char_count": 7,
+      "urdu_detected": false,
+      "english_detected": true,
+      "verification": {
+        "sha256_actual": "690b67ef1360fcbb2f009cdf77901d6e655516f1d04123763c510b2390c2e90d",
+        "sha256_expected": "690b67ef1360fcbb2f009cdf77901d6e655516f1d04123763c510b2390c2e90d",
+        "sha256_verified": true,
+        "all_pages_processed": true,
+        "passed_pages": [],
+        "review_pages": [],
+        "failed_pages": [
+          1
+        ],
+        "pages_with_urdu": [],
+        "pages_with_english": []
+      },
+      "errors": [],
+      "finished_at": "2026-08-13T15:38:40.186595+00:00"
+    },
+    {
+      "phase": 2,
+      "filename": "d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "source_pdf": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs\\d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "method": "PaddleOCR + PyMuPDF",
+      "ocr_language": "ur",
+      "render_dpi": 220,
+      "started_at": "2026-08-13T15:38:40.201283+00:00",
+      "status": "FAILED",
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        }
+      ],
+      "full_text": "[PAGE 1]",
+      "total_char_count": 8,
+      "total_nonspace_char_count": 7,
+      "urdu_detected": false,
+      "english_detected": true,
+      "verification": {
+        "sha256_actual": "9002f5872d3fd38ef92e66fd564be24c4d1cc8f3b53a3b041b55f80576c821ff",
+        "sha256_expected": "9002f5872d3fd38ef92e66fd564be24c4d1cc8f3b53a3b041b55f80576c821ff",
+        "sha256_verified": true,
+        "all_pages_processed": true,
+        "passed_pages": [],
+        "review_pages": [],
+        "failed_pages": [
+          1
+        ],
+        "pages_with_urdu": [],
+        "pages_with_english": []
+      },
+      "errors": [],
+      "finished_at": "2026-08-13T15:38:40.873828+00:00"
+    },
+    {
+      "phase": 2,
+      "filename": "d94be6f4-4fc6-4789-a525-992014caa653.pdf",
+      "source_pdf": "D:\\UET Chatbot\\data\\inventory\\admission\\pdfs\\d94be6f4-4fc6-4789-a525-992014caa653.pdf",
+      "method": "PaddleOCR + PyMuPDF",
+      "ocr_language": "ur",
+      "render_dpi": 220,
+      "started_at": "2026-08-13T15:38:40.877775+00:00",
+      "status": "FAILED",
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "method": "PaddleOCR + PyMuPDF",
+          "status": "FAILED",
+          "char_count": 0,
+          "nonspace_char_count": 0,
+          "contains_urdu": false,
+          "contains_english": false,
+          "lines": [],
+          "text": "",
+          "error": "NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\paddle\\fluid\\framework\\new_executor\\instruction\\onednn\\onednn_instruction.cc:118)\n"
+        }
+      ],
+      "full_text": "[PAGE 1]",
+      "total_char_count": 8,
+      "total_nonspace_char_count": 7,
+      "urdu_detected": false,
+      "english_detected": true,
+      "verification": {
+        "sha256_actual": "1b4ea8807e0e8646b94dabfb2afd49aa552d4bd9e06f0d463e96b4ce6f833b1c",
+        "sha256_expected": "1b4ea8807e0e8646b94dabfb2afd49aa552d4bd9e06f0d463e96b4ce6f833b1c",
+        "sha256_verified": true,
+        "all_pages_processed": true,
+        "passed_pages": [],
+        "review_pages": [],
+        "failed_pages": [
+          1
+        ],
+        "pages_with_urdu": [],
+        "pages_with_english": []
+      },
+      "errors": [],
+      "finished_at": "2026-08-13T15:38:43.932193+00:00"
+    }
+  ]
+}

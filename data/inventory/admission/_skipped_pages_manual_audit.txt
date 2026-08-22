@@ -1,0 +1,352 @@
+UET ADMISSION PDF - SKIPPED PAGE MANUAL AUDIT
+================================================================================
+
+Total skipped pages: 85
+
+Instructions:
+  IMPORTANT = page contains useful admission information and must be reprocessed
+  SKIP     = page is decorative / irrelevant / Urdu content not needed
+  REVIEW   = uncertain, inspect later
+
+================================================================================
+
+001. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 2 | low_quality_ocr_output | likely_non_english_or_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+002. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 43 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+003. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 54 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+004. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 60 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+005. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 63 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+006. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 72 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+007. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 74 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+008. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 77 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+009. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 129 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+010. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 133 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+011. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 135 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+012. 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf | PAGE 170 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+013. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 40 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+014. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 43 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+015. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 44 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+016. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 47 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+017. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 52 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+018. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 57 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+019. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 58 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+020. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 69 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+021. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 70 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+022. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 74 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+023. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 82 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+024. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 83 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+025. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 86 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+026. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 91 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+027. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 100 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+028. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 106 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+029. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 107 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+030. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 110 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+031. 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf | PAGE 114 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+032. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 2 | low_quality_ocr_output | likely_non_english_or_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+033. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 45 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+034. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 56 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+035. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 62 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+036. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 65 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+037. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 74 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+038. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 76 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+039. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 79 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+040. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 131 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+041. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 135 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+042. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 137 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+043. 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf | PAGE 172 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+044. 90166bac-e657-4cee-890f-c34aee652b6c.pdf | PAGE 4 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+045. 90166bac-e657-4cee-890f-c34aee652b6c.pdf | PAGE 5 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+046. 90166bac-e657-4cee-890f-c34aee652b6c.pdf | PAGE 6 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+047. 90166bac-e657-4cee-890f-c34aee652b6c.pdf | PAGE 7 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+048. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 9 | low_quality_ocr_output | likely_non_english_or_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+049. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 30 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+050. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 34 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+051. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 38 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+052. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 43 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+053. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 47 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+054. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 52 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+055. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 57 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+056. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 58 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+057. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 63 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+058. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 67 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+059. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 73 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+060. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 74 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+061. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 78 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+062. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 87 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+063. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 91 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+064. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 96 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+065. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 105 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+066. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 111 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+067. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 112 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+068. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 115 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+069. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 119 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+070. MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf | PAGE 149 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+071. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 2 | low_quality_ocr_output | likely_non_english_or_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+072. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 43 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+073. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 55 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+074. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 59 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+075. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 62 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+076. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 71 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+077. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 73 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+078. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 76 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+079. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 107 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+080. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 136 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+081. UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf | PAGE 141 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+082. admission-guide.pdf | PAGE 4 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+083. admission-guide.pdf | PAGE 5 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+084. admission-guide.pdf | PAGE 6 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+
+085. admission-guide.pdf | PAGE 7 | low_quality_ocr_output | likely_garbled
+     DECISION: __________
+     NOTES:    ________________________________
+

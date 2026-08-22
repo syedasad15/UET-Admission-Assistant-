@@ -1,0 +1,58 @@
+{
+  "source": "https://admission.uet.edu.pk/",
+  "stage": "admission_homepage_discovery",
+  "crawl_policy": {
+    "homepage_only": true,
+    "discovered_links_crawled": false
+  },
+  "sections": [
+    {
+      "name": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "name": "Home",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "name": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "name": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "name": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "name": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "name": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "name": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "name": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "name": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "name": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    },
+    {
+      "name": "Apply Now",
+      "url": "https://admission.uet.edu.pk/#programs"
+    }
+  ]
+}

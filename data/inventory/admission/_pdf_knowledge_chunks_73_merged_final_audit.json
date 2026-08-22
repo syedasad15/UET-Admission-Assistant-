@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "read_only_inputs": true,
+  "original_file_modified": false,
+  "per_pdf_files_modified": false,
+  "original_chunks": 2866,
+  "recovered_chunks": 154,
+  "final_chunks": 3020,
+  "expected_final_chunks": 3020,
+  "original_unique_pages": 1069,
+  "recovered_unique_pages": 73,
+  "final_unique_pages": 1142,
+  "newly_added_pages": 73,
+  "duplicate_final_keys": 0,
+  "missing_required_fields": 0,
+  "unresolved_recovered_records": 0,
+  "recovered_sources": {
+    "native_text_recovery": 154
+  },
+  "recovered_quality_flags": {
+    "ok": 154
+  },
+  "output_file": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_knowledge_chunks_73_merged_final.json"
+}

@@ -1,0 +1,357 @@
+{
+  "source": "UET Admissions Portal",
+  "stage": "pdf_title_review",
+  "counts": {
+    "total_documents": 26,
+    "already_identified": 6,
+    "needing_review": 20,
+    "previewed": 20,
+    "missing_knowledge_files": 0
+  },
+  "previews": [
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.pdf",
+      "sha256": "56b2d41d8cdf919858ad7fa987daaf4498e3424aa624f83437f98c491d3cf958",
+      "group_size": 1,
+      "total_pages": 2,
+      "usable_pages": 2,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "1\nUNDERTAKING on E-stamp paper of Rs. 100/-\nTo be ﬁlled by the selected candidates\nI, Mr. / Ms. ___________________________ Son/daughter of Mr. __________________________ am provisionally selected for admission\nto B.Sc program of ____________________________________ in the University of Engineering and Technology, Lahore, (Main Campus,\nNew Campus KSK, FSD Campus, NWL Campus, RCET Campus). I unders..."
+        },
+        {
+          "page": 2,
+          "text": "2\nd. 50% fee refund if admission is cancelled up to the 30th day.\ne. No fee refund if admission is cancelled from the 31st day onwards.\nThe count of days used to determine the refund amount starts from the date of convening of classes. The tuition-fee refund timelines\ninclude weekends. The admission fee ie 1st Installment is NOT refundable in any circumstances.\n4.1-A Admission Cancellation by Fres..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/a8090b4d-2448-42e7-999a-a948573c7f3b.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "a8090b4d-2448-42e7-999a-a948573c7f3b.pdf",
+      "sha256": "718bf0a5cad4da204c2bf7d02c6087f2afb27289c3a66488a73f3c5779714d9e",
+      "group_size": 1,
+      "total_pages": 10,
+      "usable_pages": 10,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "UNIVERSITY OF ENGINEERING AND TECHNOLOGY, LAHORE\nCLOSING MERIT REPORT\nAdmission: Undergraduate Fall 2026\nMerit List No: 2\nCampus\nDiscipline\nCategory\nSession\nType\nClosing Merit\nFaislabad Campus\nChemical Engineering\nA1\nMorning\nECAT\n66.17838\nFaislabad Campus\nComputer Engineering (NCEAC)\nA1\nMorning\nECAT\n70.95262\nFaislabad Campus\nComputer Engineering (NCEAC)\nA1-M\nMorning\nECAT\n79.70624\nFaislabad Campus\n..."
+        },
+        {
+          "page": 2,
+          "text": "Campus\nDiscipline\nCategory\nSession\nType\nClosing Merit\nGujaranwala\nComputer Science\nA2\nMorning\nECAT\n68.3261\nGujaranwala\nComputer Science\nA2-M\nMorning\nECAT\n77.67518\nGujaranwala\nComputer Science\nM\nMorning\nECAT\n78.85351\nGujaranwala\nElectrical Engineering\nA1\nMorning\nECAT\n66.02675\nGujaranwala\nMechanical Engineering\nA1\nMorning\nECAT\n65.44895\nMain Campus (LHR)\nArchitectural Engineering\nA1\nMorning\nECAT\n80.8..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.pdf",
+      "sha256": "4e0e059449b002e30fc9c37426fb229f0847d507dbfac989a2a52c3469cba848",
+      "group_size": 1,
+      "total_pages": 2,
+      "usable_pages": 2,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "UNIVERSITY OF ENGINEERING AND TECHNOLOGY, LAHORE\nUNDERGRADUATE ADMISSION PROCESS SCHEDULE | 2026 (FALL)\nEVENT | DATE | DAY | TIME\nOn-line and Submission of Filling Admission Forms Starts | 08-06-2026 | Monday\nCandidate may request permission to edit already submitted application by paying | 12-07-2026 to | Sunday to\nRs.1500/: | 14-07-2026 | Tuesday\nLast date of On-Line Submission of Admission Form..."
+        },
+        {
+          "page": 2,
+          "text": "UNIVERSITY OF ENGINEERING AND TECHNOLOGY LAHORE\nUNDERGRADUATE ADMISSION PROCESS SCHEDULE | 2026 (FALL)\nEVENT | DATE | DAY / TIME\nCommencement of Online Filling and Submission of Admission Forms for\nLeftover / Non-Selected Candidates and | 02-09-2026 to | Wednesday to\nNon-Reported Candidates. Fee of Rs.3,000/- per candidate shall be charged | 07-09-2026 | Monday\nAnnouncement of Merit List of such c..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "sha256": "b09340a79715fb41d8c6ffc26248e6398287b5a60e3876abe2597b73e6ff07a3",
+      "group_size": 1,
+      "total_pages": 2,
+      "usable_pages": 2,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "Subsidized\nPartially Subsidized\nA1,A1-M\nI,L,M,P,R,B,D,E,H,J1,K,Q1,Q2,U1,U\n2,H1,H4,NM\nA2,A2-\nM,H2,H3,H5,J2,N,O,S,SF,SI\n1\n(Non-Recurrinig Fee (Paybale at the Time of Admission)\ni\nAdmission Fee Paybale in First Semester/Readmission Fee\n54050\n74040\n(Recurrinig Fee From 2nd to 8th or 10th Semester)\nii\nTuition Fee (Payable in every semester)\n56290\n85250\niii\nExamination Fee\n1474\n1572\niv\nFacilities Charge..."
+        },
+        {
+          "page": 2,
+          "text": "Subsidize\nPartilly Subsidize\nA1,A1-M\nI,L,M,P,R,B,D,E,H,J1,K,Q1,Q2,U1,U2,H1\n,H4,NM\nA2,A2-M,H2,H3,H5,J2,N,O,S,SF,SI\nFirst Semester (Fall) 1St Installment\nAdmission Fee (Non- Refundable)\n54,050\n74,040\nFirst Semester (Fall) [2nd Installment\nTuition Fee due on 1st day of classes: 07-\n09-2026)\n56,290\n85,250\nSecond Semester (Spring)\n72,260\n113,040\nThird Semester (Fall)\n79,020\n122,080\nFourth Semester (Spr..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/91a868d2-dfcb-4974-af21-453f6b6853d0.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "91a868d2-dfcb-4974-af21-453f6b6853d0.pdf",
+      "sha256": "b1c03d1b44f991fbd403859e1c59e8b3fcc5a064fb371fca8cf083024d3a6287",
+      "group_size": 1,
+      "total_pages": 11,
+      "usable_pages": 11,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "UNIVERSITY OF ENGINEERING AND TECHNOLOGY, LAHORE\nMINIMUM AGGREGATE REPORT\nAdmission: Undergraduate Fall 2026\nMerit List No: 1\nCampus\nDiscipline\nCategory\nSession\nType\nMinimum Aggregate\nFaislabad Campus\nChemical Engineering\nA1\nMorning\nECAT\n69.98262\nFaislabad Campus\nComputer Engineering (NCEAC)\nA1\nMorning\nECAT\n73.66391\nFaislabad Campus\nComputer Engineering (NCEAC)\nA1-M\nMorning\nECAT\n83.35185\nFaislabad..."
+        },
+        {
+          "page": 2,
+          "text": "Campus\nDiscipline\nCategory\nSession\nType\nMinimum Aggregate\nGujaranwala\nComputer Engineering (NCEAC)\nA1\nMorning\nECAT\n69.18631\nGujaranwala\nComputer Engineering (NCEAC)\nA1-M\nMorning\nECAT\n78.74194\nGujaranwala\nComputer Science\nA1\nMorning\nECAT\n74.87595\nGujaranwala\nComputer Science\nA1-M\nMorning\nECAT\n84.32794\nGujaranwala\nComputer Science\nA2\nMorning\nECAT\n71.50095\nGujaranwala\nComputer Science\nA2-M\nMorning\nEC..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/a9f1df72-962b-4b2e-aebe-bd624d917953.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "a9f1df72-962b-4b2e-aebe-bd624d917953.pdf",
+      "sha256": "1837c7f22a7333aca8c651503f9ca93a4678add4fd2d8ba3f98992f09a752f61",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "The Aﬃdavit should be submiƩed only by Non-Muslim candidates on Rs.100/- Stamp Paper\nAFFIDAVIT BY NON MUSLIM CANDIDATES FOR NM CATEGORY ADMISSION\nCandidate Name____________________ Son/Daughter of ______________________________\nCNIC No:__________________________ do hereby aﬃrm and declare on oath; that:\nI am a Non-Muslim and belong to _______________________ (ChrisƟanity, Hinduism, Sikhism,\nBudhis..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/7faf8b8c-f607-43dd-ab53-6c5e261f705b.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "7faf8b8c-f607-43dd-ab53-6c5e261f705b.pdf",
+      "sha256": "5d294e89dd0af409ce96193e54474b72fd1c1b7c04cfa3618fd84de488504bdb",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "SPECIMEN\nINCOME CERTIFICATE\n(FOR SELF EMPLOYED ONLY)\n(AƩested by the Class-1 GazeƩed Oﬃcer)\nThis is to cerƟfy that I Mr./Mrs.____________________________________________________\nCNIC No:_________________________Resident of____________________________________\nFather/Guardian of Student Name:_____________________________ is self employed and my\nmonthly income from all sources is Rs._________________..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.pdf",
+      "sha256": "1ea70cc0f23a7f4df1670aba9e7ee2f543fd4ae72a368e36f66bc9dd6aeaf9e7",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "104 YEARS OF ACADEMIC EXCELLENCE | HIGHLIGHTS Number Engineering and Technology University in\nUNIVERSITY OF ENGINEERING & TECHNOLOGY LAHORE | Pakistan, Ranked 201st in the World for Engineering and\nTecnology: 2025-26, scholarships worth the Finandal\n(NDERGRADUATE ADMISSIONS Fall 2026 | more than PKR 1.45 billion were awarded, Split studies optionisavailable for certain programs,in\n(Engineering, Fa..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "sha256": "1e8e77445b17c3e75ff582758a3297d844b2faa8452d11db5623f8b025b8c6b1",
+      "group_size": 1,
+      "total_pages": 8,
+      "usable_pages": 4,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "UNIVERSITY OF ENGINEERING & TECHNOLOGY\nLAHORE 100+ Years of Academic Excellence\nYradleontei Complek\nADMISSION GUIDE\nFOR FALL-2026\nUndergraduate Programs\nRanked 201 in QS World University Rankings by Subject (2026) | 40+ Student Societies 450+ Events\n440+ PhD Faculty (National & International) | 20+ Sports Facilities Both Indoor & Outdoor\nPKR 1.45 Billion+Scholarships Available Annually | Annual Ca..."
+        },
+        {
+          "page": 2,
+          "text": "UNIVERSITY OF ENGINEERING AND TECHNOLOGY; LAHORE\nUNDERGRADUATE ADMISSION PROCESS SCHEDULE | 2026 (FALL)\nEVENT | DATE | DAY / TIME\nOn-line and Submission of Filling Admission Forms Starts | 08-06-2026 | Monday\nCandidate may request permission to edit already submitted application by paying | 12-07-2026 to | Sunday to\nRs.1500/: | 14-07-2026 | Tuesday\nLast date of On-Line Submission of Admission Form..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/14a1476c-9fc8-4728-96a7-3c181b0e9c81.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "14a1476c-9fc8-4728-96a7-3c181b0e9c81.pdf",
+      "sha256": "568a7e029ad0bdd55e607500498d57aca117ad9207de0264d5c9060c2f8bf349",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "Name of Applicant for Admission to UET Lahore :\nRelationship of Applicant with Pakistani Citizen Whose Credentials are given above :\n(Son/ Daughter/ Ward)\nApplicant ‘s\nPhotograph\nForm-VIII\nCERTIFICATE FROM OVERSEAS PAKISTANIS FOR ADMISSION OF THEIR CHILDREN / WARDS ON\nRESERVED SEATS UNDER CATEGORY S & SI\n(PLEASE FILL IN BLOCK LETTERS ONLY)\nThe University of Engineering & Technology, Lahore has res..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/dee8172b-0888-4be5-84a3-7b2c3005c880.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "dee8172b-0888-4be5-84a3-7b2c3005c880.pdf",
+      "sha256": "0402e2c00eb2bf3eed3c162e90de31f6dd225be08431b0eadfb5eea97507a90f",
+      "group_size": 1,
+      "total_pages": 2,
+      "usable_pages": 2,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "Form -V\nCERTIFICATE\n(Given by the Registrar, UET, Lahore)\nIt is to certify that Mr. / Mrs.\nFather/Mother of applicant\nhas been a full-time employee of the University from\nto\nas\nin the\ndepartment/branch.\nHe/She has continuously served the university for a period not less than five years (being physically present in the university during the period)\nFurther certified that he/she\na)\ndid not leave the..."
+        },
+        {
+          "page": 2,
+          "text": "Form -VI\nCERTIFICATE\n(Certificate is to be given by a Class-I Gazetted Officer)\nThe family of the applicant\nMr./ Miss.\nson/ daughter of\n_\nis personally known to me and I certify that the applicant is not married.\nSignature\nName\nFull Address\n(Official Seal)\nDated :"
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/30097787-4e76-496e-8e19-7b99fdf17347.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "30097787-4e76-496e-8e19-7b99fdf17347.pdf",
+      "sha256": "ca810a3736a13f95083fb4bb2d96d91b1ba845136c9fdd8796334a5c3cec63f8",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "UNDERTAKING REGARDING IBCC EQUIVALENCE CERTIFICATE\n(Only for Foreign Students)\nI, _________________________________________________________, Passport No. ___________________________,\nhereby undertake that I shall submit my valid IBCC Equivalence Certificate within ninety (90) days from the date of\nissuance/receipt of the University's admission letter.\nI understand that my eligibility for admission..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/098eca99-9df5-4ef9-81f0-275861ad27ac.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "098eca99-9df5-4ef9-81f0-275861ad27ac.pdf",
+      "sha256": "509ba9bc0853110b19f0fbf3f5a66affce86a599fff2065e9e48d56574e143db",
+      "group_size": 1,
+      "total_pages": 9,
+      "usable_pages": 9,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "1\nUNIVERSITY OF ENGINEERING AND TECHNOLOGY, LAHORE\nAPPLICATION FOR ADMISSION BY MIGRATION\nPERSONAL INFORMATION (PLEASE TYPE OR PRINT CLEARLY IN CAPITAL LETTERS)\nName of Applicant\nFather’s Name\nMailing Address\nPhone No.\nMobile No.\nEmail:\nPermanent Address\nReligion\nDate of Birth (Day-Month-Year)\nCitizenship\nComputerized National I.D. Card No.\n(If Pakistani Citizen)\nTemporary Residence address\n(If no..."
+        },
+        {
+          "page": 2,
+          "text": "2\nACADEMIC INFORMATION FROM WHERE MIGRATION IS BEING MADE\nA: LAST EXAMINATION PASSED AT THE PARENT UNIVERSITY/COLLEGE\nB: EXAMINATION RECORD\nEXAMINATION\nTOTAL NO. OF\nPAPERS\nPAPERS PASSED\nOUTSTANDING\nPAPERS\nTheory\nPractical\nTheory\nPractical\nTheory\nPractical\nFIRST SEMESTER\nSECOND SEMESTER\nTHIRD SEMESTER\nFOURTH SEMESTER\nSIGNED BY:\nCONTROLLER OF EXAMINATIONS\nDated:\n(WITH OFFICIAL SEAL)\nC: ATTENDANCE RE..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/937243bf-044d-422e-b0f0-c32b36e04f7d.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "937243bf-044d-422e-b0f0-c32b36e04f7d.pdf",
+      "sha256": "cc88730a16fe8c45f0f7a8c38c5e43fabd1ea38f90481e71349a695c9f428ebf",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "UNIVERSITY OF ENGINEERING & TECHNOLOGY, LAHORE.\n(STUDENTS SECTION)\nAPPLICATION FORM FOR MIGRATION\n1.\nName of Applicant:\n_______________________________________________________\n2.\nRegistration Number:\n_______________________________________________________\n3.\nName of Father/Guardian:\n_______________________________________________________\n4.\nPermanent Address:\n______________________________________..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/c8856fd5-733e-46c8-8271-1ff78cdb9ceb.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "c8856fd5-733e-46c8-8271-1ff78cdb9ceb.pdf",
+      "sha256": "690b67ef1360fcbb2f009cdf77901d6e655516f1d04123763c510b2390c2e90d",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "104 YEARS OF ACADEMIC EXCELLENCE | HIGHLIGHTS FOR MSc. | M. Phil:\nMS Masters Number | and Technology\nUNIVERSITY OF ENGINEERING | Engineering University in Pakistan.\nAND TECHNOLOGY LAHORE IamRL | Ranked 201sin the World for Engineering and\nTecpolbfaculty:\nMSC / Mz PHIL / ADMISSIONS | 9072 Research Papers\nZ5 Itescotioga? &ndioatoe aoratemniofUET,\nLahore Financial Assistance is available in different..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "sha256": "9002f5872d3fd38ef92e66fd564be24c4d1cc8f3b53a3b041b55f80576c821ff",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "FEE AND EXPENSES\nREGULARMS | MSc ! MPhil_STVDENTS FEE siructuRE FoR SESSION2026 Fall-_Morning EEvening | 3RDYEAR\nPARTICULARS | FIRST YEAR Znd Semester Ist Semezter | ZNDXEAR 4th Semester Jrd Semester | Sth Semester | Bth Semester\nADMIZSIQN FEE | 11,980\nWVMoNFEE 3EMesieR WSE FACIVITIES CHKROE? | 62,20 7,220 | 6Z,200 722] | 75270 8,0S0 | 15270 8,030 | 84,200 9,030 | 84,30 9WeQ\nEXAMINATION CHARGES | ..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/d94be6f4-4fc6-4789-a525-992014caa653.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "d94be6f4-4fc6-4789-a525-992014caa653.pdf",
+      "sha256": "1b4ea8807e0e8646b94dabfb2afd49aa552d4bd9e06f0d463e96b4ce6f833b1c",
+      "group_size": 1,
+      "total_pages": 1,
+      "usable_pages": 1,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "104 YEARS OF ACADEMIC EXCELLENCE\nUNIVERSITY OF ENGINEERING\nAND TECHNOLOGY LAHORE AD\nHIGHLIGHTS FOR PhD: | Technology and\nPhD: ADMISSIONS | rin Pergitarering Univtsty\nRanked 201sin the World for Engineering and Technology:\nFALL 2026 | 450 Ph.D. Faculty: Papers.\n97nteeratighaPanet National Patents\nDiscount is available, in tuition fee for all graduates admitted to Ph.D. programs\nThe University invit..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.pdf",
+      "sha256": "53474a30b3c9343d28b46a4e5bf5281d25b49f0be89e6a807fa0a055fc70a363",
+      "group_size": 1,
+      "total_pages": 6,
+      "usable_pages": 6,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "Declaration Form\ni) Muslims Only\nA) I solemnly declare that I believe that Hazrat Muhammad\n(SAWS) is the last Prophet of Allah and there is and was no\nProphet after him. And that I have firm faith in Islam and I\nam not the follower of any such person who claims to be a\nprophet or religious reformer after Hazrat Muhammad\n(peace be upon him). I do not belong to Qadiani, Ahmadi or\nLahori Group.\nSigna..."
+        },
+        {
+          "page": 2,
+          "text": "BIODATA CARD\nUNIVERSITY OF ENGINEERING AND TECHNOLOGY, LAHORE\nA\nPERSONAL RECORD\n1.\nName of Applicant\n2.\nDiscipline applied for\n3.\nReligion\n4.\nPlace / Date of Birth\n5.\nPermanent Home Address\nB\nFAMILY RECORD\n1.\nFather’s Name\n2.\nFather’s Occupation\n3.\nFather’s Address\n4.\nFather’s Pay\n5.\nMother’s Occupation and Pay (if any)\n6.\nIncome from any other source\n7.\nTotal Family Income (Monthly)\nC\nEXTRA CURRI..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/104495c8-1fd5-4476-9721-66a4d5b653dd.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "104495c8-1fd5-4476-9721-66a4d5b653dd.pdf",
+      "sha256": "fc5d831d089520e01b43bde1cfe59d950d3b39d92919b482f0fb7e9fe184030e",
+      "group_size": 1,
+      "total_pages": 2,
+      "usable_pages": 2,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "Form -III\nCERTIFICATE\n(To be given by the Head of Department not below a Class I Gazetted Officer)\nThis is to certify that Mr/ Mrs\nfather/ mother of the applicant namely\nis an employee of the Department of\nand he/ she has served in the province of Sind / KPK. / Baluchistan in his/ her capacity as\n(state rank/ BPS)\nFrom\nto\nIt is further certified after due verification of his/her official record th..."
+        },
+        {
+          "page": 2,
+          "text": "Form -IV\nCERTIFICATE\n(To be given by the Election Officer)\nI (name of the Election Officer)\nBeing the Election Officer of:\nWard No.\nArea\nCity/Town\nTehsil\nDistrict\nin the Punjab Province / Federal Capital Area, Islamabad do hereby certify that the name of\n(applicant’s father)\nMr.\nson of Mr.\nappears on page\nof the latest electoral roll of voters of the area under my control. This electoral roll was ..."
+        }
+      ]
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/429cada0-b8a1-4b15-8c3b-392d9a4f1d50.pdf",
+      "canonical_title": "Download",
+      "canonical_local_filename": "429cada0-b8a1-4b15-8c3b-392d9a4f1d50.pdf",
+      "sha256": "e9f3e02b957ffb269c3c14289de4cf12dd25b4e0a8c995c5ebe8295c98de4eda",
+      "group_size": 1,
+      "total_pages": 2,
+      "usable_pages": 2,
+      "preview_pages": [
+        {
+          "page": 1,
+          "text": "SUBJECT TEST SCHEDULE OF POSTGRADUATE PROGRAMS (ADMISSIONS FALL-2026)-(Revised)\nSr.\nNo.\nDate\nDay\nDepartment / Venue\nSubject Tests for Postgraduate Programs\nSubject Test Time\nFrom\nTo\n1.\n17 Aug\nMonday\nChemical Engineering\nM.Sc. Chemical Engineering (LHR/FSD)\nPh.D. Chemical Engineering (LHR/FSD)\n8:15 am\n9:15 am\n2.\n17 Aug\nMonday\nGeological Engineering\nM.Sc./ Ph.D. Geological Engineering\n8:15 am\n9:15 a..."
+        },
+        {
+          "page": 2,
+          "text": "M.Sc. Geotechnical Engineering\nM.Sc. Hydraulics & Irrigation Engineering\nM.Sc. Disaster Mitigation Engineering\nPh.D. Civil Engineering (LHR/NWL)\n36.\n19 Aug\nWednesday\nPhysics\nM.Phil. Nano Science and Technology\n09:15 am\n10:15 am\n37.\n19 Aug\nWednesday\nComputer Science\nM.Sc. Computer Science (LHR / NWL / RCET)\nPh.D. Computer Science (LHR / KSK)\nM.Sc. Software Engineering\n09:15 am\n10:15 am\n38.\n19 Aug\nW..."
+        }
+      ]
+    }
+  ]
+}

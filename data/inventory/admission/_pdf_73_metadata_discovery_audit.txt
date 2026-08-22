@@ -1,0 +1,1737 @@
+====================================================================================================
+73 RECOVERED CHUNKS — METADATA SOURCE DISCOVERY AUDIT
+====================================================================================================
+
+Base directory : D:\UET Chatbot\data\inventory\admission
+Recovered file : D:\UET Chatbot\data\inventory\admission\_pdf_recovered_native_chunks.json
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+recovered_chunks                   : 154
+recovered_pages                    : 73
+fully_resolved                     : 154
+partially_resolved                 : 0
+completely_unresolved              : 0
+
+====================================================================================================
+FIELD RESOLUTION
+====================================================================================================
+canonical_url                      : 154
+canonical_title                    : 154
+sha256                             : 154
+all_urls                           : 154
+
+====================================================================================================
+SOURCE FILE FREQUENCY
+====================================================================================================
+   154  _pdf_knowledge_chunks.json
+
+====================================================================================================
+UNRESOLVED / PARTIAL RECORDS
+====================================================================================================
+[NONE]
+
+====================================================================================================
+RECOVERED RECORD DETAILS
+====================================================================================================
+
+[0] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=43 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[1] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=43 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[2] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=54 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[3] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=60 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[4] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=60 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[5] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=60 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[6] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=60 chunk=3
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[7] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=63 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[8] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=63 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[9] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=63 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[10] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=72 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[11] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=74 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[12] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=77 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[13] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=77 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[14] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=77 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[15] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=129 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[16] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=129 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[17] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=129 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[18] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=133 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[19] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=133 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[20] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=135 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[21] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=170 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[22] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=170 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[23] 1d111018-7c33-455a-9aa0-662f7c30da9e.pdf page=170 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf
+   canonical_title: Download
+   sha256: 2b46e0a809266e43f93c653891c477fb36496ccb0cd782ac7f85b3085265a2c8
+   all_urls: list[1]
+
+[24] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=40 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[25] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=40 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[26] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=43 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[27] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=43 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[28] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=43 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[29] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=44 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[30] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=44 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[31] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=47 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[32] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=47 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[33] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=52 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[34] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=57 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[35] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=57 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[36] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=58 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[37] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=58 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[38] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=69 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[39] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=69 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[40] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=69 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[41] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=70 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[42] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=70 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[43] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=74 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[44] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=82 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[45] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=82 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[46] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=82 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[47] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=83 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[48] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=86 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[49] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=86 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[50] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=86 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[51] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=91 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[52] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=100 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[53] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=100 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[54] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=100 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[55] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=106 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[56] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=106 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[57] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=106 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[58] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=106 chunk=3
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[59] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=107 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[60] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=110 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[61] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=110 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[62] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=114 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[63] 43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf page=114 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf
+   canonical_title: Download
+   sha256: 344e04fc714a2c74e003101804d54cad3549f44b1e7e0f6ec9bf7e7238d84d32
+   all_urls: list[1]
+
+[64] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=45 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[65] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=45 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[66] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=56 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[67] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=62 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[68] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=62 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[69] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=62 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[70] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=62 chunk=3
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[71] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=65 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[72] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=65 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[73] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=65 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[74] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=74 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[75] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=76 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[76] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=79 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[77] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=79 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[78] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=79 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[79] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=131 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[80] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=131 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[81] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=131 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[82] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=135 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[83] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=135 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[84] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=137 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[85] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=172 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[86] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=172 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[87] 559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf page=172 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf
+   canonical_title: Download
+   sha256: 0dde331d92181e248bc69ea35125c0ccdfb569a7ebbf7908f354fcbbe924fd29
+   all_urls: list[1]
+
+[88] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=30 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[89] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=30 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[90] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=34 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[91] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=38 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[92] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=43 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[93] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=43 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[94] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=43 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[95] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=47 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[96] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=47 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[97] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=52 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[98] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=57 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[99] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=57 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[100] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=58 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[101] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=58 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[102] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=63 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[103] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=67 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[104] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=73 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[105] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=73 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[106] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=73 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[107] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=74 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[108] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=74 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[109] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=78 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[110] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=87 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[111] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=87 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[112] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=87 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[113] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=91 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[114] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=91 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[115] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=91 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[116] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=96 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[117] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=105 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[118] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=105 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[119] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=105 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[120] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=111 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[121] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=111 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[122] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=111 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[123] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=112 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[124] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=112 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[125] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=115 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[126] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=115 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[127] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=119 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[128] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=119 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[129] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=149 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[130] MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf page=149 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf
+   canonical_title: Download Prospectus
+   sha256: 5479e8f8a7cd7861731d0b0ae2c963dabbf57a419496689739b873da39e440c7
+   all_urls: list[3]
+
+[131] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=43 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[132] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=43 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[133] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=43 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[134] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=55 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[135] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=59 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[136] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=59 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[137] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=59 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[138] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=59 chunk=3
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[139] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=62 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[140] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=62 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[141] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=62 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[142] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=71 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[143] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=73 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[144] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=76 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[145] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=76 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[146] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=76 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[147] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=107 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[148] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=107 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[149] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=136 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[150] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=136 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[151] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=136 chunk=2
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[152] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=141 chunk=0
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+[153] UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf page=141 chunk=1
+Resolved : True
+Missing  : NONE
+Candidates: 5
+Sources:
+   - _pdf_knowledge_chunks.json
+   canonical_url: https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf
+   canonical_title: Download Prospectus
+   sha256: 97115d62779d03c772e47d1fe3f5c667cf763184d9533920b9251e1b47342bd4
+   all_urls: list[2]
+
+====================================================================================================
+AUDIT COMPLETE
+====================================================================================================
+
+READ-ONLY: No JSON file was modified.

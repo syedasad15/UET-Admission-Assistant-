@@ -1,0 +1,138 @@
+{
+  "source": "UET Admissions Portal",
+  "stage": "actions_registry",
+  "input_file": "D:\\UET Chatbot\\data\\inventory\\admission\\_pages_reviewed.json",
+  "output_file": "D:\\UET Chatbot\\data\\inventory\\admission\\_actions_registry.json",
+  "counts": {
+    "input_actions": 14,
+    "unique_actions": 14,
+    "duplicates": 0,
+    "usable_actions": 14,
+    "excluded_actions": 0,
+    "action_types": 4
+  },
+  "actions": {
+    "create_challan": [
+      {
+        "title": "Generate",
+        "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/create-challan",
+        "program": "Master's",
+        "context": "",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Generate",
+        "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/create-challan",
+        "program": "PhD",
+        "context": "",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      }
+    ],
+    "forget_challan": [
+      {
+        "title": "Forget Challan Number?",
+        "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/forgetchallan?redirectFrom=ADMIT_CARD",
+        "program": "Master's",
+        "context": "ADMIT_CARD",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Forget Challan Number?",
+        "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/forgetchallan?redirectFrom=APPLICATION",
+        "program": "Master's",
+        "context": "APPLICATION",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Forget Challan Number?",
+        "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/forgetchallan?redirectFrom=ADMIT_CARD",
+        "program": "PhD",
+        "context": "ADMIT_CARD",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Forget Challan Number?",
+        "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/forgetchallan?redirectFrom=APPLICATION",
+        "program": "PhD",
+        "context": "APPLICATION",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Forget Challan Number?",
+        "url": "https://admission.uet.edu.pk/UG-2026-1/account/forgetchallan",
+        "program": "Undergraduate",
+        "context": "",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      }
+    ],
+    "login": [
+      {
+        "title": "Download",
+        "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/login?redirectFrom=ADMIT_CARD",
+        "program": "Master's",
+        "context": "ADMIT_CARD",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Fill Application",
+        "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/login?redirectFrom=APPLICATION",
+        "program": "Master's",
+        "context": "APPLICATION",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Download",
+        "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/login?redirectFrom=ADMIT_CARD",
+        "program": "PhD",
+        "context": "ADMIT_CARD",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Fill Application",
+        "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/login?redirectFrom=APPLICATION",
+        "program": "PhD",
+        "context": "APPLICATION",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "Back to Login",
+        "url": "https://admission.uet.edu.pk/UG-2026-1/account/login",
+        "program": "Undergraduate",
+        "context": "",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      },
+      {
+        "title": "View Merit List",
+        "url": "https://admission.uet.edu.pk/UG-2026-1/account/login?redirectFrom=MERIT_LIST",
+        "program": "Undergraduate",
+        "context": "MERIT_LIST",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      }
+    ],
+    "module_action": [
+      {
+        "title": "Apply Now",
+        "url": "https://admission.uet.edu.pk/modules/EntryTest/UserRoles/SelfFinance/PersonalInformation_new.aspx",
+        "program": "General",
+        "context": "",
+        "reason": "Action URL preserved for chatbot navigation",
+        "priority": "high"
+      }
+    ]
+  },
+  "duplicates": [],
+  "excluded": []
+}

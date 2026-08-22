@@ -1,0 +1,122 @@
+{
+  "source": "UET Lahore",
+  "start_url": "https://www.uet.edu.pk/home/",
+  "generated_at": "2026-08-12T08:48:32.913178+00:00",
+  "phase": 1,
+  "description": "Main website navigation structure discovered from UET homepage.",
+  "crawled_beyond_homepage": false,
+  "sections": [
+    {
+      "name": "Quick Links",
+      "url": "https://uet.edu.pk/home",
+      "children": [
+        {
+          "name": "News & Events",
+          "url": "https://uet.edu.pk/newsannouncement/top-stories"
+        },
+        {
+          "name": "Donate",
+          "url": "https://uet.edu.pk/"
+        },
+        {
+          "name": "Contacts",
+          "url": "https://uet.edu.pk/about-uet/introduction/-uet-contacts-"
+        }
+      ]
+    },
+    {
+      "name": "ABOUT UET",
+      "url": "https://uet.edu.pk/about-uet/introduction/about-the-university",
+      "children": [
+        {
+          "name": "Explore UET Lahore",
+          "url": "https://uet.edu.pk/about-uet/introduction/about-the-university"
+        },
+        {
+          "name": "History of UET",
+          "url": "https://uet.edu.pk/about-uet/history/historic-profile"
+        },
+        {
+          "name": "ADMINISTRATION",
+          "url": "https://uet.edu.pk/about-uet/administration/university-officers"
+        },
+        {
+          "name": "CAMPUSES",
+          "url": "https://uet.edu.pk/about-uet/campuses/nwl-campus"
+        }
+      ]
+    },
+    {
+      "name": "ACADEMICS",
+      "url": "https://uet.edu.pk/academics/academics/faculties-departments",
+      "children": [
+        {
+          "name": "ACADEMICS",
+          "url": "https://uet.edu.pk/academics/academics/faculties-departments"
+        },
+        {
+          "name": "Rules & Regulations",
+          "url": "https://uet.edu.pk/academics/rule-regulations/institutional-and-orgainizational-rules"
+        },
+        {
+          "name": "Faculty Members",
+          "url": "https://uet.edu.pk/academics/faculty-staff-members/Examination/documents-verification"
+        }
+      ]
+    },
+    {
+      "name": "CAMPUS FACILITIES",
+      "url": "https://uet.edu.pk/facilties/core-facilities/library",
+      "children": [
+        {
+          "name": "Campus Facilities",
+          "url": "https://uet.edu.pk/facilties/core-facilities/library"
+        },
+        {
+          "name": "Student Facilities",
+          "url": "https://uet.edu.pk/facilties/student-facilities/residential-halls"
+        },
+        {
+          "name": "Portals",
+          "url": "https://uet.edu.pk/facilties/portals/lms"
+        },
+        {
+          "name": "Downloads",
+          "url": "https://uet.edu.pk/facilties/student/student-affairs"
+        }
+      ]
+    },
+    {
+      "name": "RESEARCH & INNOVATION",
+      "url": "https://uet.edu.pk/research/publications/research-publications",
+      "children": [
+        {
+          "name": "Publications",
+          "url": "https://uet.edu.pk/research/publications/research-publications"
+        },
+        {
+          "name": "Research",
+          "url": "https://uet.edu.pk/research/research/directorate-of-research"
+        },
+        {
+          "name": "Innovation",
+          "url": "https://uet.edu.pk/research/innovation/startups"
+        }
+      ]
+    },
+    {
+      "name": "CAMPUSES",
+      "url": "https://uet.edu.pk/campuses/portal/uet-automation",
+      "children": [
+        {
+          "name": "Portal",
+          "url": "https://uet.edu.pk/campuses/portal/uet-automation"
+        },
+        {
+          "name": "Students",
+          "url": "https://uet.edu.pk/campuses/student"
+        }
+      ]
+    }
+  ]
+}

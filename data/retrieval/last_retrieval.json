@@ -1,0 +1,233 @@
+{
+  "question": "What is the fee structure of BS programs?",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "collection": "uet_admission_knowledge",
+  "candidate_count": 20,
+  "final_result_count": 8,
+  "max_distance": 0.78,
+  "confidence": "strong",
+  "sources": [
+    {
+      "source_type": "pdf",
+      "title": "Fee Structure — Undergraduate Programs",
+      "url": "https://admission.uet.edu.pk/uploads/downloads/4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "pdf_file": "4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "page": 1
+    },
+    {
+      "source_type": "pdf",
+      "title": "Undergraduate Prospectus (Fall 2026)",
+      "url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 238
+    },
+    {
+      "source_type": "pdf",
+      "title": "MS / M.Phil Fee Structure (Fall 2026)",
+      "url": "https://admission.uet.edu.pk/uploads/downloads/d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "pdf_file": "d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "page": 1
+    },
+    {
+      "source_type": "page",
+      "title": "Bachelors in Sciences - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/program/1",
+      "pdf_file": "",
+      "page": null
+    },
+    {
+      "source_type": "page",
+      "title": "Undergraduate Fee Schedule for Session Fall 2026 - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/44",
+      "pdf_file": "",
+      "page": null
+    }
+  ],
+  "results": [
+    {
+      "rank": 1,
+      "id": "pdf_046",
+      "distance": 0.476593017578125,
+      "source_type": "pdf",
+      "title": "Fee Structure — Undergraduate Programs",
+      "url": "https://admission.uet.edu.pk/uploads/downloads/4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "pdf_file": "4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "page": 1,
+      "book": "fees",
+      "temporal": false,
+      "quality_flag": "ok",
+      "extraction_method": "native",
+      "categories": "",
+      "text": "Subsidized\nPartially Subsidized\nA1,A1-M\nI,L,M,P,R,B,D,E,H,J1,K,Q1,Q2,U1,U\n2,H1,H4,NM\nA2,A2-\nM,H2,H3,H5,J2,N,O,S,SF,SI\n1\n(Non-Recurrinig Fee (Paybale at the Time of Admission)\ni\nAdmission Fee Paybale in First Semester/Readmission Fee\n54050\n74040\n(Recurrinig Fee From 2nd to 8th or 10th Semester)\nii\nTuition Fee (Payable in every semester)\n56290\n85250\niii\nExamination Fee\n1474\n1572\niv\nFacilities Charges (Dayscholars/Hostiled)\n7220/3610\n7220/3610\nv\nSummer Semester Subject Registration Fee\n2650\n9850\nvi\nDegree & Final DMC & Verification Fee (Payable in 8th Semester)\n10000\n10000\n2\nSemester Hostel Charges\ni\nRoom Rent (Cubicle/ Dormitory)\n7000/5500\n15000/7500\nii\nUtility Charges (Cubicle/ Dormitory)\n10750/7540\n9170/8760\niii\nHostel Admission Fee (One Time Payment)\n2810\n2810\niv\nConsolidated Summer Semester Hostel Charges (Cubicle/ Dormitory)\n17750/13040\n24170/16260\nFee Breakup For Entry Session Fall-2026\nDescription\nSr. No.\nUNDERGRADUATE FEE SCHEDULE FOR SESSION FALL 2026",
+      "source_reference": {
+        "source_type": "pdf",
+        "title": "Fee Structure — Undergraduate Programs",
+        "url": "https://admission.uet.edu.pk/uploads/downloads/4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+        "pdf_file": "4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+        "page": 1
+      }
+    },
+    {
+      "rank": 2,
+      "id": "pdf_047",
+      "distance": 0.5032404661178589,
+      "source_type": "pdf",
+      "title": "Fee Structure — Undergraduate Programs",
+      "url": "https://admission.uet.edu.pk/uploads/downloads/4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "pdf_file": "4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "page": 2,
+      "book": "fees",
+      "temporal": false,
+      "quality_flag": "ok",
+      "extraction_method": "native",
+      "categories": "",
+      "text": "Subsidize\nPartilly Subsidize\nA1,A1-M\nI,L,M,P,R,B,D,E,H,J1,K,Q1,Q2,U1,U2,H1\n,H4,NM\nA2,A2-M,H2,H3,H5,J2,N,O,S,SF,SI\nFirst Semester (Fall) 1St Installment\nAdmission Fee (Non- Refundable)\n54,050\n74,040\nFirst Semester (Fall) [2nd Installment\nTuition Fee due on 1st day of classes: 07-\n09-2026)\n56,290\n85,250\nSecond Semester (Spring)\n72,260\n113,040\nThird Semester (Fall)\n79,020\n122,080\nFourth Semester (Spring)\n79,020\n122,080\nFifth Semester (Fall)\n86,580\n133,400\nSixth Semester (Spring)\n86,580\n133,400\nSeventh Semester (Fall)\n95,060\n146,070\nEighth Semester (Spring)\n105,060\n156,070\nTotal 8 Semesters\n713,920\n1,085,430\nNinth Semester (Fall)\n104,550\n160,260\nTenth Semester (Spring)\n104,550\n160,260\nTotal 10 Semesters\n923,020\n1,405,950\nDormitory (Fall/Spring)\n13040\n17750\nCubicle (Fall/Spring)\n16260\n24170\nSemesters\nSession FALL 2026\nPer Semester Hostel Fee & Summer Hostel Fee\nRs.2810/- charged as non-refundable Hostel Admission Fee at the time of allotment\nUNDERGRADUATE FEE SCHEDULE FOR SESSION FALL 2026",
+      "source_reference": {
+        "source_type": "pdf",
+        "title": "Fee Structure — Undergraduate Programs",
+        "url": "https://admission.uet.edu.pk/uploads/downloads/4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+        "pdf_file": "4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+        "page": 2
+      }
+    },
+    {
+      "rank": 3,
+      "id": "pdf_1171",
+      "distance": 0.6115956902503967,
+      "source_type": "pdf",
+      "title": "Undergraduate Prospectus (Fall 2026)",
+      "url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 238,
+      "book": "programs",
+      "temporal": false,
+      "quality_flag": "ok",
+      "extraction_method": "native",
+      "categories": "",
+      "text": "Undergraduate Prospectus Fall 2026 www.uet.edu.pk 238 UG FEE REGULATIONS 1. Periods of fees and Other Charges a) The fees and other charges are categorized as: i. One-time payments at the time of admission ii. Semester recurring fees iii. Summer semester dues for students registering during summer semester b) During each year of a student’s stay at the University, all recurring fees are charged in two installments payable at the beginning of Fall and Spring semesters except for the first semester wherein students can pay the charges in two installments. c) Registration fee at the rate of: (i) Rs 2,634/- per credit hour for subsidized category, and (ii) Rs 9,835/- per credit hour for partially subsidized category will be charged for subjects registered during the summer semester. d) A total of 8 semesters or 10 semesters recurring fees are admissible from students graduating from a four years degree program or a five years degree program, respectively. e) Students registering in subjects after completing 8 semesters or 10 semesters, respectively, from a four years degree program or a five years degree program",
+      "source_reference": {
+        "source_type": "pdf",
+        "title": "Undergraduate Prospectus (Fall 2026)",
+        "url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+        "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+        "page": 238
+      }
+    },
+    {
+      "rank": 4,
+      "id": "pdf_1180",
+      "distance": 0.615276575088501,
+      "source_type": "pdf",
+      "title": "Undergraduate Prospectus (Fall 2026)",
+      "url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 240,
+      "book": "programs",
+      "temporal": false,
+      "quality_flag": "ok",
+      "extraction_method": "native",
+      "categories": "",
+      "text": "Undergraduate Prospectus Fall 2026\nwww.uet.edu.pk\n240\nFEE STRUCTURE\nSr. No.\nDescription\nSubsidized\nPartially Subsidized\nA1,A1-M I, L, M, P, R, B, D,\nE, H, J1, K, Q1, Q2, U1, U2,\nH1, H4, NM\nA2, A2-M, H2, H3, H5,\nJ2, N, O, S, SF,SI\n1\n(Non-Recurring Fee (Payable at the Time of Admission)\ni\nAdmission Fee Payable in First Semester/Readmission Fee\n54050\n74040\n(Recurring Fee From 2nd to 8th or 10th Semester)\nii\nTuition Fee (Payable in every semester)\n56290\n85250\niii\nExamination Fee\n1474\n1572\niv\nFacilities Charges (Day scholars / Hostiled)\n7220/3610\n7220/3610\nv\nSummer Semester Subject Registration Fee\n2650\n9850\nvi\nDegree & Final DMC & Verification Fee (Payable in 8th Semester)\n10000\n10000\n2\nSemester Hostel Charges\ni\nRoom Rent (Cubicle/ Dormitory)\n7000/5500\n15000/7500\nii\nUtility Charges (Cubicle/ Dormitory)\n10750/7540\n9170/8760\niii\nHostel Admission Fee (One Time Payment)\n2810\n2810\niv\nConsolidated Summer Semester Hostel Charges (Cubicle/ Dormitory)\n17750/13040\n24170/16260",
+      "source_reference": {
+        "source_type": "pdf",
+        "title": "Undergraduate Prospectus (Fall 2026)",
+        "url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+        "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+        "page": 240
+      }
+    },
+    {
+      "rank": 5,
+      "id": "pdf_1248",
+      "distance": 0.6366004347801208,
+      "source_type": "pdf",
+      "title": "MS / M.Phil Fee Structure (Fall 2026)",
+      "url": "https://admission.uet.edu.pk/uploads/downloads/d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "pdf_file": "d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "page": 1,
+      "book": "fees",
+      "temporal": false,
+      "quality_flag": "manually_verified",
+      "extraction_method": "manual_correction",
+      "categories": "",
+      "text": "FEE AND EXPENSES\n\nREGULAR M.S / M.Sc / M.Phil STUDENT'S FEE STRUCTURE FOR SESSION 2026 Fall - Morning / Evening\n\nParticulars | 1st Semester | 2nd Semester | 3rd Semester | 4th Semester | 5th Semester | 6th Semester\nAdmission Fee | 11,980 | - | - | - | - | -\nTuition Fee Semester Wise | 67,200 | 67,200 | 75,270 | 75,270 | 84,300 | 84,300\nFacilities Charges | 7,220 | 7,220 | 8,090 | 8,090 | 9,060 | 9,060\nExamination Charges | 1,350 | 1,350 | 1,510 | 1,510 | 1,690 | 1,690\nMiscellaneous Charges | 16,790 | 3,530 | 3,530 | 3,530 | 3,530 | 3,530\nTuition Fee Semester Wise (Total) | 104,540 | 79,300 | 88,400 | 88,400 | 98,580 | 98,580\n\nPH.D STUDENT'S FEE STRUCTURE FOR SESSION 2026 FALL\n(With 50% waiver in admission charges & 30% waiver in semester tuition fee)\n\nParticulars | 1st Semester | 2nd Semester | 3rd Semester | 4th Semester | 5th Semester | 6th Semester\nAdmission Fee | 5,990 (after 50% discount) | - | - | - | - | -\nTuition Fee Semester Wise | 47,040 | 47,040 | 52,690 | 52,690 | 59,010 | 59,010\nFacilities Charges | 7,220 | 7,220 | 8,090 | 8,090 | 9,060 | 9,060\nExamination Charges | 1,350 | 1,350 | 1,510 | 1,510 | 1,690 | 1,690\nMiscellaneous Charges | 16,790 | 3,530 | 3,950 | 3,950 | 4,430 | 4,430\n30% Discounted Tuition Fee Semester Wise (Total) | 78,390 | 59,140 | 66,240 | 66,240 | 74,190 | 74,190\n\nWEEKEND FEE STRUCTURE FOR SESSION 2026 FALL FOR M.S / M.SC / M.PHIL / M.B.A\n\nParticulars | 1st Semester | 2nd Semester | 3rd Semester | 4th Semester | 5th Semester | 6th Semester\nAdmission Fee | 13,370 | - | - | - | - | -\nTuition Fee Semester Wise | 100,800 | 100,800 | 100,800 | 50,400 | 50,400 | 50,400\nMiscellaneous Charges | 26,980 | 11,110 | 11,110 | 11,110 | 11,110 | 11,110\nFirst Semester Weekend Fee (Total) | 141,150 | 111,910 | 111,910 | 61,510 | 61,510 | 61,510\n\nNOTE:\nThe university reduced 50% Ph.D. admission charges and 30% tuition fee waiver as research support scholarship to all graduates admitted to Ph.D. programs (from Spring 2026 onward). The Ph.D. students would be given preference for appointment as teaching fellows at university.\n25% discount in tuition fee for alumni of UET, Lahore, for M.Sc / M.Phil / Masters / MS Programs.",
+      "source_reference": {
+        "source_type": "pdf",
+        "title": "MS / M.Phil Fee Structure (Fall 2026)",
+        "url": "https://admission.uet.edu.pk/uploads/downloads/d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+        "pdf_file": "d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+        "page": 1
+      }
+    },
+    {
+      "rank": 6,
+      "id": "page_109",
+      "distance": 0.6402799487113953,
+      "source_type": "page",
+      "title": "Bachelors in Sciences - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/program/1",
+      "pdf_file": "",
+      "page": 0,
+      "book": "deadlines",
+      "temporal": true,
+      "quality_flag": "ok",
+      "extraction_method": "page",
+      "categories": "admission_process, deadlines, documents, ecat, eligibility, fees, hostel, international, merit, programs, schedule, scholarships",
+      "text": "Description Subsidized Partially Subsidized A1, A1-M I,L,M,P,R,B,D,E,H,J1,K,Q1,Q2,U1,U2,H1,H4,NM A2, A2-M H2,H3,H5,J2,N,O,S,SF,SI 1 Non-Recurring Fee (Payable at the Time of Admission) i Admission Fee Payable in First Semester / Readmission Fee 54,050 74,040 Recurring Fee From 2nd to 8th or 10th Semester ii Tuition Fee (Payable in every semester) 56,290 85,250 iii Examination Fee 1,474 1,572 iv Facilities Charges (Dayscholars / Hostiled) 7,220 / 3,610 7,220 / 3,610 v Summer Semester Subject Registration Fee 2,650 9,850 vi Degree & Final DMC & Verification Fee (Payable in 8th Semester) 10,000 10,000 2 Semester Hostel Charges i Room Rent (Cubicle / Dormitory) 7,000 / 5,500 15,000 / 7,500 ii Utility Charges (Cubicle / Dormitory) 10,750 / 7,540 9,170 / 8,760 iii Hostel Admission Fee (One Time Payment) 2,810 2,810 iv Consolidated Summer Semester Hostel Charges (Cubicle / Dormitory) 17,750 / 13,040 24,170 / 16,260 UNDERGRADUATE FEE SCHEDULE FOR SESSION FALL 2026 Session FALL 2026 Semesters Subsidized Partially Subsidized A1,A1-M I,L,M,P,R,B,D,E,H,J1,K,Q1,Q2,U1,U2,H1,H4,NM A2,A2-M,H2,H3,H5,J2,N,O,S,SF,SI First Semester (Fall) 1st Installment Admission Fee (Non-Refundable) 54,050 74,040 First Semester (Fall) 2nd Installment Tuition Fee (Due on 07-09-2026) 56,290 85,250 Second Semester (Spring) 72,260 113,040 Third Semester (Fall) 79,020 122,080 Fourth Semester (Spring) 79,020 122,080 Fifth Semester (Fall) 86,580 133,400 Sixth Semester (Spring) 86,580 133,400 Seventh Semester (Fall) 95,060 146,070 Eighth Semester (Spring) 105,060 156,070 Total 8 Semesters 713,920 1,085,430 Ninth Semester (Fall) 104,550 160,260 Tenth Semester (Spring) 104,550 160,260 Total 10 Semesters 923,020 1,405,950 Per Semester Hostel Fee & Summer Hostel Fee Rs.",
+      "source_reference": {
+        "source_type": "page",
+        "title": "Bachelors in Sciences - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/program/1",
+        "pdf_file": "",
+        "page": null
+      }
+    },
+    {
+      "rank": 7,
+      "id": "page_072",
+      "distance": 0.6674386262893677,
+      "source_type": "page",
+      "title": "Undergraduate Fee Schedule for Session Fall 2026 - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/44",
+      "pdf_file": "",
+      "page": 0,
+      "book": "fees",
+      "temporal": true,
+      "quality_flag": "ok",
+      "extraction_method": "page",
+      "categories": "admission_process, fees, hostel, programs, schedule",
+      "text": "Home News Undergraduate Fee Schedule for Session Fall 2026 Undergraduate Fee Schedule for Session Fall 2026 Comprehensive fee schedule for Undergraduate Admissions Fall 2026, outlining semester-wise tuition and admission charges for subsidized and partially subsidized categories, along with hostel fee details and applicable notes for special fee structures. July 26, 2026 Bachelors in Sciences 22081 views The Undergraduate Fee Schedule for Session Fall 2026 has been published. Applicants are advised to carefully review the semester-wise admission and tuition fee structure for both subsidized and partially subsidized categories, along with hostel charges and other applicable fee-related instructions, before confirming their admission. Candidates must ensure timely payment of all dues as per the prescribed schedule to avoid any inconvenience during the admission process. Back to News",
+      "source_reference": {
+        "source_type": "page",
+        "title": "Undergraduate Fee Schedule for Session Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/44",
+        "pdf_file": "",
+        "page": null
+      }
+    },
+    {
+      "rank": 8,
+      "id": "page_103",
+      "distance": 0.6711503267288208,
+      "source_type": "page",
+      "title": "Bachelors in Sciences - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/program/1",
+      "pdf_file": "",
+      "page": 0,
+      "book": "deadlines",
+      "temporal": true,
+      "quality_flag": "ok",
+      "extraction_method": "page",
+      "categories": "admission_process, deadlines, documents, ecat, eligibility, fees, hostel, international, merit, programs, schedule, scholarships",
+      "text": "This process will continue for a maximum of three weeks after the commencement of classes or until all seats are filled. Application Submission Process: Interested candidates will have to submit an online application through the admission portal according to the announced schedule and generate a challan fee according to their status. Fee Structure: Existing candidates will pay Rs. 1500 while new candidates will pay Rs. 3000. The fee must be deposited in the designated bank. Validity of Application: After fee submission, the application will remain valid for one week. Merit List Announcement: Every Friday night, a list of selected candidates will be displayed on the admission portal. Selected candidates must submit the fee and report to the university within the prescribed time so that all admission formalities can be completed. Reapplication Process: If a candidate is not selected within one week, the application will expire, and the candidate will have to apply again and submit the fee for the following week. This process will continue on a weekly basis for a maximum of three weeks, provided seats are available.",
+      "source_reference": {
+        "source_type": "page",
+        "title": "Bachelors in Sciences - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/program/1",
+        "pdf_file": "",
+        "page": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/30097787-4e76-496e-8e19-7b99fdf17347.pdf",
+  "canonical_title": "Download",
+  "sha256": "ca810a3736a13f95083fb4bb2d96d91b1ba845136c9fdd8796334a5c3cec63f8",
+  "all_urls": [
+    "https://admission.uet.edu.pk/uploads/downloads/30097787-4e76-496e-8e19-7b99fdf17347.pdf"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "native",
+      "text": "UNDERTAKING REGARDING IBCC EQUIVALENCE CERTIFICATE\n(Only for Foreign Students)\nI, _________________________________________________________, Passport No. ___________________________,\nhereby undertake that I shall submit my valid IBCC Equivalence Certificate within ninety (90) days from the date of\nissuance/receipt of the University's admission letter.\nI understand that my eligibility for admission shall be determined only upon submission and verification of the IBCC\nEquivalence Certificate, irrespective of the stage of the degree program at which it is submitted. I further acknowledge that\nmy qualification must be equivalent to F.Sc. Pre-Engineering with at least 60% marks or fulfill the eligibility criteria\nprescribed by the University.\nI agree that if I fail to submit the Equivalence Certificate within the prescribed period, or if upon verification I am found\nineligible, my provisional admission may be cancelled at any stage of the degree program without prior notice.\nI further undertake that I shall be solely responsible for any loss of time, tuition fees, academic progress, degree completion,\nor any other consequences arising from delayed submission of the Equivalence Certificate or failure to meet the prescribed\neligibility criteria. The University shall bear no liability in this regard.\nI shall not raise any claim or objection against the University regarding such cancellation of admission.\nStudent Signature: ___________________________\nStudent Name:\n___________________________\nDepartment Name:\n___________________________\nCNIC/Passport No.: ___________________________\nDate: ___________________________",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.711,
+        "vowel_ratio": 0.401,
+        "suspicious_word_ratio": 0.032
+      },
+      "chunks": [
+        "UNDERTAKING REGARDING IBCC EQUIVALENCE CERTIFICATE (Only for Foreign Students) I, _________________________________________________________, Passport No. ___________________________, hereby undertake that I shall submit my valid IBCC Equivalence Certificate within ninety (90) days from the date of issuance/receipt of the University's admission letter. I understand that my eligibility for admission shall be determined only upon submission and verification of the IBCC Equivalence Certificate, irrespective of the stage of the degree program at which it is submitted. I further acknowledge that my qualification must be equivalent to F.Sc. Pre-Engineering with at least 60% marks or fulfill the eligibility criteria prescribed by the University. I agree that if I fail to submit the Equivalence Certificate within the prescribed period, or if upon verification I am found ineligible, my provisional admission may be cancelled at any stage of the degree program without prior notice. I further undertake that I shall be solely responsible for any loss of time, tuition fees, academic progress, degree completion, or any other consequences arising from delayed submission of the Equivalence Certificate or failure to meet the prescribed eligibility criteria. The University shall",
+        "time, tuition fees, academic progress, degree completion, or any other consequences arising from delayed submission of the Equivalence Certificate or failure to meet the prescribed eligibility criteria. The University shall bear no liability in this regard. I shall not raise any claim or objection against the University regarding such cancellation of admission. Student Signature: ___________________________ Student Name: ___________________________ Department Name: ___________________________ CNIC/Passport No.: ___________________________ Date: ___________________________"
+      ]
+    }
+  ]
+}

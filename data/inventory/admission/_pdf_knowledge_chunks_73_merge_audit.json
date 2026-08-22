@@ -1,0 +1,694 @@
+{
+  "audit": "73 recovered native chunks safe merge audit",
+  "created_at": "2026-08-19T12:10:51.891358",
+  "policy": {
+    "original_global_file_modified": false,
+    "per_pdf_files_modified": false,
+    "merge_mode": "page_level_replacement",
+    "recovered_pages_replace_existing_page_chunks": true,
+    "new_recovered_pages_are_added": true,
+    "duplicate_chunks_allowed": false
+  },
+  "input_files": {
+    "existing_global_chunks": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_knowledge_chunks.json",
+    "recovered_native_chunks": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_recovered_native_chunks.json"
+  },
+  "output_files": {
+    "merged_chunks": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_knowledge_chunks_73_merged.json",
+    "audit": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_knowledge_chunks_73_merge_audit.json"
+  },
+  "counts": {
+    "existing_chunks": 2866,
+    "existing_pages": 1069,
+    "recovered_chunks": 154,
+    "recovered_pages": 73,
+    "replaced_pages": 0,
+    "added_pages": 73,
+    "removed_existing_chunks": 0,
+    "final_chunks": 3020,
+    "final_pages": 1142,
+    "expected_final_chunks": 3020,
+    "final_duplicate_chunk_keys": 0
+  },
+  "validation": {
+    "expected_recovered_pages_73": true,
+    "expected_recovered_chunks_154": true,
+    "final_count_formula_ok": true,
+    "no_final_duplicate_chunk_keys": true,
+    "all_recovered_pages_present": true
+  },
+  "source_counts": {
+    "existing": {
+      "native+embedded_image_ocr": 324,
+      "native": 2498,
+      "full_page_ocr": 44
+    },
+    "recovered": {
+      "native_text_recovery": 154
+    },
+    "final": {
+      "native+embedded_image_ocr": 324,
+      "native": 2498,
+      "full_page_ocr": 44,
+      "native_text_recovery": 154
+    }
+  },
+  "quality_counts": {
+    "existing": {
+      "ok": 2866
+    },
+    "recovered": {
+      "": 154
+    },
+    "final": {
+      "ok": 2866,
+      "": 154
+    }
+  },
+  "pdf_summary": {
+    "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf": {
+      "recovered_pages": 11,
+      "replaced_pages": 0,
+      "added_pages": 11,
+      "recovered_chunks": 24,
+      "removed_existing_chunks": 0
+    },
+    "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf": {
+      "recovered_pages": 19,
+      "replaced_pages": 0,
+      "added_pages": 19,
+      "recovered_chunks": 40,
+      "removed_existing_chunks": 0
+    },
+    "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf": {
+      "recovered_pages": 11,
+      "replaced_pages": 0,
+      "added_pages": 11,
+      "recovered_chunks": 24,
+      "removed_existing_chunks": 0
+    },
+    "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf": {
+      "recovered_pages": 22,
+      "replaced_pages": 0,
+      "added_pages": 22,
+      "recovered_chunks": 43,
+      "removed_existing_chunks": 0
+    },
+    "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf": {
+      "recovered_pages": 10,
+      "replaced_pages": 0,
+      "added_pages": 10,
+      "recovered_chunks": 23,
+      "removed_existing_chunks": 0
+    }
+  },
+  "page_details": [
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 43,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 54,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 60,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 4,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 63,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 72,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 74,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 77,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 129,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 133,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 135,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 170,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 40,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 43,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 44,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 47,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 52,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 57,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 58,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 69,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 70,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 74,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 82,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 83,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 86,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 91,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 100,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 106,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 4,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 107,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 110,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 114,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 45,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 56,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 62,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 4,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 65,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 74,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 76,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 79,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 131,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 135,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 137,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 172,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 30,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 34,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 38,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 43,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 47,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 52,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 57,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 58,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 63,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 67,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 73,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 74,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 78,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 87,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 91,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 96,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 105,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 111,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 112,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 115,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 119,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 149,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 43,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 55,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 59,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 4,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 62,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 71,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 73,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 1,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 76,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 107,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 136,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 3,
+      "overlapping_chunk_keys": 0
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 141,
+      "action": "ADD_NEW_PAGE",
+      "existing_chunks": 0,
+      "recovered_chunks": 2,
+      "overlapping_chunk_keys": 0
+    }
+  ],
+  "duplicate_existing_keys": [],
+  "duplicate_recovered_keys": [],
+  "final_duplicate_keys": []
+}

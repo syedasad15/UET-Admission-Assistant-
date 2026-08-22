@@ -1,0 +1,51 @@
+==========================================================================================
+FINAL AUDIT — 73 PAGE MERGED KNOWLEDGE CHUNKS
+==========================================================================================
+
+Original chunks : 2866
+Recovered chunks: 154
+Merged chunks   : 3020
+
+PAGE COUNTS
+------------------------------------------------------------------------------------------
+Original pages      : 1069
+Recovered pages     : 73
+Merged pages        : 1142
+Newly added pages   : 73
+Overlapping pages   : 0
+
+DUPLICATES
+------------------------------------------------------------------------------------------
+Original duplicate keys  : 0
+Recovered duplicate keys : 0
+Merged duplicate keys    : 0
+Cross duplicates         : 0
+
+INTEGRITY
+------------------------------------------------------------------------------------------
+Missing fields           : 154
+Empty text               : 0
+Invalid pages            : 0
+Invalid chunk indexes    : 0
+Changed original chunks  : 0
+
+VALIDATION
+------------------------------------------------------------------------------------------
+[OK] original_count
+[OK] recovered_count
+[OK] merged_count
+[OK] formula
+[OK] no_duplicate_original
+[OK] no_duplicate_recovered
+[OK] no_duplicate_merged
+[OK] no_cross_duplicates
+[OK] recovered_pages
+[OK] all_recovered_present
+[OK] all_original_present
+[OK] original_text_unchanged
+[FAIL] no_missing_fields
+[OK] no_empty_text
+[OK] valid_pages
+[OK] valid_chunk_indexes
+
+OVERALL STATUS: FAIL

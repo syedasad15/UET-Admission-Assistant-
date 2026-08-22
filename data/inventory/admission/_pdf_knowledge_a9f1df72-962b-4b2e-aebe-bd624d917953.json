@@ -1,0 +1,24 @@
+{
+  "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/a9f1df72-962b-4b2e-aebe-bd624d917953.pdf",
+  "canonical_title": "Download",
+  "sha256": "1837c7f22a7333aca8c651503f9ca93a4678add4fd2d8ba3f98992f09a752f61",
+  "all_urls": [
+    "https://admission.uet.edu.pk/uploads/downloads/a9f1df72-962b-4b2e-aebe-bd624d917953.pdf"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "native",
+      "text": "The Aﬃdavit should be submiƩed only by Non-Muslim candidates on Rs.100/- Stamp Paper\nAFFIDAVIT BY NON MUSLIM CANDIDATES FOR NM CATEGORY ADMISSION\nCandidate Name____________________ Son/Daughter of ______________________________\nCNIC No:__________________________ do hereby aﬃrm and declare on oath; that:\nI am a Non-Muslim and belong to _______________________ (ChrisƟanity, Hinduism, Sikhism,\nBudhist, Parsi, Qadiani Group, Lahori Group, Ahmadi, Bahai or belong to scheduled castes).\nDate: ____________\nDeponent Signature:_________________________\nDeponent Name :___________________________\nResidenƟal Address:_________________________\n__________________________\nATTESTED BY:\nSIGNATURE: ___________________________\nNAME OF PERSON:______________________\nDESIGNATION: _________________________\nOFFICIAL STAMP_________________________\nNOTE: Please aƩach the relevant religion document issued by NADRA, aƩested by relevant\nminority agency, if available",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.524,
+        "vowel_ratio": 0.394,
+        "suspicious_word_ratio": 0.141
+      },
+      "chunks": [
+        "The Aﬃdavit should be submiƩed only by Non-Muslim candidates on Rs.100/- Stamp Paper\nAFFIDAVIT BY NON MUSLIM CANDIDATES FOR NM CATEGORY ADMISSION\nCandidate Name____________________ Son/Daughter of ______________________________\nCNIC No:__________________________ do hereby aﬃrm and declare on oath; that:\nI am a Non-Muslim and belong to _______________________ (ChrisƟanity, Hinduism, Sikhism,\nBudhist, Parsi, Qadiani Group, Lahori Group, Ahmadi, Bahai or belong to scheduled castes).\nDate: ____________\nDeponent Signature:_________________________\nDeponent Name :___________________________\nResidenƟal Address:_________________________\n__________________________\nATTESTED BY:\nSIGNATURE: ___________________________\nNAME OF PERSON:______________________\nDESIGNATION: _________________________\nOFFICIAL STAMP_________________________\nNOTE: Please aƩach the relevant religion document issued by NADRA, aƩested by relevant\nminority agency, if available"
+      ]
+    }
+  ]
+}

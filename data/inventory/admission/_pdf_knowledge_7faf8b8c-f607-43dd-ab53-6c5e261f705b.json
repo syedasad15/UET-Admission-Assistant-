@@ -1,0 +1,24 @@
+{
+  "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/7faf8b8c-f607-43dd-ab53-6c5e261f705b.pdf",
+  "canonical_title": "Download",
+  "sha256": "5d294e89dd0af409ce96193e54474b72fd1c1b7c04cfa3618fd84de488504bdb",
+  "all_urls": [
+    "https://admission.uet.edu.pk/uploads/downloads/7faf8b8c-f607-43dd-ab53-6c5e261f705b.pdf"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "native",
+      "text": "SPECIMEN\nINCOME CERTIFICATE\n(FOR SELF EMPLOYED ONLY)\n(AƩested by the Class-1 GazeƩed Oﬃcer)\nThis is to cerƟfy that I Mr./Mrs.____________________________________________________\nCNIC No:_________________________Resident of____________________________________\nFather/Guardian of Student Name:_____________________________ is self employed and my\nmonthly income from all sources is Rs.________________________.\nParent/Guardian Name: ______________________________ CNIC:_______________________\nParent /Guardian Signature:___________________________\nNOTE: In case, the Father/Guardian is an employee of a Government, Semi Government or\nAutonomous bodies, he/she must submit income cerƟﬁcate duly veriﬁed by Head of his/her\ndepartment/organizaƟon. The income declared in this cerƟﬁcate will be veriﬁed later.",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.54,
+        "vowel_ratio": 0.392,
+        "suspicious_word_ratio": 0.107
+      },
+      "chunks": [
+        "SPECIMEN\nINCOME CERTIFICATE\n(FOR SELF EMPLOYED ONLY)\n(AƩested by the Class-1 GazeƩed Oﬃcer)\nThis is to cerƟfy that I Mr./Mrs.____________________________________________________\nCNIC No:_________________________Resident of____________________________________\nFather/Guardian of Student Name:_____________________________ is self employed and my\nmonthly income from all sources is Rs.________________________.\nParent/Guardian Name: ______________________________ CNIC:_______________________\nParent /Guardian Signature:___________________________\nNOTE: In case, the Father/Guardian is an employee of a Government, Semi Government or\nAutonomous bodies, he/she must submit income cerƟﬁcate duly veriﬁed by Head of his/her\ndepartment/organizaƟon. The income declared in this cerƟﬁcate will be veriﬁed later."
+      ]
+    }
+  ]
+}

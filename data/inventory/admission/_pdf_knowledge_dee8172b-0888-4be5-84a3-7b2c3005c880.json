@@ -1,0 +1,38 @@
+{
+  "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/dee8172b-0888-4be5-84a3-7b2c3005c880.pdf",
+  "canonical_title": "Download",
+  "sha256": "0402e2c00eb2bf3eed3c162e90de31f6dd225be08431b0eadfb5eea97507a90f",
+  "all_urls": [
+    "https://admission.uet.edu.pk/uploads/downloads/dee8172b-0888-4be5-84a3-7b2c3005c880.pdf"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "native",
+      "text": "Form -V\nCERTIFICATE\n(Given by the Registrar, UET, Lahore)\nIt is to certify that Mr. / Mrs.\nFather/Mother of applicant\nhas been a full-time employee of the University from\nto\nas\nin the\ndepartment/branch.\nHe/She has continuously served the university for a period not less than five years (being physically present in the university during the period)\nFurther certified that he/she\na)\ndid not leave the university service by resigning and\nb)\nwas not dismissed, removed or debarred from the University service under its Efficiency and Discipline Rules\nc)\nhas not been transferred to the University of Engineering and Technology, Taxila.\nSignature of the\nRegistrar\nDated:\n(Official Seal)\nApplicants\nPhotograph\nParent’s\nPhotograph",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.811,
+        "vowel_ratio": 0.371,
+        "suspicious_word_ratio": 0.0
+      },
+      "chunks": [
+        "Form -V\nCERTIFICATE\n(Given by the Registrar, UET, Lahore)\nIt is to certify that Mr. / Mrs.\nFather/Mother of applicant\nhas been a full-time employee of the University from\nto\nas\nin the\ndepartment/branch.\nHe/She has continuously served the university for a period not less than five years (being physically present in the university during the period)\nFurther certified that he/she\na)\ndid not leave the university service by resigning and\nb)\nwas not dismissed, removed or debarred from the University service under its Efficiency and Discipline Rules\nc)\nhas not been transferred to the University of Engineering and Technology, Taxila.\nSignature of the\nRegistrar\nDated:\n(Official Seal)\nApplicants\nPhotograph\nParent’s\nPhotograph"
+      ]
+    },
+    {
+      "page": 2,
+      "source": "native",
+      "text": "Form -VI\nCERTIFICATE\n(Certificate is to be given by a Class-I Gazetted Officer)\nThe family of the applicant\nMr./ Miss.\nson/ daughter of\n_\nis personally known to me and I certify that the applicant is not married.\nSignature\nName\nFull Address\n(Official Seal)\nDated :",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.78,
+        "vowel_ratio": 0.379,
+        "suspicious_word_ratio": 0.022
+      },
+      "chunks": [
+        "Form -VI\nCERTIFICATE\n(Certificate is to be given by a Class-I Gazetted Officer)\nThe family of the applicant\nMr./ Miss.\nson/ daughter of\n_\nis personally known to me and I certify that the applicant is not married.\nSignature\nName\nFull Address\n(Official Seal)\nDated :"
+      ]
+    }
+  ]
+}

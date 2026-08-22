@@ -1,0 +1,2529 @@
+UET ADMISSION — REVIEW PAGES
+================================================================================
+
+Source: D:\UET Chatbot\data\inventory\admission\_pages_reviewed.json
+Total pages scanned: 58
+Review pages found: 18
+
+These are pages whose decision/status was identified as REVIEW.
+
+================================================================================
+REVIEW PAGE #5
+================================================================================
+
+TITLE: Home - UET Admissions Portal
+URL: https://admission.uet.edu.pk/#programs
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Home - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/#programs
+
+decision:
+REVIEW
+
+reason:
+Page does not contain enough recognized admission information
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/#programs",
+  "final_url": "https://admission.uet.edu.pk/#programs",
+  "title": "Home - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page does not contain enough recognized admission information",
+  "priority": "medium",
+  "confidence": 0.5,
+  "quality_score": 30,
+  "page_type": "program",
+  "content_signals": [],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [],
+  "text": "Loading this data, please wait... Latest News Loading this data, please wait... Loading this data, please wait... Our Programs Choose from a wide range of engineering and technology programs Loading this data, please wait... Loading this data, please wait...",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:19:31.413104+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #10
+================================================================================
+
+TITLE: Home - UET Admissions Portal
+URL: https://admission.uet.edu.pk
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Home - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk
+
+decision:
+REVIEW
+
+reason:
+Page does not contain enough recognized admission information
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk",
+  "final_url": "https://admission.uet.edu.pk/",
+  "title": "Home - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page does not contain enough recognized admission information",
+  "priority": "medium",
+  "confidence": 0.5,
+  "quality_score": 30,
+  "page_type": "program",
+  "content_signals": [],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [],
+  "text": "Loading this data, please wait... Latest News Loading this data, please wait... Loading this data, please wait... Our Programs Choose from a wide range of engineering and technology programs Loading this data, please wait... Loading this data, please wait...",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:19:35.924567+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #24
+================================================================================
+
+TITLE: Undergraduate Admissions Fall 2026 – Record Response from Aspiring Students - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/43
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Undergraduate Admissions Fall 2026 – Record Response from Aspiring Students - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/43
+
+decision:
+REVIEW
+
+reason:
+Page appears promotional or low-value for the knowledge base
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/43",
+  "final_url": "https://admission.uet.edu.pk/news/43",
+  "title": "Undergraduate Admissions Fall 2026 – Record Response from Aspiring Students - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page appears promotional or low-value for the knowledge base",
+  "priority": "low",
+  "confidence": 0.7,
+  "quality_score": 20,
+  "page_type": "program",
+  "content_signals": [],
+  "action_signals": [],
+  "low_value_signals": [
+    "record response"
+  ],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Undergraduate Admissions Fall 2026 – Record Response from Aspiring Students Undergraduate Admissions Fall 2026 – Record Response from Aspiring Students UET Lahore received an overwhelming response for Undergraduate Admissions Fall 2026, with 21,066 applications and 288,166 program preferences submitted, reflecting the trust and confidence of aspiring students. July 24, 2026 1159 views UET Lahore received an overwhelming response for Undergraduate Admissions Fall 2026, with 21,066 applications and 288,166 program preferences submitted. This outstanding response reflects the University's legacy of trust and excellence and the continued confidence of aspiring students in UET Lahore. The University sincerely thanks all applicants for choosing UET Lahore. Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:19:47.429920+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #30
+================================================================================
+
+TITLE: UET Lahore Restores Network Services – Admission Portal and All Online Services Now Live - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/37
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+UET Lahore Restores Network Services – Admission Portal and All Online Services Now Live - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/37
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/37",
+  "final_url": "https://admission.uet.edu.pk/news/37",
+  "title": "UET Lahore Restores Network Services – Admission Portal and All Online Services Now Live - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 34,
+  "page_type": "news",
+  "content_signals": [
+    "fee",
+    "admission_process",
+    "documents"
+  ],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News UET Lahore Restores Network Services – Admission Portal and All Online Services Now Live UET Lahore Restores Network Services – Admission Portal and All Online Services Now Live The University of Engineering and Technology (UET) Lahore has successfully restored its network services. The admission portal and all online services are now fully operational. Applicants may continue submitting their applications and accessing all online facilities without interruption. July 16, 2026 793 views The University of Engineering and Technology (UET) Lahore is pleased to inform all applicants that the university's network has been successfully restored. Consequently, the Undergraduate Admissions Portal and all related online services are now fully operational. Applicants may now log in to the admission portal to complete and submit their applications, upload required documents, pay application processing fees, and access all admission-related services without interruption. UET Lahore appreciates the patience, understanding, and cooperation of all applicants during the temporary service disruption and remains committed to providing efficient and uninterrupted admission services. Admission Portal: https://admission.uet.edu.pk Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:19:52.176978+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #38
+================================================================================
+
+TITLE: Application Scrutiny Underway - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/29
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Application Scrutiny Underway - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/29
+
+decision:
+REVIEW
+
+reason:
+Page does not contain enough recognized admission information
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/29",
+  "final_url": "https://admission.uet.edu.pk/news/29",
+  "title": "Application Scrutiny Underway - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page does not contain enough recognized admission information",
+  "priority": "medium",
+  "confidence": 0.5,
+  "quality_score": 40,
+  "page_type": "program",
+  "content_signals": [],
+  "action_signals": [
+    "check_result"
+  ],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Application Scrutiny Underway Application Scrutiny Underway Application scrutiny has commenced. Applicants are advised to log in regularly to monitor their application status. Provisionally rejected applications may be corrected and resubmitted after addressing the stated rejection reasons. Ensure all submitted information is accurate, as repeated submission of incorrect information may result in permanent blocking of the application. July 02, 2026 Bachelors in Sciences 5021 views Application scrutiny has commenced. Applicants are advised to log in to the admission portal regularly to monitor their application status. If your application is provisionally rejected, carefully review the rejection reasons, make the necessary corrections, and resubmit it. Please ensure that all information provided is accurate and complete, as repeated submission of false or incorrect information may result in permanent blocking of your application. Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:19:58.510109+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #42
+================================================================================
+
+TITLE: Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/24
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/24
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/24",
+  "final_url": "https://admission.uet.edu.pk/news/24",
+  "title": "Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 13,
+  "page_type": "news",
+  "content_signals": [
+    "ecat"
+  ],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries June 26, 2026 1920 views To facilitate applicants appearing in the ECAT-02 Final, the Admissions Office at the University of Engineering and Technology (UET) Lahore will remain open over the weekend to provide guidance and address candidates' queries related to the test. Candidates may visit the Admissions Office during the following office hours: Saturday: 9:00 AM – 3:30 PM Sunday: 8:00 AM – 10:00 AM All ECAT-02 Final candidates are encouraged to visit the Admissions Office during the above timings for assistance. Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:01.621329+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #46
+================================================================================
+
+TITLE: ECAT Fall 2026 Registrations are closed. - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/18
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+ECAT Fall 2026 Registrations are closed. - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/18
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/18",
+  "final_url": "https://admission.uet.edu.pk/news/18",
+  "title": "ECAT Fall 2026 Registrations are closed. - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 8,
+  "page_type": "news",
+  "content_signals": [
+    "ecat"
+  ],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "14 June 2026",
+    "2026"
+  ],
+  "text": "Home News ECAT Fall 2026 Registrations are closed. ECAT Fall 2026 Registrations are closed. June 13, 2026 6705 views ECAT Fall 2026 registrations are now closed. Candidates are informed that the admit cards (roll number slips) will be available from 14 June 2026 (evening) visit: https://ecat.uet.edu.pk/ Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:04.762581+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #47
+================================================================================
+
+TITLE: Last Date - ECAT 2026 - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/16
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Last Date - ECAT 2026 - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/16
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/16",
+  "final_url": "https://admission.uet.edu.pk/news/16",
+  "title": "Last Date - ECAT 2026 - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 16,
+  "page_type": "news",
+  "content_signals": [
+    "deadline",
+    "ecat"
+  ],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Last Date - ECAT 2026 Last Date - ECAT 2026 June 12, 2026 21449 views Last date to apply for ECAT - 2026 visit now: https://ecat.uet.edu.pk/ Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:05.542049+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #48
+================================================================================
+
+TITLE: Undergraduate Admissions Advertisement FALL 2026 - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/15
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Undergraduate Admissions Advertisement FALL 2026 - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/15
+
+decision:
+REVIEW
+
+reason:
+Page does not contain enough recognized admission information
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/15",
+  "final_url": "https://admission.uet.edu.pk/news/15",
+  "title": "Undergraduate Admissions Advertisement FALL 2026 - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page does not contain enough recognized admission information",
+  "priority": "medium",
+  "confidence": 0.5,
+  "quality_score": 30,
+  "page_type": "program",
+  "content_signals": [],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Undergraduate Admissions Advertisement FALL 2026 Undergraduate Admissions Advertisement FALL 2026 Undergraduate Admissions Advertisement FALL 2026 June 07, 2026 Bachelors in Sciences 2434 views Undergraduate Admissions Advertisement FALL 2026 Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:06.303660+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #49
+================================================================================
+
+TITLE: Podcast on Undergraduate Admission Seats - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/6
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Podcast on Undergraduate Admission Seats - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/6
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/6",
+  "final_url": "https://admission.uet.edu.pk/news/6",
+  "title": "Podcast on Undergraduate Admission Seats - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 16,
+  "page_type": "news",
+  "content_signals": [
+    "eligibility",
+    "admission_process"
+  ],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Podcast on Undergraduate Admission Seats Podcast on Undergraduate Admission Seats Podcast on Undergraduate Admission Seats May 31, 2026 1889 views Podcast on Admission Categories, Seat Types, Eligibility and Application Process Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:07.115116+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #50
+================================================================================
+
+TITLE: Admission Podcast Series 2026 - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/5
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Admission Podcast Series 2026 - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/5
+
+decision:
+REVIEW
+
+reason:
+News page does not contain enough recognized admission knowledge
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/5",
+  "final_url": "https://admission.uet.edu.pk/news/5",
+  "title": "Admission Podcast Series 2026 - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page does not contain enough recognized admission knowledge",
+  "priority": "low",
+  "confidence": 0.35,
+  "quality_score": 0,
+  "page_type": "news",
+  "content_signals": [],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Admission Podcast Series 2026 Admission Podcast Series 2026 Admission Podcast Series 2026 May 31, 2026 1304 views Admission Podcast Series 2026 every Monday live from 5:00 PM to 6:00 PM Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:07.932722+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #51
+================================================================================
+
+TITLE: Undergraduate Admissions - Fall 2026 - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/4
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Undergraduate Admissions - Fall 2026 - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/4
+
+decision:
+REVIEW
+
+reason:
+Page does not contain enough recognized admission information
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/4",
+  "final_url": "https://admission.uet.edu.pk/news/4",
+  "title": "Undergraduate Admissions - Fall 2026 - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page does not contain enough recognized admission information",
+  "priority": "medium",
+  "confidence": 0.5,
+  "quality_score": 30,
+  "page_type": "program",
+  "content_signals": [],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News Undergraduate Admissions - Fall 2026 Undergraduate Admissions - Fall 2026 Undergraduate Admissions - Fall 2026 May 21, 2026 Bachelors in Sciences 15524 views The admissions for Undergraduate Programs will open on June 08, 2026, In Sha Allah. Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:08.682896+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #52
+================================================================================
+
+TITLE: ECAT 2026 - Second - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/3
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+ECAT 2026 - Second - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/3
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/3",
+  "final_url": "https://admission.uet.edu.pk/news/3",
+  "title": "ECAT 2026 - Second - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 16,
+  "page_type": "news",
+  "content_signals": [
+    "deadline",
+    "ecat"
+  ],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2026"
+  ],
+  "text": "Home News ECAT 2026 - Second ECAT 2026 - Second ECAT 2026 (Second) - Registration is Open May 21, 2026 32156 views The last date of Registration for ECAT 2026 (Second) is June 09, 2026. View External Source Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    },
+    {
+      "title": "View External Source",
+      "url": "https://ecat.uet.edu.pk/"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:09.461644+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #53
+================================================================================
+
+TITLE: Financial Year 2025-26 Scholarships - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/2
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Financial Year 2025-26 Scholarships - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/2
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/2",
+  "final_url": "https://admission.uet.edu.pk/news/2",
+  "title": "Financial Year 2025-26 Scholarships - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 26,
+  "page_type": "news",
+  "content_signals": [
+    "scholarship",
+    "ecat"
+  ],
+  "action_signals": [
+    "apply"
+  ],
+  "low_value_signals": [],
+  "date_signals": [
+    "2025",
+    "2026"
+  ],
+  "text": "Home News Financial Year 2025-26 Scholarships Financial Year 2025-26 Scholarships UET Lahore offers 10,508 scholarships in 2025-26 year. May 19, 2026 1185 views UET Lahore continues its commitment to empowering future leaders by providing scholarships worth Rs. 1.45 Billion to 10,508 students on need and merit basis during the Financial Year 2025–26. Your dreams deserve opportunities so take the next step toward your future today. Apply now:https://ecat.uet.edu.pk/ [UET Lahore admissions, scholarships in Pakistan, need based scholarships, merit scholarships, engineering admissions, ECAT, undergraduate admissions, student financial aid, higher education opportunities.] Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:10.236538+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #54
+================================================================================
+
+TITLE: Financial Year 2025-26 Scholarships - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/1
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Financial Year 2025-26 Scholarships - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/1
+
+decision:
+REVIEW
+
+reason:
+News page contains some admission information but requires relevance review
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/1",
+  "final_url": "https://admission.uet.edu.pk/news/1",
+  "title": "Financial Year 2025-26 Scholarships - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page contains some admission information but requires relevance review",
+  "priority": "medium",
+  "confidence": 0.6,
+  "quality_score": 26,
+  "page_type": "news",
+  "content_signals": [
+    "scholarship",
+    "ecat"
+  ],
+  "action_signals": [
+    "apply"
+  ],
+  "low_value_signals": [],
+  "date_signals": [
+    "2025",
+    "2026"
+  ],
+  "text": "Home News Financial Year 2025-26 Scholarships Financial Year 2025-26 Scholarships UET Lahore offers financial scholarships to 10,508 students in Financial Year 2025-26. May 19, 2026 3322 views UET Lahore continues its commitment to empowering future leaders by providing scholarships worth Rs. 1.45 Billion to 10,508 students on need and merit basis during the Financial Year 2025–26. Your dreams deserve opportunities so take the next step toward your future today. Apply now:https://ecat.uet.edu.pk/ [UET Lahore admissions, scholarships in Pakistan, need based scholarships, merit scholarships, engineering admissions, ECAT, undergraduate admissions, student financial aid, higher education opportunities.] Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:11.018201+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #56
+================================================================================
+
+TITLE: International Students UET Lahore - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/10
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+International Students UET Lahore - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/10
+
+decision:
+REVIEW
+
+reason:
+Page does not contain enough recognized admission information
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/10",
+  "final_url": "https://admission.uet.edu.pk/news/10",
+  "title": "International Students UET Lahore - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page does not contain enough recognized admission information",
+  "priority": "medium",
+  "confidence": 0.5,
+  "quality_score": 38,
+  "page_type": "foreign_students",
+  "content_signals": [
+    "international"
+  ],
+  "action_signals": [],
+  "low_value_signals": [],
+  "date_signals": [
+    "2025"
+  ],
+  "text": "Home News International Students UET Lahore International Students UET Lahore November 03, 2025 373 views A brief glimpse of the life of International Students at UET Lahore..!! View External Source Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    },
+    {
+      "title": "View External Source",
+      "url": "https://www.facebook.com/admission.uet.edu.pk/videos/1465978321270774/?rdid=fL80msjQbM1vPpbE"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:12.648822+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #57
+================================================================================
+
+TITLE: Meet our international student from Zimbabwe - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/9
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Meet our international student from Zimbabwe - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/9
+
+decision:
+REVIEW
+
+reason:
+Page does not contain enough recognized admission information
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/9",
+  "final_url": "https://admission.uet.edu.pk/news/9",
+  "title": "Meet our international student from Zimbabwe - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "Page does not contain enough recognized admission information",
+  "priority": "medium",
+  "confidence": 0.5,
+  "quality_score": 23,
+  "page_type": "foreign_students",
+  "content_signals": [
+    "international"
+  ],
+  "action_signals": [],
+  "low_value_signals": [
+    "meet our"
+  ],
+  "date_signals": [
+    "2025"
+  ],
+  "text": "Home News Meet our international student from Zimbabwe Meet our international student from Zimbabwe August 13, 2025 327 views Meet our international student from Zimbabwe and hear his story in his own words..!! View External Source Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    },
+    {
+      "title": "View External Source",
+      "url": "https://www.facebook.com/admission.uet.edu.pk/videos/2473526649689042/?mibextid=9drbnH&s=yWDuG2&fs=e"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:13.419836+00:00"
+}
+
+
+
+
+================================================================================
+REVIEW PAGE #58
+================================================================================
+
+TITLE: Welcome to UET – Where Your Future Begins! 🇵🇰 - UET Admissions Portal
+URL: https://admission.uet.edu.pk/news/14
+DECISION: REVIEW
+
+--------------------------------------------------------------------------------
+IMPORTANT FIELDS
+--------------------------------------------------------------------------------
+
+title:
+Welcome to UET – Where Your Future Begins! 🇵🇰 - UET Admissions Portal
+
+url:
+https://admission.uet.edu.pk/news/14
+
+decision:
+REVIEW
+
+reason:
+News page does not contain enough recognized admission knowledge
+
+--------------------------------------------------------------------------------
+COMPLETE ORIGINAL PAGE JSON
+--------------------------------------------------------------------------------
+
+{
+  "url": "https://admission.uet.edu.pk/news/14",
+  "final_url": "https://admission.uet.edu.pk/news/14",
+  "title": "Welcome to UET – Where Your Future Begins! 🇵🇰 - UET Admissions Portal",
+  "original_classification": "CONTENT",
+  "decision": "REVIEW",
+  "reason": "News page does not contain enough recognized admission knowledge",
+  "priority": "low",
+  "confidence": 0.35,
+  "quality_score": 0,
+  "page_type": "news",
+  "content_signals": [],
+  "action_signals": [],
+  "low_value_signals": [
+    "welcome to uet",
+    "where your future begins"
+  ],
+  "date_signals": [
+    "2025"
+  ],
+  "text": "Home News Welcome to UET – Where Your Future Begins! 🇵🇰 Welcome to UET – Where Your Future Begins! 🇵🇰 June 01, 2025 379 views Prof. Dr. Shahid Munir (Tamgha-e-Imtiaz) warmly welcomes all students from across Pakistan and around the world to join University of Engineering and Technology (UET) – a place of excellence, innovation, and endless opportunities! View External Source Back to News",
+  "internal_links": [
+    {
+      "title": "[email protected]",
+      "url": "https://admission.uet.edu.pk/cdn-cgi/l/email-protection"
+    },
+    {
+      "title": "UET Admissions",
+      "url": "https://admission.uet.edu.pk/"
+    },
+    {
+      "title": "Bachelors in Sciences",
+      "url": "https://admission.uet.edu.pk/program/1"
+    },
+    {
+      "title": "Master",
+      "url": "https://admission.uet.edu.pk/program/3"
+    },
+    {
+      "title": "Ph.D",
+      "url": "https://admission.uet.edu.pk/program/4"
+    },
+    {
+      "title": "Associate Degree Program",
+      "url": "https://admission.uet.edu.pk/program/2"
+    },
+    {
+      "title": "All Programs",
+      "url": "https://admission.uet.edu.pk/#programs"
+    },
+    {
+      "title": "Downloads",
+      "url": "https://admission.uet.edu.pk/downloads"
+    },
+    {
+      "title": "Foreign Students",
+      "url": "https://admission.uet.edu.pk/foreign-students"
+    },
+    {
+      "title": "News",
+      "url": "https://admission.uet.edu.pk/news"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://admission.uet.edu.pk/faqs"
+    }
+  ],
+  "external_links": [
+    {
+      "title": "ECAT",
+      "url": "https://ecat.uet.edu.pk"
+    },
+    {
+      "title": "Complaints",
+      "url": "https://ecat.uet.edu.pk/General/Complaints"
+    },
+    {
+      "title": "UET",
+      "url": "https://uet.edu.pk"
+    },
+    {
+      "title": "",
+      "url": "https://www.facebook.com/share/18X3SX3ViH/"
+    },
+    {
+      "title": "",
+      "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1"
+    },
+    {
+      "title": "",
+      "url": "https://www.linkedin.com/company/admission-cell-uet-lahore/"
+    },
+    {
+      "title": "",
+      "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD"
+    },
+    {
+      "title": "",
+      "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c"
+    },
+    {
+      "title": "View External Source",
+      "url": "https://www.facebook.com/reel/565912303217909"
+    }
+  ],
+  "fetch": {
+    "success": true,
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "reviewed_at": "2026-08-13T06:20:14.202723+00:00"
+}
+
+
+

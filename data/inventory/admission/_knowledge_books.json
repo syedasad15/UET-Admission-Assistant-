@@ -1,0 +1,1006 @@
+{
+  "source": "UET Admissions Portal",
+  "stage": "knowledge_books",
+  "input_file": "D:\\UET Chatbot\\data\\inventory\\admission\\_knowledge_refined.json",
+  "output_file": "D:\\UET Chatbot\\data\\inventory\\admission\\_knowledge_books.json",
+  "counts": {
+    "input_pages": 57,
+    "unique_pages": 57,
+    "duplicates": 0,
+    "usable_pages": 52,
+    "excluded_pages": 5,
+    "unassigned_pages": 0,
+    "books": 7,
+    "rescued_review_pages": 9
+  },
+  "books": {
+    "admission_process": [
+      {
+        "title": "Admission Cell Closure Notice – Saturday & Sunday - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/50",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "contact",
+          "fees",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Admission Process for Selected Candidates – Undergraduate Admissions Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/48",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "documents",
+          "fees",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Hostel Allotment Process for Undergraduate Admissions Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/49",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "eligibility",
+          "fees",
+          "hostel",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "How to Arrange Documents Before Submission at IBM, UET Lahore - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/47",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "documents",
+          "fees",
+          "programs"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Podcast on UET Admission Guide - Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/20",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "contact",
+          "eligibility",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Podcast on Undergraduate Admission Seats - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/6",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "eligibility",
+          "programs"
+        ],
+        "type": "news",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "UET Lahore Restores Network Services – Admission Portal and All Online Services Now Live - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/37",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "documents",
+          "fees",
+          "programs"
+        ],
+        "type": "news",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Home Page - UET Admission Portal",
+        "url": "https://admission.uet.edu.pk/UG-2026-1",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "fees",
+          "merit",
+          "schedule"
+        ],
+        "type": "admission",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Home Page - UET Admission Portal",
+        "url": "https://admission.uet.edu.pk/MS-2026-1",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "ecat",
+          "eligibility",
+          "fees",
+          "merit",
+          "programs"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Home Page - UET Admission Portal",
+        "url": "https://admission.uet.edu.pk/PhD-2026-1",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "ecat",
+          "eligibility",
+          "fees",
+          "merit",
+          "programs"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Application Scrutiny Underway - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/29",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 30,
+        "categories": [
+          "admission_process",
+          "programs"
+        ],
+        "type": "program",
+        "builder_reason": "REVIEW_KEEP_ADMISSION_PROCESS",
+        "review_decision": "KEEP"
+      }
+    ],
+    "deadlines": [
+      {
+        "title": "Countdown Begins: UET Lahore 2nd Merit List 2026 Releasing on 7 August at 11:00 PM - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/52",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "fees",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "ECAT 2026 (Phase-II) Result – What’s Next? - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/25",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "ecat",
+          "eligibility",
+          "programs",
+          "schedule"
+        ],
+        "type": "news",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "ECAT 2026 - Second - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/3",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "deadlines",
+          "ecat",
+          "schedule"
+        ],
+        "type": "news",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "ECAT 2026 Phase 2- Result Announcement - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/26",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "ecat",
+          "schedule"
+        ],
+        "type": "news",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Final Opportunity: Apply Today for UET Lahore Fall 2026 Admissions - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/35",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "HEC Announces Fully Funded Allama Muhammad Iqbal Scholarship for International Undergraduate Students - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/39",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "eligibility",
+          "fees",
+          "hostel",
+          "international",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "HEC Announces PhD Scholarships 2027 under the U.S.-Pakistan Knowledge Corridor Program - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/40",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "eligibility",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "HEC Invites Applications for Omani Scholarship Program 2026–27 for Undergraduate Studies - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/41",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "eligibility",
+          "programs",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Important Announcement for Selected Candidates – 2nd Merit List | Last Date: August 12, 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/55",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "fees",
+          "merit",
+          "schedule"
+        ],
+        "type": "news",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Last Date - ECAT 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/16",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "ecat",
+          "schedule"
+        ],
+        "type": "news",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Last Reminder for Selected Candidates in the First Merit List - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/51",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "fees",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Latest News - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "contact",
+          "deadlines",
+          "documents",
+          "ecat",
+          "eligibility",
+          "fees",
+          "hostel",
+          "international",
+          "merit",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Missed ECAT? You Still Have Options! - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/27",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "ecat",
+          "eligibility",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Second Merit List Now Live – Undergraduate Admissions Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/54",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "eligibility",
+          "fees",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Selected the Wrong Program Preference? Update It Before the Final Deadline! - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/32",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "deadlines",
+          "eligibility",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "UET Lahore Announces Admissions for M.Sc., M.Phil., MS and Master's Programs – Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/33",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "eligibility",
+          "fees",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "UET Lahore Announces Ph.D. Admissions – Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/34",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "eligibility",
+          "fees",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Undergraduate Admission Process Schedule - Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/28",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "fees",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Undergraduate Admissions Fall 2026 – 1st Merit List Published - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/42",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "deadlines",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "⏳ The Countdown Has Begun – Only 6 Days Left to Apply! ⭐ - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/30",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "🎙️ Live Podcast: How to Complete Documents for the 1st Merit List | Undergraduate Admissions Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/38",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "contact",
+          "deadlines",
+          "documents",
+          "merit",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "🎙️ UET Admissions 2026 Podcast: Smart Preference Selection Strategies - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/31",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "contact",
+          "deadlines",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "📢 UET Lahore Extends Undergraduate Admissions Deadline – Apply by 16 July 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/36",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "eligibility",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Bachelors in Sciences - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/program/1",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "ecat",
+          "eligibility",
+          "fees",
+          "hostel",
+          "international",
+          "merit",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Downloads - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/downloads",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "deadlines",
+          "documents",
+          "eligibility",
+          "fees",
+          "hostel",
+          "international",
+          "merit",
+          "programs",
+          "quota",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Frequently Asked Questions - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/faqs",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "contact",
+          "deadlines",
+          "documents",
+          "ecat",
+          "eligibility",
+          "fees",
+          "hostel",
+          "international",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "faq",
+        "builder_reason": "USABLE"
+      }
+    ],
+    "ecat": [
+      {
+        "title": "ECAT 2026 (Second) Result Announcement - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/22",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "ecat",
+          "schedule"
+        ],
+        "type": "download",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Admit Card Announcement – ECAT 2026 (Final ECAT for Fall 2026) - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/23",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 85,
+        "categories": [
+          "ecat",
+          "schedule"
+        ],
+        "type": "download",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/24",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 20,
+        "categories": [
+          "contact",
+          "ecat",
+          "schedule"
+        ],
+        "type": "news",
+        "builder_reason": "REVIEW_KEEP_ECAT_OPERATIONAL_NOTICE",
+        "review_decision": "KEEP"
+      },
+      {
+        "title": "ECAT Fall 2026 Registrations are closed. - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/18",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 20,
+        "categories": [
+          "ecat",
+          "schedule"
+        ],
+        "type": "news",
+        "builder_reason": "REVIEW_KEEP_ECAT_STATUS",
+        "review_decision": "KEEP"
+      }
+    ],
+    "fees": [
+      {
+        "title": "Undergraduate Fee Schedule for Session Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/44",
+        "status": "CORE",
+        "role": "temporal",
+        "score": 100,
+        "categories": [
+          "admission_process",
+          "fees",
+          "hostel",
+          "programs",
+          "schedule"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Associate Degree Program - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/program/2",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "contact",
+          "eligibility",
+          "fees",
+          "programs",
+          "schedule"
+        ],
+        "type": "faq",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Foreign Students - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/foreign-students",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "eligibility",
+          "fees",
+          "hostel",
+          "international",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Master - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/program/3",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "contact",
+          "eligibility",
+          "fees",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "faq",
+        "builder_reason": "USABLE"
+      },
+      {
+        "title": "Ph.D - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/program/4",
+        "status": "TEMPORAL",
+        "role": "temporal",
+        "score": 80,
+        "categories": [
+          "admission_process",
+          "eligibility",
+          "fees",
+          "international",
+          "programs",
+          "schedule",
+          "scholarships"
+        ],
+        "type": "program",
+        "builder_reason": "USABLE"
+      }
+    ],
+    "international_admissions": [
+      {
+        "title": "International Students UET Lahore - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/10",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 20,
+        "categories": [
+          "international"
+        ],
+        "type": "foreign_students",
+        "builder_reason": "REVIEW_KEEP_INTERNATIONAL_ADMISSIONS",
+        "review_decision": "KEEP"
+      }
+    ],
+    "programs": [
+      {
+        "title": "Home - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/#programs",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 30,
+        "categories": [
+          "programs"
+        ],
+        "type": "program",
+        "builder_reason": "REVIEW_KEEP_HOME_PROGRAM_INFORMATION",
+        "review_decision": "KEEP"
+      },
+      {
+        "title": "Undergraduate Admissions - Fall 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/4",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 30,
+        "categories": [
+          "programs"
+        ],
+        "type": "program",
+        "builder_reason": "REVIEW_KEEP_ADMISSIONS_INFORMATION",
+        "review_decision": "KEEP"
+      },
+      {
+        "title": "Undergraduate Admissions Advertisement FALL 2026 - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/15",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 30,
+        "categories": [
+          "programs"
+        ],
+        "type": "program",
+        "builder_reason": "REVIEW_KEEP_UNDERGRADUATE_ADVERTISEMENT",
+        "review_decision": "KEEP"
+      }
+    ],
+    "scholarships": [
+      {
+        "title": "Financial Year 2025-26 Scholarships - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/2",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 30,
+        "categories": [
+          "admission_process",
+          "ecat",
+          "programs",
+          "scholarships"
+        ],
+        "type": "news",
+        "builder_reason": "REVIEW_KEEP_SCHOLARSHIP_CONTENT",
+        "review_decision": "KEEP"
+      },
+      {
+        "title": "Financial Year 2025-26 Scholarships - UET Admissions Portal",
+        "url": "https://admission.uet.edu.pk/news/1",
+        "status": "REVIEW",
+        "role": "supporting",
+        "score": 30,
+        "categories": [
+          "admission_process",
+          "ecat",
+          "programs",
+          "scholarships"
+        ],
+        "type": "news",
+        "builder_reason": "REVIEW_KEEP_SCHOLARSHIP_CONTENT",
+        "review_decision": "KEEP"
+      }
+    ]
+  },
+  "duplicates": [],
+  "unassigned": [],
+  "excluded": [
+    {
+      "title": "Undergraduate Admissions Fall 2026 – Record Response from Aspiring Students - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/43",
+      "status": "SKIP",
+      "role": "promotional",
+      "book": "programs",
+      "reason": "SKIP_STATUS",
+      "temporal_signals": []
+    },
+    {
+      "title": "Admission Podcast Series 2026 - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/5",
+      "status": "SKIP",
+      "role": "promotional",
+      "book": "temporal_updates",
+      "reason": "SKIP_STATUS",
+      "temporal_signals": []
+    },
+    {
+      "title": "Message from VC UET Lahore - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/12",
+      "status": "SKIP",
+      "role": "promotional",
+      "book": "scholarships",
+      "reason": "SKIP_STATUS",
+      "temporal_signals": []
+    },
+    {
+      "title": "Meet our international student from Zimbabwe - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/9",
+      "status": "SKIP",
+      "role": "promotional",
+      "book": "international_admissions",
+      "reason": "SKIP_STATUS",
+      "temporal_signals": []
+    },
+    {
+      "title": "Welcome to UET – Where Your Future Begins! 🇵🇰 - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/14",
+      "status": "SKIP",
+      "role": "promotional",
+      "book": "temporal_updates",
+      "reason": "SKIP_STATUS",
+      "temporal_signals": []
+    }
+  ],
+  "rescued_review_pages": [
+    {
+      "title": "Home - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/#programs",
+      "book": "programs",
+      "signals": [],
+      "reason": "REVIEW_KEEP_HOME_PROGRAM_INFORMATION"
+    },
+    {
+      "title": "Application Scrutiny Underway - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/29",
+      "book": "admission_process",
+      "signals": [],
+      "reason": "REVIEW_KEEP_ADMISSION_PROCESS"
+    },
+    {
+      "title": "Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/24",
+      "book": "ecat",
+      "signals": [],
+      "reason": "REVIEW_KEEP_ECAT_OPERATIONAL_NOTICE"
+    },
+    {
+      "title": "ECAT Fall 2026 Registrations are closed. - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/18",
+      "book": "ecat",
+      "signals": [],
+      "reason": "REVIEW_KEEP_ECAT_STATUS"
+    },
+    {
+      "title": "Undergraduate Admissions Advertisement FALL 2026 - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/15",
+      "book": "programs",
+      "signals": [],
+      "reason": "REVIEW_KEEP_UNDERGRADUATE_ADVERTISEMENT"
+    },
+    {
+      "title": "Undergraduate Admissions - Fall 2026 - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/4",
+      "book": "programs",
+      "signals": [],
+      "reason": "REVIEW_KEEP_ADMISSIONS_INFORMATION"
+    },
+    {
+      "title": "Financial Year 2025-26 Scholarships - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/2",
+      "book": "scholarships",
+      "signals": [],
+      "reason": "REVIEW_KEEP_SCHOLARSHIP_CONTENT"
+    },
+    {
+      "title": "Financial Year 2025-26 Scholarships - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/1",
+      "book": "scholarships",
+      "signals": [],
+      "reason": "REVIEW_KEEP_SCHOLARSHIP_CONTENT"
+    },
+    {
+      "title": "International Students UET Lahore - UET Admissions Portal",
+      "url": "https://admission.uet.edu.pk/news/10",
+      "book": "international_admissions",
+      "signals": [],
+      "reason": "REVIEW_KEEP_INTERNATIONAL_ADMISSIONS"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "source": "UET Admissions Portal",
+  "stage": "pdf_knowledge_audit",
+  "status": "NEEDS_REVIEW",
+  "input_files": {
+    "canonical_pdf_registry": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_duplicates.json",
+    "combined_chunks": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_knowledge_chunks.json",
+    "skip_summary": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_extraction_skip_summary.json"
+  },
+  "counts": {
+    "canonical_pdfs": 0,
+    "page_knowledge_files": 27,
+    "chunks": 2866,
+    "skipped_pages": 85,
+    "issues": 4,
+    "critical_issues": 0,
+    "exact_duplicate_texts": 413
+  },
+  "text_statistics": {
+    "average_characters": 1027.69,
+    "minimum_characters": 63,
+    "maximum_characters": 2225
+  },
+  "quality_distribution": {
+    "ok": 2866
+  },
+  "source_distribution": {
+    "native+embedded_image_ocr": 324,
+    "native": 2498,
+    "full_page_ocr": 44
+  },
+  "skip_reason_distribution": {
+    "low_quality_ocr_output": 85
+  },
+  "missing_metadata": {},
+  "pdf_chunk_distribution": [
+    {
+      "pdf_file": "010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.pdf",
+      "chunks": 15
+    },
+    {
+      "pdf_file": "098eca99-9df5-4ef9-81f0-275861ad27ac.pdf",
+      "chunks": 17
+    },
+    {
+      "pdf_file": "104495c8-1fd5-4476-9721-66a4d5b653dd.pdf",
+      "chunks": 2
+    },
+    {
+      "pdf_file": "14a1476c-9fc8-4728-96a7-3c181b0e9c81.pdf",
+      "chunks": 3
+    },
+    {
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "chunks": 616
+    },
+    {
+      "pdf_file": "30097787-4e76-496e-8e19-7b99fdf17347.pdf",
+      "chunks": 2
+    },
+    {
+      "pdf_file": "429cada0-b8a1-4b15-8c3b-392d9a4f1d50.pdf",
+      "chunks": 6
+    },
+    {
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "chunks": 391
+    },
+    {
+      "pdf_file": "4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+      "chunks": 2
+    },
+    {
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "chunks": 641
+    },
+    {
+      "pdf_file": "6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.pdf",
+      "chunks": 8
+    },
+    {
+      "pdf_file": "7faf8b8c-f607-43dd-ab53-6c5e261f705b.pdf",
+      "chunks": 1
+    },
+    {
+      "pdf_file": "90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "chunks": 7
+    },
+    {
+      "pdf_file": "91a868d2-dfcb-4974-af21-453f6b6853d0.pdf",
+      "chunks": 21
+    },
+    {
+      "pdf_file": "937243bf-044d-422e-b0f0-c32b36e04f7d.pdf",
+      "chunks": 1
+    },
+    {
+      "pdf_file": "a8090b4d-2448-42e7-999a-a948573c7f3b.pdf",
+      "chunks": 19
+    },
+    {
+      "pdf_file": "a9f1df72-962b-4b2e-aebe-bd624d917953.pdf",
+      "chunks": 1
+    },
+    {
+      "pdf_file": "admission-guide.pdf",
+      "chunks": 7
+    },
+    {
+      "pdf_file": "bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.pdf",
+      "chunks": 3
+    },
+    {
+      "pdf_file": "c8856fd5-733e-46c8-8271-1ff78cdb9ceb.pdf",
+      "chunks": 9
+    },
+    {
+      "pdf_file": "d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+      "chunks": 3
+    },
+    {
+      "pdf_file": "d94be6f4-4fc6-4789-a525-992014caa653.pdf",
+      "chunks": 7
+    },
+    {
+      "pdf_file": "dee8172b-0888-4be5-84a3-7b2c3005c880.pdf",
+      "chunks": 2
+    },
+    {
+      "pdf_file": "f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.pdf",
+      "chunks": 9
+    },
+    {
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "chunks": 398
+    },
+    {
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "chunks": 675
+    }
+  ],
+  "page_file_audit": [
+    {
+      "file": "_pdf_knowledge_010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.json",
+      "pages_detected": 6,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_098eca99-9df5-4ef9-81f0-275861ad27ac.json",
+      "pages_detected": 9,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_104495c8-1fd5-4476-9721-66a4d5b653dd.json",
+      "pages_detected": 2,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_14a1476c-9fc8-4728-96a7-3c181b0e9c81.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_1d111018-7c33-455a-9aa0-662f7c30da9e.json",
+      "pages_detected": 235,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_30097787-4e76-496e-8e19-7b99fdf17347.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_429cada0-b8a1-4b15-8c3b-392d9a4f1d50.json",
+      "pages_detected": 2,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_43d0e9ac-e1a7-49fe-9c91-a84383fa309a.json",
+      "pages_detected": 171,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_4808e934-e5dc-4a3d-b53e-88e72d948ac0.json",
+      "pages_detected": 2,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_559fc79c-04b2-4ead-81f2-d7f9af2601a9.json",
+      "pages_detected": 245,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.json",
+      "pages_detected": 2,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_7faf8b8c-f607-43dd-ab53-6c5e261f705b.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_90166bac-e657-4cee-890f-c34aee652b6c.json",
+      "pages_detected": 8,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_91a868d2-dfcb-4974-af21-453f6b6853d0.json",
+      "pages_detected": 11,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_937243bf-044d-422e-b0f0-c32b36e04f7d.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_a8090b4d-2448-42e7-999a-a948573c7f3b.json",
+      "pages_detected": 10,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_a9f1df72-962b-4b2e-aebe-bd624d917953.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_admission-guide.json",
+      "pages_detected": 8,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.json",
+      "pages_detected": 2,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_c8856fd5-733e-46c8-8271-1ff78cdb9ceb.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_chunks.json",
+      "pages_detected": 2866,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_d3f4869b-a8d6-426b-a462-357c0b33ed58.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_d94be6f4-4fc6-4789-a525-992014caa653.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_dee8172b-0888-4be5-84a3-7b2c3005c880.json",
+      "pages_detected": 2,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.json",
+      "pages_detected": 1,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.json",
+      "pages_detected": 178,
+      "status": "ok"
+    },
+    {
+      "file": "_pdf_knowledge_UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.json",
+      "pages_detected": 252,
+      "status": "ok"
+    }
+  ],
+  "canonical_registry": {
+    "urls": 0,
+    "titles": 0,
+    "sha256": 0
+  },
+  "recommendations": [
+    "Review exact duplicate chunks before embedding/indexing.",
+    "Audit skipped pages and classify Urdu/non-English, OCR failure, decorative, or important content.",
+    "Do not generate embeddings until this audit and skipped-page review are complete.",
+    "Preserve raw PDF knowledge files as immutable extraction output."
+  ]
+}

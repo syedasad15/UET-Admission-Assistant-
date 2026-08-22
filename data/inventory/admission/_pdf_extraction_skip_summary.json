@@ -1,0 +1,686 @@
+{
+  "note": "Pages listed here produced no usable text under current OCR settings (LANGUAGES = ['en']). As of now, Urdu-only content is expected to appear here -- this is a scoped, intentional gap (see module docstring), not a bug.",
+  "total_skipped_pages": 85,
+  "skipped_pages": [
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 9,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_non_english_or_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 30,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 34,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 38,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 43,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 47,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 52,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 57,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 58,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 63,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 67,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 73,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 74,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 78,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 87,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 91,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 96,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 105,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 111,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 112,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 115,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 119,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+      "page": 149,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 2,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_non_english_or_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 43,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 55,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 59,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 62,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 71,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 73,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 76,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 107,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 136,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "canonical_title": "Download Prospectus",
+      "pdf_file": "UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+      "page": 141,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/admission-guide.pdf",
+      "canonical_title": "Admission Guide",
+      "pdf_file": "admission-guide.pdf",
+      "page": 4,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/admission-guide.pdf",
+      "canonical_title": "Admission Guide",
+      "pdf_file": "admission-guide.pdf",
+      "page": 5,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/admission-guide.pdf",
+      "canonical_title": "Admission Guide",
+      "pdf_file": "admission-guide.pdf",
+      "page": 6,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/admission-guide.pdf",
+      "canonical_title": "Admission Guide",
+      "pdf_file": "admission-guide.pdf",
+      "page": 7,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "page": 4,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "page": 5,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "page": 6,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+      "page": 7,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 40,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 43,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 44,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 47,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 52,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 57,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 58,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 69,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 70,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 74,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 82,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 83,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 86,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 91,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 100,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 106,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 107,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 110,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+      "page": 114,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 2,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_non_english_or_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 43,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 54,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 60,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 63,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 72,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 74,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 77,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 129,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 133,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 135,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+      "page": 170,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 2,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_non_english_or_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 45,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 56,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 62,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 65,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 74,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 76,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 79,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 131,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 135,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 137,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    },
+    {
+      "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "canonical_title": "Download",
+      "pdf_file": "559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+      "page": 172,
+      "reason": "low_quality_ocr_output",
+      "quality_flag": "likely_garbled"
+    }
+  ]
+}

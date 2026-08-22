@@ -1,0 +1,51 @@
+FILTER EXCLUDED DOCUMENTS — AUDIT REPORT
+======================================================================
+Status: PASS
+
+Original chunks : 3020
+Removed chunks  : 1736
+Kept chunks     : 1284
+Expected kept   : 1284
+
+REMOVED BY DOCUMENT
+----------------------------------------------------------------------
+43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf: expected=431 actual=431 [OK]
+1d111018-7c33-455a-9aa0-662f7c30da9e.pdf: expected=640 actual=640 [OK]
+559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf: expected=665 actual=665 [OK]
+
+CHECKS
+----------------------------------------------------------------------
+count_formula               : PASS
+matches_expected_totals     : PASS
+per_document_counts         : PASS
+exhaustive_removal          : PASS
+no_cross_contamination      : PASS
+required_fields             : PASS
+kept_chunks_unaltered       : PASS
+no_empty_text               : PASS
+
+REMAINING CHUNKS BY PDF
+----------------------------------------------------------------------
+UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf: 698
+MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf: 441
+91a868d2-dfcb-4974-af21-453f6b6853d0.pdf: 21
+a8090b4d-2448-42e7-999a-a948573c7f3b.pdf: 19
+098eca99-9df5-4ef9-81f0-275861ad27ac.pdf: 17
+010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.pdf: 15
+f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.pdf: 9
+c8856fd5-733e-46c8-8271-1ff78cdb9ceb.pdf: 9
+6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.pdf: 8
+admission-guide.pdf: 7
+90166bac-e657-4cee-890f-c34aee652b6c.pdf: 7
+d94be6f4-4fc6-4789-a525-992014caa653.pdf: 7
+429cada0-b8a1-4b15-8c3b-392d9a4f1d50.pdf: 6
+bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.pdf: 3
+14a1476c-9fc8-4728-96a7-3c181b0e9c81.pdf: 3
+d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf: 3
+4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf: 2
+dee8172b-0888-4be5-84a3-7b2c3005c880.pdf: 2
+30097787-4e76-496e-8e19-7b99fdf17347.pdf: 2
+104495c8-1fd5-4476-9721-66a4d5b653dd.pdf: 2
+a9f1df72-962b-4b2e-aebe-bd624d917953.pdf: 1
+7faf8b8c-f607-43dd-ab53-6c5e261f705b.pdf: 1
+937243bf-044d-422e-b0f0-c32b36e04f7d.pdf: 1

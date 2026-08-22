@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "files": {
+    "original": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_knowledge_chunks.json",
+    "recovered": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_recovered_native_chunks.json",
+    "final": "D:\\UET Chatbot\\data\\inventory\\admission\\_pdf_knowledge_chunks_73_merged_final.json"
+  },
+  "counts": {
+    "original": 2866,
+    "recovered": 154,
+    "final": 3020,
+    "expected_final": 3020,
+    "formula_ok": true
+  },
+  "duplicates": {
+    "original": 0,
+    "recovered": 0,
+    "final": 0,
+    "cross_original_recovered": 0
+  },
+  "pages": {
+    "original": 1069,
+    "recovered": 73,
+    "final": 1142,
+    "overlapping": 0,
+    "newly_added": 73
+  },
+  "required_fields": {
+    "original_missing": 0,
+    "recovered_missing": 154,
+    "final_missing": 0
+  },
+  "text": {
+    "original_empty": 0,
+    "recovered_empty": 0,
+    "final_empty": 0
+  },
+  "preservation": {
+    "original_changed": 0,
+    "original_missing_from_final": 0
+  },
+  "recovered_presence": {
+    "missing_from_final": 0
+  },
+  "sources": {
+    "native+embedded_image_ocr": 324,
+    "native": 2498,
+    "full_page_ocr": 44,
+    "native_text_recovery": 154
+  },
+  "quality_flags": {
+    "ok": 3020
+  },
+  "checks": {
+    "count_formula": true,
+    "duplicates": true,
+    "pages": true,
+    "required_fields": true,
+    "text": true,
+    "original_preservation": true,
+    "recovered_presence": true,
+    "source_quality": true
+  }
+}

@@ -1,0 +1,593 @@
+{
+    "source": "D:\\UET Chatbot\\data\\inventory\\admission\\_map.json",
+    "stage": "admission_content_target_filter",
+    "policy": {
+        "download_files": false,
+        "crawl_pages": false,
+        "crawl_external_websites": false,
+        "classification": "conservative"
+    },
+    "counts": {
+        "content": 58,
+        "files": 29,
+        "action": 14,
+        "external": 12,
+        "other": 0
+    },
+    "targets": {
+        "content": [
+            {
+                "url": "https://admission.uet.edu.pk/program/1",
+                "title": "Bachelors in Sciences",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/program/3",
+                "title": "Master",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/program/4",
+                "title": "Ph.D",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/program/2",
+                "title": "Associate Degree Program",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/#programs",
+                "title": "All Programs",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/downloads",
+                "title": "Downloads",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/foreign-students",
+                "title": "Foreign Students",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news",
+                "title": "News",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/faqs",
+                "title": "FAQs",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk",
+                "title": "UET Admissions",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/UG-2026-1",
+                "title": "Visit Admission Page",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/MS-2026-1",
+                "title": "Apply Now",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/PhD-2026-1",
+                "title": "Apply Now",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/55",
+                "title": "Read Full Article",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/54",
+                "title": "Second Merit List Now Live – Undergraduate Admissions Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/51",
+                "title": "Last Reminder for Selected Candidates in the First Merit List",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/52",
+                "title": "Countdown Begins: UET Lahore 2nd Merit List 2026 Releasing on 7 August at 11:00 PM",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/50",
+                "title": "Admission Cell Closure Notice – Saturday & Sunday",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/49",
+                "title": "Hostel Allotment Process for Undergraduate Admissions Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/47",
+                "title": "How to Arrange Documents Before Submission at IBM, UET Lahore",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/48",
+                "title": "Admission Process for Selected Candidates – Undergraduate Admissions Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/44",
+                "title": "Undergraduate Fee Schedule for Session Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/42",
+                "title": "Undergraduate Admissions Fall 2026 – 1st Merit List Published",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/43",
+                "title": "Undergraduate Admissions Fall 2026 – Record Response from Aspiring Students",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/39",
+                "title": "HEC Announces Fully Funded Allama Muhammad Iqbal Scholarship for International Undergraduate Students",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/40",
+                "title": "HEC Announces PhD Scholarships 2027 under the U.S.-Pakistan Knowledge Corridor Program",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/41",
+                "title": "HEC Invites Applications for Omani Scholarship Program 2026–27 for Undergraduate Studies",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/38",
+                "title": "🎙️ Live Podcast: How to Complete Documents for the 1st Merit List | Undergraduate Admissions Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/36",
+                "title": "📢 UET Lahore Extends Undergraduate Admissions Deadline – Apply by 16 July 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/37",
+                "title": "UET Lahore Restores Network Services – Admission Portal and All Online Services Now Live",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/35",
+                "title": "Final Opportunity: Apply Today for UET Lahore Fall 2026 Admissions",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/32",
+                "title": "Selected the Wrong Program Preference? Update It Before the Final Deadline!",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/33",
+                "title": "UET Lahore Announces Admissions for M.Sc., M.Phil., MS and Master's Programs – Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/34",
+                "title": "UET Lahore Announces Ph.D. Admissions – Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/31",
+                "title": "🎙️ UET Admissions 2026 Podcast: Smart Preference Selection Strategies",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/30",
+                "title": "⏳ The Countdown Has Begun – Only 6 Days Left to Apply! ⭐",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/28",
+                "title": "Undergraduate Admission Process Schedule - Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/29",
+                "title": "Application Scrutiny Underway",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/27",
+                "title": "Missed ECAT? You Still Have Options!",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/25",
+                "title": "ECAT 2026 (Phase-II) Result – What’s Next?",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/26",
+                "title": "ECAT 2026 Phase 2- Result Announcement",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/24",
+                "title": "Admissions Office to Remain Open to Assist ECAT-02 Final Candidates with their Queries",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/23",
+                "title": "Admit Card Announcement – ECAT 2026 (Final ECAT for Fall 2026)",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/22",
+                "title": "ECAT 2026 (Second) Result Announcement",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/20",
+                "title": "Podcast on UET Admission Guide - Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/18",
+                "title": "ECAT Fall 2026 Registrations are closed.",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/16",
+                "title": "Last Date - ECAT 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/15",
+                "title": "Undergraduate Admissions Advertisement FALL 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/6",
+                "title": "Podcast on Undergraduate Admission Seats",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/5",
+                "title": "Admission Podcast Series 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/4",
+                "title": "Undergraduate Admissions - Fall 2026",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/3",
+                "title": "ECAT 2026 - Second",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/2",
+                "title": "Financial Year 2025-26 Scholarships",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/1",
+                "title": "Financial Year 2025-26 Scholarships",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/12",
+                "title": "Message from VC UET Lahore",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/10",
+                "title": "International Students UET Lahore",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/9",
+                "title": "Meet our international student from Zimbabwe",
+                "classification": "CONTENT"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/news/14",
+                "title": "Welcome to UET – Where Your Future Begins! 🇵🇰",
+                "classification": "CONTENT"
+            }
+        ],
+        "files": [
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/6e353ce3-0f77-4d45-8747-2fdf9cfb90e6.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/a8090b4d-2448-42e7-999a-a948573c7f3b.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/262b6351-9035-409a-ba3d-f8bd8f9d549a.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/bc079c7a-2bcf-4ca6-81bc-f15b9eb23b64.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/4808e934-e5dc-4a3d-b53e-88e72d948ac0.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/91a868d2-dfcb-4974-af21-453f6b6853d0.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/a9f1df72-962b-4b2e-aebe-bd624d917953.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/7faf8b8c-f607-43dd-ab53-6c5e261f705b.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/f9eba060-e8d2-48a3-8fa5-9c8d58655e9f.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/90166bac-e657-4cee-890f-c34aee652b6c.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/14a1476c-9fc8-4728-96a7-3c181b0e9c81.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/dee8172b-0888-4be5-84a3-7b2c3005c880.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/30097787-4e76-496e-8e19-7b99fdf17347.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/098eca99-9df5-4ef9-81f0-275861ad27ac.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/937243bf-044d-422e-b0f0-c32b36e04f7d.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/prospectus/UG-2026-1_78f5bbdf-88d5-4889-b97c-9f0d773d7d6d.pdf",
+                "title": "Download Prospectus",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/c8856fd5-733e-46c8-8271-1ff78cdb9ceb.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/d3f4869b-a8d6-426b-a462-357c0b33ed58.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/8484474c-267f-44bc-93f8-63618c61a9af.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/prospectus/MS-2026-1_0475d05f-a54f-450c-8383-6733814b433d.pdf",
+                "title": "Download Prospectus",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/d94be6f4-4fc6-4789-a525-992014caa653.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/43d0e9ac-e1a7-49fe-9c91-a84383fa309a.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/prospectus/PhD-2026-1_6c024cbe-f598-4566-91ad-66bc1783302f.pdf",
+                "title": "Download Prospectus",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/010ddcc2-6039-4d0c-8cff-4bd4b6131ab1.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/104495c8-1fd5-4476-9721-66a4d5b653dd.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/429cada0-b8a1-4b15-8c3b-392d9a4f1d50.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/1d111018-7c33-455a-9aa0-662f7c30da9e.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/559fc79c-04b2-4ead-81f2-d7f9af2601a9.pdf",
+                "title": "Download",
+                "classification": "FILE"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/uploads/downloads/admission-guide.pdf",
+                "title": "Admission Guide",
+                "classification": "FILE"
+            }
+        ],
+        "action": [
+            {
+                "url": "https://admission.uet.edu.pk/modules/EntryTest/UserRoles/SelfFinance/PersonalInformation_new.aspx",
+                "title": "Apply Now",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/UG-2026-1/account/login?redirectFrom=MERIT_LIST",
+                "title": "View Merit List",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/create-challan",
+                "title": "Generate",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/login?redirectFrom=APPLICATION",
+                "title": "Fill Application",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/login?redirectFrom=ADMIT_CARD",
+                "title": "Download",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/create-challan",
+                "title": "Generate",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/login?redirectFrom=APPLICATION",
+                "title": "Fill Application",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/login?redirectFrom=ADMIT_CARD",
+                "title": "Download",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/UG-2026-1/account/forgetchallan",
+                "title": "Forget Challan Number?",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/forgetchallan?redirectFrom=APPLICATION",
+                "title": "Forget Challan Number?",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/MS-2026-1/pg/account/forgetchallan?redirectFrom=ADMIT_CARD",
+                "title": "Forget Challan Number?",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/forgetchallan?redirectFrom=APPLICATION",
+                "title": "Forget Challan Number?",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/PHD-2026-1/pg/account/forgetchallan?redirectFrom=ADMIT_CARD",
+                "title": "Forget Challan Number?",
+                "classification": "ACTION"
+            },
+            {
+                "url": "https://admission.uet.edu.pk/UG-2026-1/account/login",
+                "title": "Back to Login",
+                "classification": "ACTION"
+            }
+        ],
+        "external": [
+            {
+                "url": "https://ecat.uet.edu.pk",
+                "title": "ECAT",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://ecat.uet.edu.pk/General/Complaints",
+                "title": "Complaints",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://uet.edu.pk",
+                "title": "UET",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://www.facebook.com/share/18X3SX3ViH",
+                "title": "",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://www.instagram.com/admission_cell_uet_lahore?igsh=aGxmaXY5MGE4N3J1",
+                "title": "",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://www.linkedin.com/company/admission-cell-uet-lahore",
+                "title": "",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://youtube.com/@admission.uet.lahore?si=Gomexhacc9pg05tD",
+                "title": "",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://whatsapp.com/channel/0029Vb7xA347tkj2RdKqVD1c",
+                "title": "",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://youtu.be/dEGfvCngkQQ",
+                "title": "Video Guide",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://www.facebook.com/admission.uet.edu.pk/videos/1465978321270774/?rdid=fL80msjQbM1vPpbE",
+                "title": "View External Source",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://www.facebook.com/admission.uet.edu.pk/videos/2473526649689042/?mibextid=9drbnH&s=yWDuG2&fs=e",
+                "title": "View External Source",
+                "classification": "EXTERNAL"
+            },
+            {
+                "url": "https://www.facebook.com/reel/565912303217909",
+                "title": "View External Source",
+                "classification": "EXTERNAL"
+            }
+        ],
+        "other": []
+    }
+}

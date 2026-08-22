@@ -1,0 +1,90 @@
+{
+    "source": "https://admission.uet.edu.pk/",
+    "stage": "admission_section_selection",
+    "crawl_policy": {
+        "homepage_crawled": false,
+        "selected_sections_crawled": false
+    },
+    "selected_sections": [
+        {
+            "name": "Bachelors in Sciences",
+            "url": "https://admission.uet.edu.pk/program/1",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "Master",
+            "url": "https://admission.uet.edu.pk/program/3",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "Ph.D",
+            "url": "https://admission.uet.edu.pk/program/4",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "Associate Degree Program",
+            "url": "https://admission.uet.edu.pk/program/2",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "All Programs",
+            "url": "https://admission.uet.edu.pk/#programs",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "Downloads",
+            "url": "https://admission.uet.edu.pk/downloads",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "Foreign Students",
+            "url": "https://admission.uet.edu.pk/foreign-students",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "News",
+            "url": "https://admission.uet.edu.pk/news",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        },
+        {
+            "name": "FAQs",
+            "url": "https://admission.uet.edu.pk/faqs",
+            "decision": "KEEP",
+            "reason": "admission knowledge content"
+        }
+    ],
+    "skipped_sections": [
+        {
+            "name": "UET Admissions",
+            "url": "https://admission.uet.edu.pk/",
+            "decision": "SKIP",
+            "reason": "homepage duplicate"
+        },
+        {
+            "name": "Home",
+            "url": "https://admission.uet.edu.pk/",
+            "decision": "SKIP",
+            "reason": "homepage duplicate"
+        },
+        {
+            "name": "Apply Now",
+            "url": "https://admission.uet.edu.pk/#programs",
+            "decision": "SKIP",
+            "reason": "homepage duplicate"
+        }
+    ],
+    "review_sections": [],
+    "counts": {
+        "selected": 9,
+        "skipped": 3,
+        "review": 0
+    }
+}

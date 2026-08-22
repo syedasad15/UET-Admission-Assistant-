@@ -1,0 +1,27 @@
+FINAL DEEP AUDIT — 73 PAGE RECOVERY MERGED KB
+======================================================================
+Status: PASS
+
+Original chunks : 2866
+Recovered chunks: 154
+Final chunks    : 3020
+Expected final  : 3020
+
+Recovered pages : 73
+Final pages     : 1142
+
+Final missing fields: 0
+Final empty text    : 0
+Original changed    : 0
+Recovered missing   : 0
+
+CHECKS
+----------------------------------------------------------------------
+count_formula                  : PASS
+duplicates                     : PASS
+pages                          : PASS
+required_fields                : PASS
+text                           : PASS
+original_preservation          : PASS
+recovered_presence             : PASS
+source_quality                 : PASS

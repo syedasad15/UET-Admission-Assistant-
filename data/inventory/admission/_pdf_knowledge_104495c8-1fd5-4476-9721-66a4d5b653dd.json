@@ -1,0 +1,38 @@
+{
+  "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/104495c8-1fd5-4476-9721-66a4d5b653dd.pdf",
+  "canonical_title": "Download",
+  "sha256": "fc5d831d089520e01b43bde1cfe59d950d3b39d92919b482f0fb7e9fe184030e",
+  "all_urls": [
+    "https://admission.uet.edu.pk/uploads/downloads/104495c8-1fd5-4476-9721-66a4d5b653dd.pdf"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "native",
+      "text": "Form -III\nCERTIFICATE\n(To be given by the Head of Department not below a Class I Gazetted Officer)\nThis is to certify that Mr/ Mrs\nfather/ mother of the applicant namely\nis an employee of the Department of\nand he/ she has served in the province of Sind / KPK. / Baluchistan in his/ her capacity as\n(state rank/ BPS)\nFrom\nto\nIt is further certified after due verification of his/her official record that he/she is permanent resident of Punjab\nSignature of the\nHead of Department\nName\nDated :\n(Official Seal)\nSignature of the applicant’s parent\nSignature of the applicant",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.793,
+        "vowel_ratio": 0.381,
+        "suspicious_word_ratio": 0.0
+      },
+      "chunks": [
+        "Form -III\nCERTIFICATE\n(To be given by the Head of Department not below a Class I Gazetted Officer)\nThis is to certify that Mr/ Mrs\nfather/ mother of the applicant namely\nis an employee of the Department of\nand he/ she has served in the province of Sind / KPK. / Baluchistan in his/ her capacity as\n(state rank/ BPS)\nFrom\nto\nIt is further certified after due verification of his/her official record that he/she is permanent resident of Punjab\nSignature of the\nHead of Department\nName\nDated :\n(Official Seal)\nSignature of the applicant’s parent\nSignature of the applicant"
+      ]
+    },
+    {
+      "page": 2,
+      "source": "native",
+      "text": "Form -IV\nCERTIFICATE\n(To be given by the Election Officer)\nI (name of the Election Officer)\nBeing the Election Officer of:\nWard No.\nArea\nCity/Town\nTehsil\nDistrict\nin the Punjab Province / Federal Capital Area, Islamabad do hereby certify that the name of\n(applicant’s father)\nMr.\nson of Mr.\nappears on page\nof the latest electoral roll of voters of the area under my control. This electoral roll was published in\nthe year\nSignature\nELECTION OFFICER\nName\nAddress\nDated :\n(Official Seal)\nSignature of the applicant’s father/ parent\nSignature of the applicant",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.799,
+        "vowel_ratio": 0.396,
+        "suspicious_word_ratio": 0.0
+      },
+      "chunks": [
+        "Form -IV\nCERTIFICATE\n(To be given by the Election Officer)\nI (name of the Election Officer)\nBeing the Election Officer of:\nWard No.\nArea\nCity/Town\nTehsil\nDistrict\nin the Punjab Province / Federal Capital Area, Islamabad do hereby certify that the name of\n(applicant’s father)\nMr.\nson of Mr.\nappears on page\nof the latest electoral roll of voters of the area under my control. This electoral roll was published in\nthe year\nSignature\nELECTION OFFICER\nName\nAddress\nDated :\n(Official Seal)\nSignature of the applicant’s father/ parent\nSignature of the applicant"
+      ]
+    }
+  ]
+}

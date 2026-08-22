@@ -1,0 +1,24 @@
+{
+  "canonical_url": "https://admission.uet.edu.pk/uploads/downloads/937243bf-044d-422e-b0f0-c32b36e04f7d.pdf",
+  "canonical_title": "Download",
+  "sha256": "cc88730a16fe8c45f0f7a8c38c5e43fabd1ea38f90481e71349a695c9f428ebf",
+  "all_urls": [
+    "https://admission.uet.edu.pk/uploads/downloads/937243bf-044d-422e-b0f0-c32b36e04f7d.pdf"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "native",
+      "text": "UNIVERSITY OF ENGINEERING & TECHNOLOGY, LAHORE.\n(STUDENTS SECTION)\nAPPLICATION FORM FOR MIGRATION\n1.\nName of Applicant:\n_______________________________________________________\n2.\nRegistration Number:\n_______________________________________________________\n3.\nName of Father/Guardian:\n_______________________________________________________\n4.\nPermanent Address:\n_______________________________________________________\n5.\nClass:\n_______________________________________________________\n6.\nExaminations Record:\nEXAMINATION\nNUMBER OF PAPER PASSED\nCGPA\nTheory\nPractical\nFirst Semester\nSecond Semester\nThird Semester\nFourth Semester\nFifth Semester\n6.\nName of the University/ Institution\nto which the candidate wants to migrate:\n7.\nReasons for migration:\nSignature of the Applicant\nIt is certified that the above named student has cleared all the University dues and nothing is due to him.\nAssistant Registrar (Dues)\nI have no objection to the migration being granted to applicant.\nHe is a bonafide student of the department and his conduct is satisfactory.\nChairman/Director/Head of the Department\nApproved and forwarded to the Incharge Students Section for issuance of NOC.\nDean of Faculty\nIncharge Students Section\nAttachments:\n1. HBL, UET Branch, Bank Challan slip downloaded from FMS of Rs.2000/-\n2. Original Transcript issued by the Controller of Examinations, UET, Lahore.\n3. Online Clearance (if applicable).",
+      "quality": {
+        "flag": "ok",
+        "ascii_letter_ratio": 0.639,
+        "vowel_ratio": 0.38,
+        "suspicious_word_ratio": 0.035
+      },
+      "chunks": [
+        "UNIVERSITY OF ENGINEERING & TECHNOLOGY, LAHORE.\n(STUDENTS SECTION)\nAPPLICATION FORM FOR MIGRATION\n1.\nName of Applicant:\n_______________________________________________________\n2.\nRegistration Number:\n_______________________________________________________\n3.\nName of Father/Guardian:\n_______________________________________________________\n4.\nPermanent Address:\n_______________________________________________________\n5.\nClass:\n_______________________________________________________\n6.\nExaminations Record:\nEXAMINATION\nNUMBER OF PAPER PASSED\nCGPA\nTheory\nPractical\nFirst Semester\nSecond Semester\nThird Semester\nFourth Semester\nFifth Semester\n6.\nName of the University/ Institution\nto which the candidate wants to migrate:\n7.\nReasons for migration:\nSignature of the Applicant\nIt is certified that the above named student has cleared all the University dues and nothing is due to him.\nAssistant Registrar (Dues)\nI have no objection to the migration being granted to applicant.\nHe is a bonafide student of the department and his conduct is satisfactory.\nChairman/Director/Head of the Department\nApproved and forwarded to the Incharge Students Section for issuance of NOC.\nDean of Faculty\nIncharge Students Section\nAttachments:\n1. HBL, UET Branch, Bank Challan slip downloaded from FMS of Rs.2000/-\n2. Original Transcript issued by the Controller of Examinations, UET, Lahore.\n3. Online Clearance (if applicable)."
+      ]
+    }
+  ]
+}
