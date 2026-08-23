@@ -667,28 +667,23 @@ def display_sources(
 # ============================================================
 # DISPLAY MERIT RESPONSE — STRUCTURED
 # ============================================================
-
 def display_merit_response(response):
 
     if not response:
         st.error("No merit response was returned.")
         return
 
-    message = response.get("message", "")
     source_url = response.get("source_url", "")
     records = response.get("records", [])
     response_type = response.get("type", "merit")
     success = response.get("success", False)
 
-    # --------------------------------------------------------
-    # No records
-    # --------------------------------------------------------
-
     if not success or not records:
-
         st.warning(
-            message or
-            "No matching current merit record was found."
+            response.get(
+                "message",
+                "No matching current merit record was found."
+            )
         )
 
         if source_url:
@@ -698,27 +693,46 @@ def display_merit_response(response):
 
         return
 
-    # --------------------------------------------------------
-    # Header
-    # --------------------------------------------------------
+    # ========================================================
+    # MERIT CHECK HEADER
+    # ========================================================
 
     if response_type == "merit_check":
 
-        student_aggregate = response.get(
-            "student_aggregate"
-        )
+        aggregate = response.get("student_aggregate")
 
-        st.markdown("### 🎯 Merit Check")
+        st.markdown("## 🎯 Merit Check")
 
-        if student_aggregate is not None:
-
+        if aggregate is not None:
             st.info(
-                f"Your aggregate: **{student_aggregate:.5f}**"
+                f"**Your aggregate:** {aggregate:.5f}"
             )
 
     else:
 
-        st.markdown("### 📊 Current UET Merit")
+        st.markdown("## 📊 Current UET Merit")
+
+    # ========================================================
+    # NORMALIZE / SORT RECORDS
+    # ========================================================
+
+    def merit_value(record):
+        return float(
+            record.get(
+                "minimum_aggregate",
+                record.get("closing_merit", 0)
+            )
+        )
+
+    records = sorted(
+        records,
+        key=lambda r: (
+            r.get("campus", ""),
+            r.get("program", ""),
+            r.get("category", ""),
+            r.get("session", ""),
+        )
+    )
 
     # ========================================================
     # MERIT CHECK
@@ -726,361 +740,134 @@ def display_merit_response(response):
 
     if response_type == "merit_check":
 
-        # ----------------------------------------------------
-        # Group records by Campus → Program → Session → Type
-        # ----------------------------------------------------
-
-        groups = {}
+        aggregate = float(
+            response.get(
+                "student_aggregate",
+                0
+            )
+        )
 
         for record in records:
 
-            campus = record.get(
-                "campus",
-                "Unknown",
-            )
+            campus = record.get("campus", "Unknown")
+            program = record.get("program", "Unknown")
+            category = record.get("category", "Unknown")
+            session = record.get("session", "Unknown")
+            merit_type = record.get("type", "Unknown")
 
-            program = record.get(
-                "program",
-                "Unknown",
-            )
+            closing_merit = merit_value(record)
 
-            session = record.get(
-                "session",
-                "Unknown",
-            )
+            difference = aggregate - closing_merit
+            selected = difference >= 0
 
-            merit_type = record.get(
-                "type",
-                "Unknown",
-            )
+            # ----------------------------------------------
+            # Status
+            # ----------------------------------------------
 
-            key = (
-                campus,
-                program,
-                session,
-                merit_type,
-            )
-
-            groups.setdefault(
-                key,
-                []
-            ).append(record)
-
-        # ----------------------------------------------------
-        # Render each logical group once
-        # ----------------------------------------------------
-
-        for (
-            campus,
-            program,
-            session,
-            merit_type,
-        ), group_records in groups.items():
-
-            st.markdown(
-                f"""
-                <div class="merit-card">
-
-                <h4>🎓 {program}</h4>
-
-                <b>Campus:</b> {campus}<br>
-                <b>Session:</b> {session}<br>
-                <b>Type:</b> {merit_type}
-
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-            # ------------------------------------------------
-            # Build comparison table
-            # ------------------------------------------------
-
-            rows = []
-
-            for record in group_records:
-
-                category = record.get(
-                    "category",
-                    "Unknown",
-                )
-
-                minimum = record.get(
-                    "minimum_aggregate"
-                )
-
-                difference = record.get(
-                    "difference",
-                    0,
-                )
-
-                selected = record.get(
-                    "selected",
-                    False,
-                )
-
-                page = record.get(
-                    "page"
-                )
-
-                if minimum is None:
-                    continue
-
-                status = (
-                    "✅ Above"
-                    if selected
-                    else "❌ Below"
-                )
-
-                rows.append(
-                    {
-                        "Category": category,
-                        "Closing Merit": f"{minimum:.5f}",
-                        "Your Aggregate": (
-                            f"{record.get('student_aggregate', 0):.5f}"
-                        ),
-                        "Difference": (
-                            f"{difference:+.5f}"
-                        ),
-                        "Status": status,
-                    }
-                )
-
-            # Sort categories naturally.
-            category_order = {
-                "A1": 1,
-                "A1-M": 2,
-                "A2": 3,
-                "A2-M": 4,
-                "AP1": 5,
-                "AP1-M": 6,
-                "AP2": 7,
-                "AP2-M": 8,
-                "M": 9,
-                "NM": 10,
-            }
-
-            rows.sort(
-                key=lambda row:
-                    category_order.get(
-                        row["Category"],
-                        99,
-                    )
-            )
-
-            if rows:
-
-                st.dataframe(
-                    rows,
-                    use_container_width=True,
-                    hide_index=True,
-                )
-
-            # ------------------------------------------------
-            # Overall interpretation
-            # ------------------------------------------------
-
-            selected_records = [
-                r
-                for r in group_records
-                if r.get("selected", False)
-            ]
-
-            below_records = [
-                r
-                for r in group_records
-                if not r.get("selected", False)
-            ]
-
-            if selected_records and below_records:
-
-                closest_below = max(
-                    below_records,
-                    key=lambda r:
-                        r.get(
-                            "minimum_aggregate",
-                            0,
-                        ),
-                )
-
-                st.warning(
-                    f"Your aggregate is "
-                    f"**{student_aggregate:.5f}**. "
-                    f"You are below "
-                    f"**{closest_below.get('category', 'current category')}** "
-                    f"by "
-                    f"**{abs(closest_below.get('difference', 0)):.5f}**, "
-                    f"but above the other listed categories."
-                )
-
-            elif selected_records:
+            if selected:
 
                 st.success(
-                    f"Your aggregate of "
-                    f"**{student_aggregate:.5f}** "
-                    f"is above all displayed closing merits."
+                    f"### ✅ Above Closing Merit\n"
+                    f"**{campus} — {program} — {category}**"
                 )
 
             else:
 
-                closest = min(
-                    group_records,
-                    key=lambda r:
-                        abs(
-                            r.get(
-                                "difference",
-                                999,
-                            )
-                        ),
-                )
-
                 st.error(
-                    f"Your aggregate is below all "
-                    f"displayed closing merits. "
-                    f"The closest category is "
-                    f"**{closest.get('category', 'Unknown')}**."
+                    f"### ❌ Below Closing Merit\n"
+                    f"**{campus} — {program} — {category}**"
                 )
 
-            # ------------------------------------------------
-            # PDF page
-            # ------------------------------------------------
+            # ----------------------------------------------
+            # Structured information
+            # ----------------------------------------------
 
-            pages = sorted(
-                {
-                    r.get("page")
-                    for r in group_records
-                    if r.get("page")
-                }
+            col1, col2, col3 = st.columns(3)
+
+            with col1:
+                st.metric(
+                    "Closing Merit",
+                    f"{closing_merit:.5f}"
+                )
+
+            with col2:
+                st.metric(
+                    "Your Aggregate",
+                    f"{aggregate:.5f}"
+                )
+
+            with col3:
+                st.metric(
+                    "Difference",
+                    f"{difference:+.5f}"
+                )
+
+            details = {
+                "Campus": campus,
+                "Program": program,
+                "Category": category,
+                "Session": session,
+                "Type": merit_type,
+            }
+
+            st.dataframe(
+                details,
+                use_container_width=True,
+                hide_index=True,
             )
 
-            if pages:
+            page = record.get("page")
 
+            if page:
                 st.caption(
-                    "📄 PDF Page(s): "
-                    + ", ".join(
-                        str(p)
-                        for p in pages
-                    )
+                    f"📄 PDF Page: {page}"
                 )
 
+            st.divider()
+
     # ========================================================
-    # NORMAL MERIT LOOKUP
+    # NORMAL MERIT QUERY
     # ========================================================
 
     else:
 
-        # ----------------------------------------------------
-        # Group:
-        #
-        # Campus
-        #   Program
-        #       Session
-        #           Type
-        #               Categories
-        # ----------------------------------------------------
-
-        groups = {}
+        rows = []
 
         for record in records:
 
-            key = (
-                record.get(
+            rows.append({
+                "Campus": record.get(
                     "campus",
-                    "Unknown",
+                    "Unknown"
                 ),
-                record.get(
+                "Program": record.get(
                     "program",
-                    "Unknown",
+                    "Unknown"
                 ),
-                record.get(
+                "Category": record.get(
+                    "category",
+                    "Unknown"
+                ),
+                "Session": record.get(
                     "session",
-                    "Unknown",
+                    "Unknown"
                 ),
-                record.get(
+                "Type": record.get(
                     "type",
-                    "Unknown",
+                    "Unknown"
                 ),
-            )
+                "Closing Merit": merit_value(record),
+                "PDF Page": record.get(
+                    "page",
+                    ""
+                ),
+            })
 
-            groups.setdefault(
-                key,
-                []
-            ).append(record)
-
-        for (
-            campus,
-            program,
-            session,
-            merit_type,
-        ), group_records in groups.items():
-
-            st.markdown(
-                f"### 🏫 {campus}"
-            )
-
-            st.markdown(
-                f"#### 🎓 {program}"
-            )
-
-            st.caption(
-                f"Session: {session}  •  Type: {merit_type}"
-            )
-
-            rows = []
-
-            for record in group_records:
-
-                minimum = record.get(
-                    "minimum_aggregate"
-                )
-
-                if minimum is None:
-                    continue
-
-                rows.append(
-                    {
-                        "Category": record.get(
-                            "category",
-                            "Unknown",
-                        ),
-                        "Closing Merit": (
-                            f"{minimum:.5f}"
-                        ),
-                        "PDF Page": record.get(
-                            "page",
-                            "",
-                        ),
-                    }
-                )
-
-            category_order = {
-                "A1": 1,
-                "A1-M": 2,
-                "A2": 3,
-                "A2-M": 4,
-                "AP1": 5,
-                "AP1-M": 6,
-                "AP2": 7,
-                "AP2-M": 8,
-                "M": 9,
-                "NM": 10,
-            }
-
-            rows.sort(
-                key=lambda row:
-                    category_order.get(
-                        row["Category"],
-                        99,
-                    )
-            )
-
-            if rows:
-
-                st.dataframe(
-                    rows,
-                    use_container_width=True,
-                    hide_index=True,
-                )
+        st.dataframe(
+            rows,
+            use_container_width=True,
+            hide_index=True,
+        )
 
     # ========================================================
     # SOURCE
@@ -1091,7 +878,6 @@ def display_merit_response(response):
         st.markdown(
             f"[🔗 Open official UET merit source]({source_url})"
         )
-
 # ============================================================
 # MERIT ERROR HANDLER
 # ============================================================
