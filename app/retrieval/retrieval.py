@@ -1,2647 +1,952 @@
+from __future__ import annotations
 
-
-import json
 import re
+import sys
+import time
+from dataclasses import dataclass, asdict
+from datetime import datetime
 from pathlib import Path
+from typing import Iterable, Optional
+from urllib.parse import urljoin
 
-import chromadb
-from sentence_transformers import SentenceTransformer
-
-# Dynamic merit engine
-from merit import load_latest_merit
-
-
-# ============================================================
-# UET CHATBOT — PRODUCTION RETRIEVER
-# ============================================================
-#
-# ROUTING
-#
-# Merit / closing merit / aggregate question
-#       ↓
-#       merit.py
-#       ↓
-# Latest UET merit-list PDF
-#
-# Normal admission question
-#       ↓
-# ChromaDB
-#       ↓
-# BGE semantic retrieval
-#
-# IMPORTANT:
-#
-# This file does NOT download merit PDFs itself.
-#
-# merit.py is responsible for:
-#   - finding latest merit-list PDF
-#   - downloading it
-#   - extracting merit records
-#
-# This file is responsible for:
-#   - detecting merit intent
-#   - extracting campus / program / category / aggregate
-#   - routing
-#   - normal Chroma retrieval
-#   - audit logging
-#
-# ============================================================
+import fitz  # PyMuPDF
+import requests
+from bs4 import BeautifulSoup
 
 
-# ============================================================
-# PROJECT PATHS
-# ============================================================
+# ---------------------------------------------------------------------------
+# CONFIG
+# ---------------------------------------------------------------------------
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+# NOTE: This MUST point at the UET Admissions Portal (the site the whole
+# rest of this project scrapes and cites), not the general uet.edu.pk
+# university site -- that domain does not carry the "Minimum Merit"
+# download sections this module depends on.
+BASE_URL = "https://admission.uet.edu.pk/"
+DOWNLOADS_URL = urljoin(BASE_URL, "downloads")
 
-VECTORSTORE_DIR = (
-    PROJECT_ROOT
-    / "data"
-    / "vectorstore"
-    / "chroma"
-)
+CACHE_DIR = Path(__file__).resolve().parent / "uet_cache"
+CACHE_DIR.mkdir(exist_ok=True)
 
-AUDIT_DIR = (
-    PROJECT_ROOT
-    / "data"
-    / "retrieval"
-)
+TIMEOUT = 30
 
-LAST_RETRIEVAL_FILE = (
-    AUDIT_DIR
-    / "last_retrieval.json"
-)
-
-
-# ============================================================
-# CHROMA CONFIGURATION
-# ============================================================
-
-EMBEDDING_MODEL_NAME = (
-    "BAAI/bge-small-en-v1.5"
-)
-
-COLLECTION_NAME = (
-    "uet_admission_knowledge"
-)
-
-RETRIEVAL_CANDIDATES = 20
-
-FINAL_RESULTS = 8
-
-MAX_DISTANCE = 0.78
-
-STRONG_DISTANCE = 0.55
-
-GOOD_DISTANCE = 0.65
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 Chrome/131 Safari/537.36"
+    )
+}
 
 
-# ============================================================
-# BGE QUERY PREFIX
-# ============================================================
+# ---------------------------------------------------------------------------
+# DATA MODEL
+# ---------------------------------------------------------------------------
 
-BGE_QUERY_PREFIX = (
-    "Represent this sentence for searching relevant passages: "
-)
+@dataclass(frozen=True)
+class MeritRecord:
+    campus: str
+    program: str
+    category: str
+    session: str
+    admission_type: str
+    closing_merit: float
+    page: int = 0
+
+    def display(self) -> str:
+        return (
+            f"{self.campus} | {self.program} | {self.category} | "
+            f"{self.session} | {self.admission_type} | "
+            f"{self.closing_merit:.5f}"
+        )
 
 
-# ============================================================
-# CAMPUS ALIASES
-# ============================================================
+# ---------------------------------------------------------------------------
+# NORMALIZATION / ALIASES
+# ---------------------------------------------------------------------------
+
+def normalize(text: str) -> str:
+    text = str(text or "")
+    text = text.replace("\u00a0", " ")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def compact(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", normalize(text).lower())
+
 
 CAMPUS_ALIASES = {
+    "lhr": "Main Campus (LHR)",
+    "lahore": "Main Campus (LHR)",
+    "main": "Main Campus (LHR)",
+    "main campus": "Main Campus (LHR)",
+    "main campus lhr": "Main Campus (LHR)",
 
-    "lahore":
-        "Main Campus (LHR)",
+    "ksk": "New Campus (KSK)",
+    "new": "New Campus (KSK)",
+    "new campus": "New Campus (KSK)",
+    "new campus ksk": "New Campus (KSK)",
 
-    "lhr":
-        "Main Campus (LHR)",
+    "fsd": "Faislabad Campus",
+    "faislabad": "Faislabad Campus",
+    "faisalabad": "Faislabad Campus",
+    "faislabad campus": "Faislabad Campus",
+    "faisalabad campus": "Faislabad Campus",
 
-    "lahore campus":
-        "Main Campus (LHR)",
+    "grw": "Gujaranwala",
+    "gujranwala": "Gujaranwala",
+    "gujaranwala": "Gujaranwala",
+    "gujranwala campus": "Gujaranwala",
 
-    "main campus":
-        "Main Campus (LHR)",
-
-    "main campus lhr":
-        "Main Campus (LHR)",
-
-    "ksk":
-        "New Campus (KSK)",
-
-    "new campus":
-        "New Campus (KSK)",
-
-    "new campus ksk":
-        "New Campus (KSK)",
-
-    "faisalabad":
-        "Faislabad Campus",
-
-    "faislabad":
-        "Faislabad Campus",
-
-    "faisalabad campus":
-        "Faislabad Campus",
-
-    "gujranwala":
-        "Gujar anwala",
-
-    "gujaranwala":
-        "Gujar anwala",
-
-    "gujranwala campus":
-        "Gujar anwala",
-
-    "narowal":
-        "Narowal Campus (NWL)",
-
-    "nwl":
-        "Narowal Campus (NWL)",
-
-    "narowal campus":
-        "Narowal Campus (NWL)",
+    "nwl": "Narowal Campus (NWL)",
+    "narowal": "Narowal Campus (NWL)",
+    "narowal campus": "Narowal Campus (NWL)",
 }
 
-
-# ============================================================
-# CATEGORY
-# ============================================================
-
-CATEGORY_PATTERN = re.compile(
-    r"\b(A1-M|A2-M|A1|A2|NM)\b",
-    re.IGNORECASE,
-)
-
-
-# ============================================================
-# COMMON PROGRAM ALIASES
-# ============================================================
-#
-# This is ONLY for understanding user questions.
-#
-# The actual official program name comes from merit.py data.
-#
-# ============================================================
 
 PROGRAM_ALIASES = {
-
-    "computer science":
-        "Computer Science",
-
-    "cs":
-        "Computer Science",
-
-    "computer engineering":
-        "Computer Engineering",
-
-    "ce":
-        "Computer Engineering",
-
-    "software engineering":
-        "Software Engineering",
-
-    "se":
-        "Software Engineering",
-
-    "electrical engineering":
-        "Electrical Engineering",
-
-    "ee":
-        "Electrical Engineering",
-
-    "mechanical engineering":
-        "Mechanical Engineering",
-
-    "me":
-        "Mechanical Engineering",
-
-    "civil engineering":
-        "Civil Engineering",
-
-    "civil":
-        "Civil Engineering",
-
-    "chemical engineering":
-        "Chemical Engineering",
-
-    "architecture":
-        "Architecture",
-
-    "architectural engineering":
-        "Architectural Engineering",
-
-    "environmental engineering":
-        "Environmental Engineering",
-
-    "industrial engineering":
-        "Industrial Engineering",
-
-    "transportation engineering":
-        "Transportation Engineering",
-
-    "petroleum engineering":
-        "Petroleum Engineering",
-
-    "mining engineering":
-        "Mining Engineering",
-
-    "mechatronics":
-        "Mechatronics",
-
-    "biomedical engineering":
-        "Biomedical Engineering",
-
-    "food engineering":
-        "Food Engineering",
-
-    "metallurgical engineering":
-        "Metallurgical Engineering",
+    "cs": "Computer Science",
+    "computer science": "Computer Science",
+    "ai": "Artificial Intelligence",
+    "artificial intelligence": "Artificial Intelligence",
+    "cyber": "Cybersecurity",
+    "cyber security": "Cybersecurity",
+    "cybersecurity": "Cybersecurity",
+    "ds": "Data Science",
+    "data science": "Data Science",
+    "ee": "Electrical Engineering",
+    "electrical": "Electrical Engineering",
+    "electrical engineering": "Electrical Engineering",
+    "ce": "Computer Engineering (NCEAC)",
+    "computer engineering": "Computer Engineering (NCEAC)",
+    "me": "Mechanical Engineering",
+    "mechanical": "Mechanical Engineering",
+    "mechanical engineering": "Mechanical Engineering",
+    "civil": "Civil Engineering",
+    "civil engineering": "Civil Engineering",
 }
 
 
-# ============================================================
-# MERIT KEYWORDS
-# ============================================================
-
-MERIT_KEYWORDS = [
-
-    "merit",
-
-    "aggregate",
-
-    "selected",
-
-    "selection",
-
-    "closing merit",
-
-    "cutoff",
-
-    "cut off",
-
-    "minimum merit",
-
-    "minimum aggregate",
-
-    "last merit",
-
-    "merit list",
-
-    "meritlist",
-
-    "closing aggregate",
-
-    "above merit",
-
-    "below merit",
-
-    "my aggregate",
-
-    "my merit",
-
-    "can i get admission",
-
-    "can i get in",
-
-    "will i get admission",
-
-    "am i selected",
-
-    "got selected",
-
-]
+CATEGORY_ALIASES = {
+    "a1": "A1",
+    "a1m": "A1-M",
+    "a1-m": "A1-M",
+    "a2": "A2",
+    "a2m": "A2-M",
+    "a2-m": "A2-M",
+    "ap1": "AP1",
+    "ap1m": "AP1-M",
+    "ap1-m": "AP1-M",
+    "ap2": "AP2",
+    "ap2m": "AP2-M",
+    "ap2-m": "AP2-M",
+    "m": "M",
+    "nm": "NM",
+}
 
 
-# ============================================================
-# GENERAL HELPERS
-# ============================================================
+def canonical_campus(value: str) -> Optional[str]:
+    raw = normalize(value).lower()
+    if raw in CAMPUS_ALIASES:
+        return CAMPUS_ALIASES[raw]
 
-def normalize(value):
+    c = compact(raw)
+    for alias, canonical in CAMPUS_ALIASES.items():
+        if compact(alias) == c:
+            return canonical
 
-    if value is None:
-        return ""
-
-    return re.sub(
-        r"\s+",
-        " ",
-        str(value).strip(),
-    )
+    return None
 
 
-def safe_int(value):
-
-    try:
-        return int(value)
-
-    except (
-        TypeError,
-        ValueError,
-    ):
-        return 0
+def canonical_category(value: str) -> Optional[str]:
+    raw = normalize(value).lower()
+    return CATEGORY_ALIASES.get(raw)
 
 
-def safe_float(value):
-
-    try:
-        return float(value)
-
-    except (
-        TypeError,
-        ValueError,
-    ):
-        return None
+def canonical_program(value: str) -> Optional[str]:
+    raw = normalize(value).lower()
+    if raw in PROGRAM_ALIASES:
+        return PROGRAM_ALIASES[raw]
+    return normalize(value)
 
 
-def build_query(question):
+# ---------------------------------------------------------------------------
+# HTTP
+# ---------------------------------------------------------------------------
 
-    question = normalize(
-        question
-    )
-
-    if not question:
-        return ""
-
-    return (
-        BGE_QUERY_PREFIX
-        + question
-    )
+def get_session() -> requests.Session:
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    return session
 
 
-# ============================================================
-# MERIT QUESTION DETECTION
-# ============================================================
+def fetch(url: str, session: requests.Session) -> requests.Response:
+    response = session.get(url, timeout=TIMEOUT)
+    response.raise_for_status()
+    return response
 
-def is_merit_question(question):
 
-    text = normalize(
-        question
-    ).lower()
+# ---------------------------------------------------------------------------
+# FIND LATEST MERIT PDF
+# ---------------------------------------------------------------------------
 
-    # --------------------------------------------------------
-    # Explicit merit language
-    # --------------------------------------------------------
+@dataclass
+class MeritDocument:
+    url: str
+    title: str
+    list_number: int
+    admission: str
 
-    if any(
-        keyword in text
-        for keyword in MERIT_KEYWORDS
-    ):
+
+def discover_merit_documents(session: requests.Session) -> list[MeritDocument]:
+    response = fetch(DOWNLOADS_URL, session)
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    documents: list[MeritDocument] = []
+
+    for heading in soup.find_all(["h3", "h4", "h5"]):
+        heading_text = normalize(heading.get_text(" ", strip=True))
+
+        if "minimum merit" not in heading_text.lower():
+            continue
+
+        # Search links until the next heading.
+        for node in heading.find_all_next():
+            if node is not heading and node.name in {"h3", "h4", "h5"}:
+                break
+
+            if node.name != "a":
+                continue
+
+            href = node.get("href")
+            text = normalize(node.get_text(" ", strip=True))
+
+            if not href:
+                continue
+
+            combined = f"{heading_text} {text}"
+
+            match = re.search(
+                r"merit\s*list\s*(?:no\.?|number)?\s*(\d+)",
+                combined,
+                re.I,
+            )
+            if not match:
+                continue
+
+            list_number = int(match.group(1))
+            url = urljoin(response.url, href)
+
+            documents.append(
+                MeritDocument(
+                    url=url,
+                    title=text or heading_text,
+                    list_number=list_number,
+                    admission=heading_text,
+                )
+            )
+
+    # Remove duplicate URLs.
+    unique = {}
+    for doc in documents:
+        unique[doc.url] = doc
+
+    return list(unique.values())
+
+
+def choose_latest_document(documents: list[MeritDocument]) -> MeritDocument:
+    if not documents:
+        raise RuntimeError(
+            "Could not find a UET Minimum Merit PDF on the downloads page."
+        )
+
+    # Prefer the document whose admission title contains the newest year.
+    def key(doc: MeritDocument):
+        years = [int(x) for x in re.findall(r"20\d{2}", doc.admission + " " + doc.title)]
+        year = max(years) if years else 0
+        return (year, doc.list_number)
+
+    return max(documents, key=key)
+
+
+def download_pdf(doc: MeritDocument, session: requests.Session) -> Path:
+    response = fetch(doc.url, session)
+
+    content = response.content
+    if not content.startswith(b"%PDF"):
+        raise RuntimeError(f"Downloaded URL is not a PDF: {doc.url}")
+
+    filename = CACHE_DIR / f"merit_list_{doc.list_number}.pdf"
+    filename.write_bytes(content)
+    return filename
+
+
+# ---------------------------------------------------------------------------
+# PDF EXTRACTION
+# ---------------------------------------------------------------------------
+
+# Actual report structure:
+# Campus Discipline Category Session Type Closing Merit
+#
+# The attached UET Fall 2026 list demonstrates rows such as:
+# New Campus (KSK) Computer Science A1 Morning ECAT 79.74905
+#
+# We therefore parse the closing merit from the END of each row rather than
+# relying on "Computer Science" or a CS-specific parser.
+
+CATEGORY_RE = r"(?:A1-M|A2-M|AP1-M|AP2-M|A1|A2|AP1|AP2|NM|M)"
+SESSION_RE = r"(?:Morning|Evening)"
+TYPE_RE = r"(?:ECAT|Non-ECAT)"
+MERIT_RE = r"(?:\d{1,3}(?:\.\d+)?)"
+
+
+def is_header_or_noise(line: str) -> bool:
+    low = line.lower()
+
+    if "closing merit report" in low:
         return True
-
-    # --------------------------------------------------------
-    # Aggregate number + program/campus
-    #
-    # Example:
-    #
-    # 90 CS Lahore
-    # 88 Electrical KSK
-    # 85 Civil Faisalabad
-    # --------------------------------------------------------
-
-    has_number = bool(
-        re.search(
-            r"\b\d{2}(?:\.\d+)?\b",
-            text,
-        )
-    )
-
-    has_campus = any(
-        alias in text
-        for alias in CAMPUS_ALIASES
-    )
-
-    has_program = any(
-        alias in text
-        for alias in PROGRAM_ALIASES
-    )
-
-    if (
-        has_number
-        and
-        (
-            has_campus
-            or has_program
-        )
-    ):
+    if low.startswith("campus discipline"):
+        return True
+    if "university of engineering" in low:
+        return True
+    if low.startswith("ug-") and "page" in low:
+        return True
+    if low.startswith("admission:"):
+        return True
+    if low.startswith("merit list no"):
         return True
 
     return False
 
 
-# ============================================================
-# CAMPUS EXTRACTION
-# ============================================================
+def parse_row(line: str, page: int) -> Optional[MeritRecord]:
+    line = normalize(line)
 
-def extract_campus(question):
-
-    text = normalize(
-        question
-    ).lower()
-
-    aliases = sorted(
-        CAMPUS_ALIASES.keys(),
-        key=len,
-        reverse=True,
-    )
-
-    for alias in aliases:
-
-        if alias in text:
-
-            return CAMPUS_ALIASES[
-                alias
-            ]
-
-    return None
-
-
-# ============================================================
-# CATEGORY EXTRACTION
-# ============================================================
-
-def extract_category(question):
-
-    match = CATEGORY_PATTERN.search(
-        question
-    )
-
-    if not match:
+    if not line or is_header_or_noise(line):
         return None
 
-    return match.group(1).upper()
+    # Strip a leading serial number if the PDF extraction contains one.
+    line = re.sub(r"^\d+\s+", "", line)
 
+    # Closing merit is the final numeric value.
+    merit_match = re.search(rf"({MERIT_RE})\s*$", line)
+    if not merit_match:
+        return None
 
-# ============================================================
-# AGGREGATE EXTRACTION
-# ============================================================
+    closing_merit = float(merit_match.group(1))
 
-def extract_aggregate(question):
+    # Basic sanity check.
+    if not (0 <= closing_merit <= 100):
+        return None
 
-    text = normalize(
-        question
-    )
+    body = line[:merit_match.start()].strip()
 
-    patterns = [
+    # Work backwards: Type, Session, Category are stable columns.
+    type_match = re.search(rf"\s({TYPE_RE})\s*$", body, re.I)
+    if not type_match:
+        return None
 
-        # aggregate is 90
-        r"(?:aggregate|merit)"
-        r"\s*(?:is|of|=|:)?\s*"
-        r"(\d{2}(?:\.\d+)?)",
+    admission_type = type_match.group(1)
+    body = body[:type_match.start()].strip()
 
-        # 90 aggregate
-        r"(\d{2}(?:\.\d+)?)"
-        r"\s*(?:aggregate|merit)",
+    session_match = re.search(rf"\s({SESSION_RE})\s*$", body, re.I)
+    if not session_match:
+        return None
 
-        # I have 90
-        r"(?:got|have|scored|score|aggregate\s+is)"
-        r"\s*(?:=|:)?\s*"
-        r"(\d{2}(?:\.\d+)?)",
+    session = session_match.group(1)
+    body = body[:session_match.start()].strip()
 
-        # am I selected with 90
-        r"(?:with)"
-        r"\s*(\d{2}(?:\.\d+)?)",
+    category_match = re.search(rf"\s({CATEGORY_RE})\s*$", body, re.I)
+    if not category_match:
+        return None
 
-    ]
+    category = category_match.group(1)
+    body = body[:category_match.start()].strip()
 
-    for pattern in patterns:
+    # Remaining text is "Campus Discipline".
+    # Identify campus using known canonical campus names.
+    campus = None
+    campus_end = None
 
-        match = re.search(
-            pattern,
-            text,
-            re.IGNORECASE,
-        )
-
-        if match:
-
-            value = safe_float(
-                match.group(1)
-            )
-
-            if (
-                value is not None
-                and
-                0 <= value <= 100
-            ):
-
-                return value
-
-    # --------------------------------------------------------
-    # General fallback
-    # --------------------------------------------------------
-
-    numbers = re.findall(
-        r"\b\d{2}(?:\.\d+)?\b",
-        text,
-    )
-
-    for number in numbers:
-
-        value = safe_float(
-            number
-        )
-
-        if (
-            value is not None
-            and
-            0 <= value <= 100
-        ):
-
-            return value
-
-    return None
-
-
-# ============================================================
-# PROGRAM EXTRACTION
-# ============================================================
-
-def extract_program(question):
-
-    text = normalize(
-        question
-    ).lower()
-
-    aliases = sorted(
-        PROGRAM_ALIASES.keys(),
+    campus_candidates = sorted(
+        set(CAMPUS_ALIASES.values()),
         key=len,
         reverse=True,
     )
 
-    for alias in aliases:
+    for candidate in campus_candidates:
+        if body.lower().startswith(candidate.lower()):
+            campus = candidate
+            campus_end = len(candidate)
+            break
 
-        # Word boundary for short aliases
-        if len(alias) <= 3:
+    if campus is None:
+        # Handle exact PDF spellings with a tolerant prefix match.
+        for candidate in campus_candidates:
+            if compact(body).startswith(compact(candidate)):
+                # Find candidate length in original text approximately.
+                prefix = re.match(
+                    re.escape(candidate).replace(r"\ ", r"\s+"),
+                    body,
+                    re.I,
+                )
+                if prefix:
+                    campus = candidate
+                    campus_end = prefix.end()
+                    break
 
-            pattern = (
-                r"\b"
-                + re.escape(alias)
-                + r"\b"
+    if campus is None or campus_end is None:
+        return None
+
+    program = normalize(body[campus_end:])
+
+    if not program:
+        return None
+
+    return MeritRecord(
+        campus=campus,
+        program=program,
+        category=category.upper(),
+        session=session.title(),
+        admission_type=admission_type,
+        closing_merit=closing_merit,
+        page=page,
+    )
+
+
+def extract_all_rows(pdf_path: Path) -> list[MeritRecord]:
+    document = fitz.open(pdf_path)
+    records: list[MeritRecord] = []
+
+    try:
+        for page_index in range(len(document)):
+            page = document[page_index]
+            text = page.get_text("text")
+
+            for raw_line in text.splitlines():
+                record = parse_row(raw_line, page_index + 1)
+                if record:
+                    records.append(record)
+    finally:
+        document.close()
+
+    # Deduplicate using the actual identity of a merit row.
+    unique: dict[tuple, MeritRecord] = {}
+
+    for record in records:
+        key = (
+            record.campus.lower(),
+            record.program.lower(),
+            record.category.upper(),
+            record.session.lower(),
+            record.admission_type.lower(),
+        )
+
+        # If extraction finds the same row twice, retain one.
+        # If two different closing merits somehow occur for the same key,
+        # keep the first and warn later through validation.
+        unique.setdefault(key, record)
+
+    return sorted(
+        unique.values(),
+        key=lambda r: (
+            r.campus.lower(),
+            r.program.lower(),
+            r.category,
+            r.session.lower(),
+            r.admission_type.lower(),
+        ),
+    )
+
+
+# ---------------------------------------------------------------------------
+# DATA VALIDATION
+# ---------------------------------------------------------------------------
+
+def validate_records(records: list[MeritRecord]) -> None:
+    if not records:
+        raise RuntimeError("No merit rows were extracted from the PDF.")
+
+    bad = [
+        r for r in records
+        if not r.program or not (0 <= r.closing_merit <= 100)
+    ]
+
+    if bad:
+        print(f"Warning: {len(bad)} suspicious records were extracted.")
+
+    campuses = sorted({r.campus for r in records})
+    programs = sorted({r.program for r in records})
+
+    print(f"Extracted records : {len(records)}")
+    print(f"Campuses          : {len(campuses)}")
+    print(f"Programs           : {len(programs)}")
+
+
+# ---------------------------------------------------------------------------
+# SEARCH / QUERY ENGINE
+# ---------------------------------------------------------------------------
+
+def text_match(value: str, query: str) -> bool:
+    q = normalize(query).lower()
+    v = normalize(value).lower()
+
+    if not q:
+        return True
+
+    return q in v or compact(q) in compact(v)
+
+
+def find_program(records: list[MeritRecord], query: str) -> list[MeritRecord]:
+    q = normalize(query).lower()
+
+    if q in PROGRAM_ALIASES:
+        q = PROGRAM_ALIASES[q].lower()
+
+    exact = [
+        r for r in records
+        if r.program.lower() == q
+    ]
+
+    if exact:
+        return exact
+
+    return [
+        r for r in records
+        if text_match(r.program, q)
+    ]
+
+
+def filter_records(
+    records: list[MeritRecord],
+    campus: Optional[str] = None,
+    program: Optional[str] = None,
+    category: Optional[str] = None,
+    session: Optional[str] = None,
+    admission_type: Optional[str] = None,
+) -> list[MeritRecord]:
+
+    canonical_c = canonical_campus(campus) if campus else None
+    canonical_cat = canonical_category(category) if category else None
+
+    canonical_p = None
+    if program:
+        canonical_p = canonical_program(program)
+
+    result = records
+
+    if canonical_c:
+        result = [
+            r for r in result
+            if r.campus == canonical_c
+        ]
+
+    if canonical_p:
+        result = [
+            r for r in result
+            if (
+                r.program.lower() == canonical_p.lower()
+                or text_match(r.program, canonical_p)
             )
+        ]
 
-            if re.search(
-                pattern,
-                text,
-            ):
+    if canonical_cat:
+        result = [
+            r for r in result
+            if r.category.upper() == canonical_cat.upper()
+        ]
 
-                return PROGRAM_ALIASES[
-                    alias
-                ]
+    if session:
+        result = [
+            r for r in result
+            if r.session.lower() == session.lower()
+        ]
 
-        else:
+    if admission_type:
+        result = [
+            r for r in result
+            if r.admission_type.lower() == admission_type.lower()
+        ]
 
-            if alias in text:
+    return result
 
-                return PROGRAM_ALIASES[
-                    alias
-                ]
+
+def parse_query_filters(query: str):
+    """Extract easy structured tokens from natural language."""
+
+    low = normalize(query).lower()
+
+    campus = None
+    for alias, canonical in sorted(
+        CAMPUS_ALIASES.items(),
+        key=lambda x: len(x[0]),
+        reverse=True,
+    ):
+        if re.search(rf"\b{re.escape(alias)}\b", low):
+            campus = canonical
+            break
+
+    category = None
+    for alias, canonical in sorted(
+        CATEGORY_ALIASES.items(),
+        key=lambda x: len(x[0]),
+        reverse=True,
+    ):
+        if re.search(rf"\b{re.escape(alias)}\b", low):
+            category = canonical
+            break
+
+    session = None
+    if re.search(r"\bevening\b", low):
+        session = "Evening"
+    elif re.search(r"\bmorning\b", low):
+        session = "Morning"
+
+    admission_type = None
+    if re.search(r"\bnon[- ]?ecat\b", low):
+        admission_type = "Non-ECAT"
+    elif re.search(r"\becat\b", low):
+        admission_type = "ECAT"
+
+    # Detect known program aliases.
+    program = None
+    for alias, canonical in sorted(
+        PROGRAM_ALIASES.items(),
+        key=lambda x: len(x[0]),
+        reverse=True,
+    ):
+        if re.search(rf"\b{re.escape(alias)}\b", low):
+            program = canonical
+            break
+
+    return campus, program, category, session, admission_type
+
+
+# ---------------------------------------------------------------------------
+# COMMANDS
+# ---------------------------------------------------------------------------
+
+def print_records(records: list[MeritRecord], limit: int = 100) -> None:
+    if not records:
+        print("\nNo matching records found.")
+        return
+
+    shown = records[:limit]
+
+    print()
+    print(
+        f"{'Campus':<24} "
+        f"{'Program':<38} "
+        f"{'Cat':<6} "
+        f"{'Session':<9} "
+        f"{'Type':<10} "
+        f"{'Merit':>9}"
+    )
+    print("-" * 105)
+
+    for r in shown:
+        print(
+            f"{r.campus:<24.24} "
+            f"{r.program:<38.38} "
+            f"{r.category:<6} "
+            f"{r.session:<9} "
+            f"{r.admission_type:<10} "
+            f"{r.closing_merit:>9.5f}"
+        )
+
+    if len(records) > limit:
+        print(f"\nShowing {limit} of {len(records)} records.")
+
+
+def check_aggregate(
+    records: list[MeritRecord],
+    aggregate: float,
+) -> None:
+    print(f"\nYour aggregate: {aggregate:.5f}")
+    print("Comparison against matching closing merits:\n")
+
+    for r in records:
+        difference = aggregate - r.closing_merit
+        status = "ABOVE" if difference >= 0 else "BELOW"
+
+        print(
+            f"{status:>5}  "
+            f"{r.campus} | {r.program} | {r.category} | "
+            f"{r.session} | {r.admission_type} | "
+            f"merit={r.closing_merit:.5f} | "
+            f"difference={difference:+.5f}"
+        )
+
+
+def extract_user_aggregate(query: str) -> Optional[float]:
+    # Only treat a number as an aggregate if it looks like a percentage.
+    numbers = re.findall(r"\b\d{1,3}(?:\.\d+)?\b", query)
+
+    for n in numbers:
+        value = float(n)
+        if 0 <= value <= 100:
+            # Avoid treating list numbers or categories as aggregates.
+            if "." in n or value >= 50:
+                return value
 
     return None
 
 
-# ============================================================
-# MERIT INTENT
-# ============================================================
+def run_query(records: list[MeritRecord], query: str) -> None:
+    low = normalize(query).lower()
 
-def parse_merit_query(question):
+    # Special: list all programs at a campus.
+    if (
+        ("program" in low or "programs" in low)
+        and ("all" in low or "show" in low or "list" in low)
+    ):
+        campus, _, _, _, _ = parse_query_filters(query)
 
-    return {
+        if campus:
+            campus_records = filter_records(records, campus=campus)
+            programs = sorted({r.program for r in campus_records})
 
-        "is_merit":
-            is_merit_question(
-                question
-            ),
+            print(f"\nPrograms at {campus}:")
+            for p in programs:
+                print(f"  - {p}")
+            print(f"\nTotal programs: {len(programs)}")
+            return
 
-        "campus":
-            extract_campus(
-                question
-            ),
-
-        "category":
-            extract_category(
-                question
-            ),
-
-        "aggregate":
-            extract_aggregate(
-                question
-            ),
-
-        "program":
-            extract_program(
-                question
-            ),
-    }
-
-
-# ============================================================
-# NORMALIZE PROGRAM FOR COMPARISON
-# ============================================================
-
-def normalize_program_name(
-    value
-):
-
-    text = normalize(
-        value
-    ).lower()
-
-    text = re.sub(
-        r"\([^)]*\)",
-        "",
-        text,
+    # Special: records below/above a merit threshold.
+    threshold_match = re.search(
+        r"\b(?:below|under|less than|above|over|greater than)\s+"
+        r"(\d{1,3}(?:\.\d+)?)",
+        low,
     )
 
-    text = re.sub(
-        r"[^a-z0-9]+",
-        " ",
-        text,
-    )
-
-    return normalize(
-        text
-    )
-
-
-# ============================================================
-# PROGRAM MATCH
-# ============================================================
-
-def program_matches(
-    record_program,
-    requested_program,
-):
-
-    if not requested_program:
-        return True
-
-    actual = normalize_program_name(
-        record_program
-    )
-
-    requested = normalize_program_name(
-        requested_program
-    )
-
-    if not actual or not requested:
-        return False
-
-    return (
-        actual == requested
-        or requested in actual
-        or actual in requested
-    )
-
-
-# ============================================================
-# CAMPUS MATCH
-# ============================================================
-
-def campus_matches(
-    record_campus,
-    requested_campus,
-):
-
-    if not requested_campus:
-        return True
-
-    actual = normalize(
-        record_campus
-    ).lower()
-
-    requested = normalize(
-        requested_campus
-    ).lower()
-
-    return (
-        actual == requested
-        or requested in actual
-        or actual in requested
-    )
-
-
-# ============================================================
-# CATEGORY MATCH
-# ============================================================
-
-def category_matches(
-    record_category,
-    requested_category,
-):
-
-    if not requested_category:
-        return True
-
-    return (
-        normalize(
-            record_category
-        ).lower()
-        ==
-        normalize(
-            requested_category
-        ).lower()
-    )
-
-
-# ============================================================
-# GENERIC MERIT DATA FILTER
-# ============================================================
-
-def filter_merit_data(
-    data,
-    program=None,
-    campus=None,
-    category=None,
-):
-
-    results = []
-
-    for item in data:
-
-        if not isinstance(
-            item,
-            dict,
-        ):
-            continue
-
-        record_program = item.get(
-            "program",
-            item.get(
-                "discipline",
-                "",
-            ),
-        )
-
-        record_campus = item.get(
-            "campus",
-            "",
-        )
-
-        record_category = item.get(
-            "category",
-            "",
-        )
-
-        if not program_matches(
-            record_program,
-            program,
-        ):
-            continue
-
-        if not campus_matches(
-            record_campus,
-            campus,
-        ):
-            continue
-
-        if not category_matches(
-            record_category,
-            category,
-        ):
-            continue
-
-        results.append(
-            item
-        )
-
-    return results
-
-
-# ============================================================
-# MERIT RESPONSE
-# ============================================================
-
-def answer_merit_question(
-    question
-):
-
-    intent = parse_merit_query(
-        question
-    )
-
-    program = intent[
-        "program"
-    ]
-
-    campus = intent[
-        "campus"
-    ]
-
-    category = intent[
-        "category"
-    ]
-
-    aggregate = intent[
-        "aggregate"
-    ]
-
-    # --------------------------------------------------------
-    # Load latest merit data
-    # --------------------------------------------------------
-
-    try:
-
-        merit = load_latest_merit()
-
-    except Exception as exc:
-
-        return {
-
-            "success":
-                False,
-
-            "type":
-                "merit_unavailable",
-
-            "message":
-                (
-                    "The latest UET merit list "
-                    "could not be retrieved right now."
-                ),
-
-            "error":
-                str(exc),
-
-            "source_url":
-                None,
-
-            "records":
-                [],
-        }
-
-    data = merit.get(
-        "data",
-        [],
-    )
-
-    source_url = merit.get(
-        "source_url"
-    )
-
-    pdf_file = merit.get(
-        "pdf_file"
-    )
-
-    checked_at = merit.get(
-        "checked_at"
-    )
-
-    if not data:
-
-        return {
-
-            "success":
-                False,
-
-            "type":
-                "merit_empty",
-
-            "message":
-                (
-                    "The latest UET merit PDF "
-                    "was downloaded, but no merit "
-                    "records could be extracted."
-                ),
-
-            "error":
-                None,
-
-            "source_url":
-                source_url,
-
-            "pdf_file":
-                pdf_file,
-
-            "checked_at":
-                checked_at,
-
-            "records":
-                [],
-        }
-
-    # --------------------------------------------------------
-    # If user did not mention a program, try to understand
-    # from the data only when there is exactly one obvious
-    # match. Otherwise return available guidance.
-    # --------------------------------------------------------
-
-    records = filter_merit_data(
-        data,
-        program=program,
-        campus=campus,
-        category=category,
-    )
-
-    # --------------------------------------------------------
-    # No records found with requested filters
-    # --------------------------------------------------------
-
-    if not records:
-
-        return {
-
-            "success":
-                False,
-
-            "type":
-                "merit_not_found",
-
-            "message":
-                (
-                    "No current merit record was "
-                    "found for the requested "
-                    "program, campus, or category."
-                ),
-
-            "source_url":
-                source_url,
-
-            "pdf_file":
-                pdf_file,
-
-            "checked_at":
-                checked_at,
-
-            "program":
-                program,
-
-            "campus":
-                campus,
-
-            "category":
-                category,
-
-            "student_aggregate":
-                aggregate,
-
-            "records":
-                [],
-        }
-
-    # --------------------------------------------------------
-    # Student aggregate check
-    # --------------------------------------------------------
-
-    if aggregate is not None:
-
-        checks = []
-
-        for record in records:
-
-            minimum = safe_float(
-                record.get(
-                    "minimum_aggregate",
-                    record.get(
-                        "closing_merit"
-                    ),
-                )
-            )
-
-            if minimum is None:
-                continue
-
-            difference = (
-                aggregate
-                - minimum
-            )
-
-            checks.append({
-
-                **record,
-
-                "student_aggregate":
-                    aggregate,
-
-                "selected":
-                    aggregate >= minimum,
-
-                "difference":
-                    round(
-                        difference,
-                        5,
-                    ),
-
-            })
-
-        if not checks:
-
-            return {
-
-                "success":
-                    False,
-
-                "type":
-                    "merit_invalid_records",
-
-                "message":
-                    (
-                        "Matching merit records "
-                        "were found, but their "
-                        "closing merit could not "
-                        "be read."
-                    ),
-
-                "source_url":
-                    source_url,
-
-                "pdf_file":
-                    pdf_file,
-
-                "checked_at":
-                    checked_at,
-
-                "records":
-                    [],
-            }
-
-        return {
-
-            "success":
-                True,
-
-            "type":
-                "merit_check",
-
-            "message":
-                (
-                    "Latest UET merit data "
-                    "was used."
-                ),
-
-            "source_url":
-                source_url,
-
-            "pdf_file":
-                pdf_file,
-
-            "checked_at":
-                checked_at,
-
-            "program":
-                program,
-
-            "campus":
-                campus,
-
-            "category":
-                category,
-
-            "student_aggregate":
-                aggregate,
-
-            "records":
-                checks,
-        }
-
-    # --------------------------------------------------------
-    # Normal merit lookup
-    # --------------------------------------------------------
-
-    return {
-
-        "success":
-            True,
-
-        "type":
-            "merit",
-
-        "message":
-            (
-                "Latest UET merit data "
-                "was used."
-            ),
-
-        "source_url":
-            source_url,
-
-        "pdf_file":
-            pdf_file,
-
-        "checked_at":
-            checked_at,
-
-        "program":
-            program,
-
-        "campus":
-            campus,
-
-        "category":
-            category,
-
-        "records":
+    if threshold_match:
+        threshold = float(threshold_match.group(1))
+        campus, program, category, session, admission_type = parse_query_filters(query)
+
+        filtered = filter_records(
             records,
-    }
-
-
-# ============================================================
-# MERIT RESULT TEXT
-# ============================================================
-
-def format_merit_response(
-    response
-):
-
-    if not response.get(
-        "success",
-        False,
-    ):
-
-        return {
-
-            "answer":
-                response.get(
-                    "message",
-                    "The merit system could not process this question.",
-                ),
-
-            "source_url":
-                response.get(
-                    "source_url"
-                ),
-
-            "merit_response":
-                response,
-        }
-
-    response_type = response.get(
-        "type"
-    )
-
-    records = response.get(
-        "records",
-        [],
-    )
-
-    source_url = response.get(
-        "source_url"
-    )
-
-    # --------------------------------------------------------
-    # Student selection
-    # --------------------------------------------------------
-
-    if response_type == "merit_check":
-
-        aggregate = response.get(
-            "student_aggregate"
+            campus=campus,
+            program=program,
+            category=category,
+            session=session,
+            admission_type=admission_type,
         )
 
-        lines = []
-
-        lines.append(
-            f"Your aggregate: **{aggregate:.5f}**"
-        )
-
-        for record in records:
-
-            program = record.get(
-                "program",
-                record.get(
-                    "discipline",
-                    "Unknown program",
-                ),
-            )
-
-            campus = record.get(
-                "campus",
-                "Unknown campus",
-            )
-
-            category = record.get(
-                "category",
-                "",
-            )
-
-            session = record.get(
-                "session",
-                "",
-            )
-
-            admission_type = record.get(
-                "type",
-                "",
-            )
-
-            minimum = safe_float(
-                record.get(
-                    "minimum_aggregate",
-                    record.get(
-                        "closing_merit"
-                    ),
-                )
-            )
-
-            difference = safe_float(
-                record.get(
-                    "difference"
-                )
-            )
-
-            selected = bool(
-                record.get(
-                    "selected"
-                )
-            )
-
-            if selected:
-
-                status = (
-                    "✅ **SELECTED / ABOVE CURRENT MERIT**"
-                )
-
-            else:
-
-                status = (
-                    "❌ **BELOW CURRENT MERIT**"
-                )
-
-            lines.append(
-                ""
-            )
-
-            lines.append(
-                f"**{program} — {campus}**"
-            )
-
-            if category:
-                lines.append(
-                    f"- Category: {category}"
-                )
-
-            if session:
-                lines.append(
-                    f"- Session: {session}"
-                )
-
-            if admission_type:
-                lines.append(
-                    f"- Type: {admission_type}"
-                )
-
-            if minimum is not None:
-                lines.append(
-                    f"- Current closing merit: **{minimum:.5f}**"
-                )
-
-            if difference is not None:
-                lines.append(
-                    f"- Difference: **{difference:+.5f}**"
-                )
-
-            lines.append(
-                f"- Status: {status}"
-            )
-
-        if source_url:
-
-            lines.append(
-                ""
-            )
-
-            lines.append(
-                f"[🔗 Open official UET merit source]({source_url})"
-            )
-
-        return {
-
-            "answer":
-                "\n".join(lines),
-
-            "source_url":
-                source_url,
-
-            "merit_response":
-                response,
-        }
-
-    # --------------------------------------------------------
-    # Normal merit lookup
-    # --------------------------------------------------------
-
-    lines = []
-
-    for record in records:
-
-        program = record.get(
-            "program",
-            record.get(
-                "discipline",
-                "Unknown program",
-            ),
-        )
-
-        campus = record.get(
-            "campus",
-            "Unknown campus",
-        )
-
-        category = record.get(
-            "category",
-            "",
-        )
-
-        session = record.get(
-            "session",
-            "",
-        )
-
-        admission_type = record.get(
-            "type",
-            "",
-        )
-
-        minimum = safe_float(
-            record.get(
-                "minimum_aggregate",
-                record.get(
-                    "closing_merit"
-                ),
-            )
-        )
-
-        line = (
-            f"**{program} — {campus}**"
-        )
-
-        if category:
-            line += (
-                f" | {category}"
-            )
-
-        if session:
-            line += (
-                f" | {session}"
-            )
-
-        if admission_type:
-            line += (
-                f" | {admission_type}"
-            )
-
-        if minimum is not None:
-            line += (
-                f" → **{minimum:.5f}**"
-            )
-
-        lines.append(
-            line
-        )
-
-    if source_url:
-
-        lines.append(
-            ""
-        )
-
-        lines.append(
-            f"[🔗 Open official UET merit source]({source_url})"
-        )
-
-    return {
-
-        "answer":
-            "\n".join(lines),
-
-        "source_url":
-            source_url,
-
-        "merit_response":
-            response,
-    }
-
-
-# ============================================================
-# CHROMA SOURCE HELPERS
-# ============================================================
-
-def get_source_key(
-    metadata
-):
-
-    metadata = (
-        metadata
-        or {}
-    )
-
-    source_type = normalize(
-        metadata.get(
-            "source_type"
-        )
-    )
-
-    pdf_file = normalize(
-        metadata.get(
-            "pdf_file"
-        )
-    )
-
-    url = normalize(
-        metadata.get(
-            "url"
-        )
-    )
-
-    title = normalize(
-        metadata.get(
-            "title"
-        )
-    )
-
-    if (
-        source_type == "pdf"
-        and pdf_file
-    ):
-
-        return (
-            f"pdf::{pdf_file}"
-        )
-
-    if url:
-
-        return (
-            f"url::{url}"
-        )
-
-    if title:
-
-        return (
-            f"title::{title}"
-        )
-
-    return "unknown"
-
-
-# ============================================================
-# CONFIDENCE
-# ============================================================
-
-def classify_confidence(
-    results
-):
-
-    if not results:
-        return "none"
-
-    best_distance = results[
-        0
-    ].get(
-        "distance"
-    )
-
-    if best_distance is None:
-        return "none"
-
-    if (
-        best_distance
-        <= STRONG_DISTANCE
-    ):
-
-        return "strong"
-
-    if (
-        best_distance
-        <= GOOD_DISTANCE
-    ):
-
-        return "good"
-
-    if (
-        best_distance
-        <= MAX_DISTANCE
-    ):
-
-        return "moderate"
-
-    return "low"
-
-
-# ============================================================
-# SOURCE REFERENCE
-# ============================================================
-
-def make_source_reference(
-    result
-):
-
-    metadata = (
-        result.get(
-            "metadata",
-            {},
-        )
-        or {}
-    )
-
-    source_type = normalize(
-        metadata.get(
-            "source_type"
-        )
-    )
-
-    title = normalize(
-        metadata.get(
-            "title"
-        )
-    )
-
-    url = normalize(
-        metadata.get(
-            "url"
-        )
-    )
-
-    pdf_file = normalize(
-        metadata.get(
-            "pdf_file"
-        )
-    )
-
-    page = safe_int(
-        metadata.get(
-            "page"
-        )
-    )
-
-    return {
-
-        "source_type":
-            source_type,
-
-        "title":
-            title,
-
-        "url":
-            url,
-
-        "pdf_file":
-            pdf_file,
-
-        "page":
-            page
-            if page > 0
-            else None,
-    }
-
-
-# ============================================================
-# CLEAN CHROMA RESULT
-# ============================================================
-
-def clean_result(
-    result
-):
-
-    metadata = (
-        result.get(
-            "metadata",
-            {},
-        )
-        or {}
-    )
-
-    return {
-
-        "rank":
-            result.get(
-                "rank"
-            ),
-
-        "id":
-            result.get(
-                "id"
-            ),
-
-        "distance":
-            result.get(
-                "distance"
-            ),
-
-        "source_type":
-            normalize(
-                metadata.get(
-                    "source_type"
-                )
-            ),
-
-        "title":
-            normalize(
-                metadata.get(
-                    "title"
-                )
-            ),
-
-        "url":
-            normalize(
-                metadata.get(
-                    "url"
-                )
-            ),
-
-        "pdf_file":
-            normalize(
-                metadata.get(
-                    "pdf_file"
-                )
-            ),
-
-        "page":
-            safe_int(
-                metadata.get(
-                    "page"
-                )
-            ),
-
-        "book":
-            normalize(
-                metadata.get(
-                    "book"
-                )
-            ),
-
-        "temporal":
-            bool(
-                metadata.get(
-                    "temporal",
-                    False,
-                )
-            ),
-
-        "quality_flag":
-            normalize(
-                metadata.get(
-                    "quality_flag"
-                )
-            ),
-
-        "extraction_method":
-            normalize(
-                metadata.get(
-                    "extraction_method"
-                )
-            ),
-
-        "categories":
-            normalize(
-                metadata.get(
-                    "categories"
-                )
-            ),
-
-        "text":
-            normalize(
-                result.get(
-                    "document"
-                )
-            ),
-    }
-
-
-# ============================================================
-# LOAD CHROMA
-# ============================================================
-
-def load_collection():
-
-    if not VECTORSTORE_DIR.exists():
-
-        raise FileNotFoundError(
-            "\nVector store was not found:\n"
-            f"{VECTORSTORE_DIR}\n\n"
-            "Run ingestion.py first."
-        )
-
-    client = chromadb.PersistentClient(
-        path=str(
-            VECTORSTORE_DIR
-        )
-    )
-
-    try:
-
-        collection = (
-            client.get_collection(
-                name=COLLECTION_NAME
-            )
-        )
-
-    except Exception as exc:
-
-        raise RuntimeError(
-            "\nChroma collection was not found:\n"
-            f"{COLLECTION_NAME}\n\n"
-            "Run ingestion.py first."
-        ) from exc
-
-    return collection
-
-
-# ============================================================
-# LOAD EMBEDDING MODEL
-# ============================================================
-
-def load_embedding_model():
-
-    print()
-    print(
-        "Loading embedding model:"
-    )
-
-    print(
-        EMBEDDING_MODEL_NAME
-    )
-
-    return SentenceTransformer(
-        EMBEDDING_MODEL_NAME
-    )
-
-
-# ============================================================
-# RAW CHROMA RETRIEVAL
-# ============================================================
-
-def retrieve_candidates(
-    collection,
-    model,
-    question,
-):
-
-    query_text = build_query(
-        question
-    )
-
-    query_embedding = (
-        model.encode(
-            [query_text],
-            normalize_embeddings=True,
-            show_progress_bar=False,
-        )
-    )
-
-    result = collection.query(
-
-        query_embeddings=
-            query_embedding.tolist(),
-
-        n_results=
-            RETRIEVAL_CANDIDATES,
-
-        include=[
-            "documents",
-            "metadatas",
-            "distances",
-        ],
-    )
-
-    ids = (
-        result.get(
-            "ids",
-            [[]],
-        )[0]
-        if result.get("ids")
-        else []
-    )
-
-    documents = (
-        result.get(
-            "documents",
-            [[]],
-        )[0]
-        if result.get("documents")
-        else []
-    )
-
-    metadatas = (
-        result.get(
-            "metadatas",
-            [[]],
-        )[0]
-        if result.get("metadatas")
-        else []
-    )
-
-    distances = (
-        result.get(
-            "distances",
-            [[]],
-        )[0]
-        if result.get("distances")
-        else []
-    )
-
-    candidates = []
-
-    for index, chunk_id in enumerate(
-        ids
-    ):
-
-        candidates.append({
-
-            "id":
-                chunk_id,
-
-            "distance":
-                distances[index]
-                if index < len(
-                    distances
-                )
-                else None,
-
-            "metadata":
-                metadatas[index]
-                if index < len(
-                    metadatas
-                )
-                else {},
-
-            "document":
-                documents[index]
-                if index < len(
-                    documents
-                )
-                else "",
-        })
-
-    return candidates
-
-
-# ============================================================
-# DISTANCE FILTER
-# ============================================================
-
-def filter_by_distance(
-    candidates
-):
-
-    return [
-
-        candidate
-
-        for candidate in candidates
-
-        if (
-            candidate.get(
-                "distance"
-            )
-            is not None
-            and
-            candidate.get(
-                "distance"
-            )
-            <= MAX_DISTANCE
-        )
-
-    ]
-
-
-# ============================================================
-# DEDUPLICATION
-# ============================================================
-
-def deduplicate_results(
-    candidates
-):
-
-    seen = set()
-
-    results = []
-
-    for candidate in candidates:
-
-        chunk_id = candidate.get(
-            "id"
-        )
-
-        if chunk_id in seen:
-            continue
-
-        seen.add(
-            chunk_id
-        )
-
-        results.append(
-            candidate
-        )
-
-    return results
-
-
-# ============================================================
-# SOURCE DIVERSIFICATION
-# ============================================================
-
-def diversify_sources(
-    candidates
-):
-
-    selected = []
-
-    source_counts = {}
-
-    for candidate in candidates:
-
-        source_key = get_source_key(
-            candidate.get(
-                "metadata",
-                {},
-            )
-        )
-
-        count = source_counts.get(
-            source_key,
-            0,
-        )
-
-        if count >= 4:
-            continue
-
-        selected.append(
-            candidate
-        )
-
-        source_counts[
-            source_key
-        ] = count + 1
-
-        if (
-            len(selected)
-            >= FINAL_RESULTS
-        ):
-            break
-
-    # --------------------------------------------------------
-    # Fill remaining slots
-    # --------------------------------------------------------
-
-    if (
-        len(selected)
-        < FINAL_RESULTS
-    ):
-
-        selected_ids = {
-            item.get("id")
-            for item in selected
-        }
-
-        for candidate in candidates:
-
-            if (
-                candidate.get("id")
-                in selected_ids
-            ):
-                continue
-
-            selected.append(
-                candidate
-            )
-
-            if (
-                len(selected)
-                >= FINAL_RESULTS
-            ):
-                break
-
-    return selected
-
-
-# ============================================================
-# BUILD CHROMA RESULTS
-# ============================================================
-
-def build_results(
-    candidates
-):
-
-    results = []
-
-    for rank, candidate in enumerate(
-        candidates,
-        start=1,
-    ):
-
-        item = clean_result({
-
-            **candidate,
-
-            "rank":
-                rank,
-        })
-
-        item[
-            "source_reference"
-        ] = make_source_reference(
-            candidate
-        )
-
-        results.append(
-            item
-        )
-
-    return results
-
-
-# ============================================================
-# SOURCE SUMMARY
-# ============================================================
-
-def build_source_summary(
-    results
-):
-
-    sources = []
-
-    seen = set()
-
-    for result in results:
-
-        reference = result.get(
-            "source_reference",
-            {},
-        )
-
-        key = (
-
-            reference.get(
-                "source_type"
-            ),
-
-            reference.get(
-                "title"
-            ),
-
-            reference.get(
-                "url"
-            ),
-
-            reference.get(
-                "pdf_file"
-            ),
-        )
-
-        if key in seen:
-            continue
-
-        seen.add(
-            key
-        )
-
-        sources.append(
-            reference
-        )
-
-    return sources
-
-
-# ============================================================
-# SAVE AUDIT
-# ============================================================
-
-def save_audit(
-    question,
-    results,
-    confidence,
-    candidate_count,
-):
-
-    AUDIT_DIR.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    audit = {
-
-        "question":
-            question,
-
-        "embedding_model":
-            EMBEDDING_MODEL_NAME,
-
-        "query_prefix":
-            BGE_QUERY_PREFIX,
-
-        "collection":
-            COLLECTION_NAME,
-
-        "candidate_count":
-            candidate_count,
-
-        "final_result_count":
-            len(results),
-
-        "max_distance":
-            MAX_DISTANCE,
-
-        "confidence":
-            confidence,
-
-        "sources":
-            build_source_summary(
-                results
-            ),
-
-        "results":
-            results,
-    }
-
-    with LAST_RETRIEVAL_FILE.open(
-        "w",
-        encoding="utf-8",
-    ) as file:
-
-        json.dump(
-            audit,
-            file,
-            indent=2,
-            ensure_ascii=False,
-        )
-
-
-# ============================================================
-# NORMAL RETRIEVE
-# ============================================================
-
-def retrieve_normal(
-    collection,
-    model,
-    question,
-):
-
-    candidates = retrieve_candidates(
-        collection,
-        model,
-        question,
-    )
-
-    candidates.sort(
-        key=lambda item: (
-            item.get(
-                "distance"
-            )
-            if item.get(
-                "distance"
-            ) is not None
-            else float("inf")
-        )
-    )
-
-    filtered = filter_by_distance(
-        candidates
-    )
-
-    filtered = deduplicate_results(
-        filtered
-    )
-
-    selected = diversify_sources(
-        filtered
-    )
-
-    results = build_results(
-        selected
-    )
-
-    confidence = classify_confidence(
-        results
-    )
-
-    return (
-        results,
-        confidence,
-        len(candidates),
-    )
-
-
-# ============================================================
-# MAIN ROUTER
-# ============================================================
-
-def route_question(
-    question,
-    collection,
-    model,
-):
-
-    question = normalize(
-        question
-    )
-
-    if not question:
-
-        return {
-
-            "route":
-                "semantic",
-
-            "results":
-                [],
-
-            "confidence":
-                "none",
-        }
-
-    # ========================================================
-    # MERIT ROUTE
-    # ========================================================
-
-    if is_merit_question(
-        question
-    ):
-
-        print()
-        print(
-            "[ROUTER] Merit question detected."
-        )
-
-        intent = parse_merit_query(
-            question
-        )
-
-        print(
-            f"[ROUTER] Program : "
-            f"{intent.get('program')}"
-        )
-
-        print(
-            f"[ROUTER] Campus  : "
-            f"{intent.get('campus')}"
-        )
-
-        print(
-            f"[ROUTER] Category: "
-            f"{intent.get('category')}"
-        )
-
-        print(
-            f"[ROUTER] Aggregate: "
-            f"{intent.get('aggregate')}"
-        )
-
-        response = answer_merit_question(
-            question
-        )
-
-        formatted = format_merit_response(
-            response
-        )
-
-        return {
-
-            "route":
-                "merit",
-
-            "response":
-                response,
-
-            "answer":
-                formatted["answer"],
-
-            "source_url":
-                formatted.get(
-                    "source_url"
-                ),
-        }
-
-    # ========================================================
-    # NORMAL SEMANTIC ROUTE
-    # ========================================================
-
-    print()
-    print(
-        "[ROUTER] Normal knowledge question."
-    )
-
-    (
-        results,
-        confidence,
-        candidate_count,
-    ) = retrieve_normal(
-        collection,
-        model,
-        question,
-    )
-
-    save_audit(
-        question,
-        results,
-        confidence,
-        candidate_count,
-    )
-
-    return {
-
-        "route":
-            "semantic",
-
-        "results":
-            results,
-
-        "confidence":
-            confidence,
-    }
-
-
-# ============================================================
-# MAIN
-# ============================================================
-
-def main():
-
-    print()
-    print("=" * 80)
-    print(
-        "UET CHATBOT — PRODUCTION RETRIEVER"
-    )
-    print("=" * 80)
-
-    print()
-    print(
-        "Routes:"
-    )
-
-    print(
-        "  Merit questions  -> Dynamic latest UET merit"
-    )
-
-    print(
-        "  Other questions  -> ChromaDB semantic search"
-    )
-
-    # --------------------------------------------------------
-    # Load Chroma
-    # --------------------------------------------------------
-
-    collection = load_collection()
-
-    count = collection.count()
-
-    print()
-    print(
-        f"Vectors available: {count}"
-    )
-
-    if count == 0:
-
-        raise RuntimeError(
-            "ChromaDB collection is empty."
-        )
-
-    # --------------------------------------------------------
-    # Load embedding model
-    # --------------------------------------------------------
-
-    model = load_embedding_model()
-
-    print()
-    print("=" * 80)
-    print(
-        "READY"
-    )
-    print("=" * 80)
-
-    print()
-    print(
-        "Examples:"
-    )
-
-    print(
-        "  My aggregate is 90, am I selected for CS Lahore?"
-    )
-
-    print(
-        "  What is the merit for Electrical Engineering Lahore?"
-    )
-
-    print(
-        "  What is Civil Engineering merit KSK?"
-    )
-
-    print(
-        "  What is UET admission process?"
-    )
-
-    print(
-        "  exit"
-    )
-
-    while True:
-
-        try:
-
-            question = input(
-                "\nUser question: "
-            ).strip()
-
-        except (
-            KeyboardInterrupt,
-            EOFError,
-        ):
-
-            print()
-            print(
-                "Exiting."
-            )
-
-            break
-
-        if not question:
-            continue
-
-        if question.lower() in {
-            "exit",
-            "quit",
-            "q",
-        }:
-
-            print()
-            print(
-                "Exiting."
-            )
-
-            break
-
-        try:
-
-            result = route_question(
-                question,
-                collection,
-                model,
-            )
-
-            # ------------------------------------------------
-            # MERIT
-            # ------------------------------------------------
-
-            if (
-                result["route"]
-                == "merit"
-            ):
-
-                print()
-                print("=" * 80)
-                print(
-                    "MERIT RESPONSE"
-                )
-                print("=" * 80)
-
-                print()
-                print(
-                    result.get(
-                        "answer",
-                        "",
-                    )
-                )
-
-            # ------------------------------------------------
-            # NORMAL
-            # ------------------------------------------------
-
-            elif (
-                result["route"]
-                == "semantic"
-            ):
-
-                display_results(
-                    question,
-                    result.get(
-                        "results",
-                        [],
-                    ),
-                    result.get(
-                        "confidence",
-                        "none",
-                    ),
-                )
-
-            else:
-
-                print()
-                print(
-                    "[ERROR] Unknown route:"
-                )
-
-                print(
-                    result
-                )
-
-        except Exception as exc:
-
-            print()
-            print(
-                "=" * 80
-            )
-
-            print(
-                "[ERROR]"
-            )
-
-            print(
-                str(exc)
-            )
-
-            print(
-                "=" * 80
-            )
-
-
-# ============================================================
-# DISPLAY NORMAL RETRIEVAL
-# ============================================================
-
-def display_results(
-    question,
-    results,
-    confidence,
-):
-
-    print()
-    print("=" * 78)
-    print(
-        "SEMANTIC RETRIEVAL RESULTS"
-    )
-    print("=" * 78)
-
-    print()
-    print(
-        f"Query      : {question}"
-    )
-
-    print(
-        f"Confidence : {confidence.upper()}"
-    )
-
-    print(
-        f"Results    : {len(results)}"
-    )
-
-    if not results:
-
-        print()
-        print(
-            "[NO RELIABLE RESULTS]"
-        )
-
+        if re.search(r"\b(?:below|under|less than)\b", low):
+            filtered = [r for r in filtered if r.closing_merit < threshold]
+        else:
+            filtered = [r for r in filtered if r.closing_merit > threshold]
+
+        print_records(filtered)
         return
 
-    for result in results:
+    # Normal structured query.
+    campus, program, category, session, admission_type = parse_query_filters(query)
 
-        print()
-        print(
-            "-" * 78
+    # If no program was detected, use remaining query as a fuzzy program search
+    # only when it looks like the user supplied a program name.
+    if not program:
+        q = re.sub(
+            r"\b(?:what|what is|show|find|merit|closing|minimum|for|at|the|"
+            r"campus|morning|evening|ecat|non[- ]?ecat)\b",
+            " ",
+            low,
         )
-
-        print(
-            f"RANK       : "
-            f"{result['rank']}"
+        q = re.sub(
+            r"\b(?:a1m|a2m|ap1m|ap2m|a1|a2|ap1|ap2|nm|m)\b",
+            " ",
+            q,
         )
+        q = normalize(q)
 
-        print(
-            f"DISTANCE   : "
-            f"{result['distance']}"
-        )
+        if q:
+            candidates = find_program(records, q)
+            if len(candidates) > 0:
+                # Use the actual program name if one dominant program matches.
+                program_names = sorted({r.program for r in candidates})
+                if len(program_names) == 1:
+                    program = program_names[0]
 
-        print(
-            f"SOURCE TYPE: "
-            f"{result['source_type']}"
-        )
+    filtered = filter_records(
+        records,
+        campus=campus,
+        program=program,
+        category=category,
+        session=session,
+        admission_type=admission_type,
+    )
 
-        print(
-            f"TITLE      : "
-            f"{result['title']}"
-        )
+    aggregate = extract_user_aggregate(query)
 
-        if result["url"]:
-
-            print(
-                f"URL        : "
-                f"{result['url']}"
-            )
-
-        if result["pdf_file"]:
-
-            print(
-                f"PDF FILE   : "
-                f"{result['pdf_file']}"
-            )
-
-        if result["page"]:
-
-            print(
-                f"PAGE       : "
-                f"{result['page']}"
-            )
-
-        print()
-        print(
-            "TEXT:"
-        )
-
-        print(
-            result["text"]
-        )
+    if aggregate is not None and filtered:
+        check_aggregate(filtered, aggregate)
+    else:
+        print_records(filtered)
 
 
-# ============================================================
-# ENTRY POINT
-# ============================================================
+# ---------------------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------------------
+
+def load_data() -> tuple[list[MeritRecord], MeritDocument, Path]:
+    session = get_session()
+
+    print("Checking UET for the latest Minimum Merit list...")
+
+    documents = discover_merit_documents(session)
+    latest = choose_latest_document(documents)
+
+    print(f"Latest list: Merit List {latest.list_number}")
+    print(f"Admission : {latest.admission}")
+    print(f"Source    : {latest.url}")
+
+    pdf_path = download_pdf(latest, session)
+
+    print(f"PDF       : {pdf_path}")
+
+    records = extract_all_rows(pdf_path)
+    validate_records(records)
+
+    return records, latest, pdf_path
+
+
+# ---------------------------------------------------------------------------
+# COMPATIBILITY SHIM FOR retrieval.py
+# ---------------------------------------------------------------------------
+#
+# retrieval.py does `from merit import load_latest_merit` and expects a
+# dict shaped like:
+#
+#   {
+#       "data": [ {campus, program, category, session, type,
+#                  minimum_aggregate, page}, ... ],
+#       "source_url": ...,
+#       "merit_list_number": ...,
+#       "title": ...,
+#       "checked_at": ...,
+#   }
+#
+# This module's own MeritRecord uses different field names
+# (admission_type, closing_merit) because it's a general-purpose engine
+# (not CS-only). This shim runs the same discover -> download -> extract
+# pipeline as load_data() and translates the result into the field names
+# the rest of the app already relies on, without touching retrieval.py.
+# ---------------------------------------------------------------------------
+
+def load_latest_merit() -> dict:
+
+    session = get_session()
+
+    documents = discover_merit_documents(session)
+    latest = choose_latest_document(documents)
+    pdf_path = download_pdf(latest, session)
+    records = extract_all_rows(pdf_path)
+    validate_records(records)
+
+    data = [
+        {
+            "campus": r.campus,
+            "program": r.program,
+            "category": r.category,
+            "session": r.session,
+            "type": r.admission_type,
+            "minimum_aggregate": r.closing_merit,
+            "page": r.page,
+        }
+        for r in records
+    ]
+
+    return {
+        "data": data,
+        "pdf_file": str(pdf_path),
+        "source_url": latest.url,
+        "merit_list_number": latest.list_number,
+        "title": latest.admission,
+        "checked_at": datetime.now().isoformat(),
+    }
+
+
+def main() -> None:
+    try:
+        records, latest, pdf_path = load_data()
+    except Exception as exc:
+        print(f"\nERROR: {exc}")
+        sys.exit(1)
+
+    print("\n" + "=" * 70)
+    print("UET GENERAL MERIT QUERY")
+    print("=" * 70)
+    print("Examples:")
+    print("  Computer Science Lahore A1")
+    print("  CS KSK")
+    print("  Electrical Engineering Narowal")
+    print("  show all programs at Lahore")
+    print("  Mechanical Engineering A2-M")
+    print("  programs below 70 at KSK")
+    print("  Computer Science Lahore A1 with 87.5")
+    print("  type 'help' for more examples")
+    print("  type 'exit' to quit")
+    print()
+
+    while True:
+        try:
+            query = input("UET> ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print("\nGoodbye.")
+            break
+
+        if not query:
+            continue
+
+        if query.lower() in {"exit", "quit", "q"}:
+            print("Goodbye.")
+            break
+
+        if query.lower() == "help":
+            print("""
+GENERAL QUERIES
+
+Program:
+  Computer Science Lahore A1
+  CS KSK
+  Electrical Engineering Narowal
+  Mechanical Engineering A2-M
+
+Campus:
+  show all programs at Lahore
+  show all programs at KSK
+
+Filters:
+  Computer Science Morning
+  Computer Science ECAT
+  Computer Science A1-M Lahore
+
+Aggregate:
+  Computer Science Lahore A1 with 87.5
+  CS KSK 84.2
+
+Thresholds:
+  programs below 70 at KSK
+  programs above 85 at Lahore
+
+Aliases:
+  LHR = Main Campus
+  KSK = New Campus
+  FSD = Faislabad Campus
+  GRW = Gujaranwala
+  NWL = Narowal
+  CS = Computer Science
+  AI = Artificial Intelligence
+  EE = Electrical Engineering
+  ME = Mechanical Engineering
+""")
+            continue
+
+        try:
+            run_query(records, query)
+        except Exception as exc:
+            print(f"Query error: {exc}")
+
 
 if __name__ == "__main__":
-
     main()
