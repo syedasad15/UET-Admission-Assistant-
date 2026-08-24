@@ -18,10 +18,6 @@ from bs4 import BeautifulSoup
 # CONFIG
 # ---------------------------------------------------------------------------
 
-# NOTE: This MUST point at the UET Admissions Portal (the site the whole
-# rest of this project scrapes and cites), not the general uet.edu.pk
-# university site -- that domain does not carry the "Minimum Merit"
-# download sections this module depends on.
 BASE_URL = "https://admission.uet.edu.pk/"
 DOWNLOADS_URL = urljoin(BASE_URL, "downloads")
 
@@ -142,6 +138,17 @@ CATEGORY_ALIASES = {
     "ap2-m": "AP2-M",
     "m": "M",
     "nm": "NM",
+
+    # Bug fix: single-letter quota codes present in the report (e.g.
+    # Electrical/Mechanical/Civil "L/N/O/P/R/S/T") were missing entirely,
+    # so filter_records(..., category="S") etc. silently matched nothing.
+    "l": "L",
+    "n": "N",
+    "o": "O",
+    "p": "P",
+    "r": "R",
+    "s": "S",
+    "t": "T",
 }
 
 
@@ -153,6 +160,12 @@ def canonical_campus(value: str) -> Optional[str]:
     c = compact(raw)
     for alias, canonical in CAMPUS_ALIASES.items():
         if compact(alias) == c:
+            return canonical
+
+    # Fall back: the PDF's campus cell text is already the canonical form
+    # (e.g. "Faislabad Campus", "Gujaranwala", "Main Campus (LHR)").
+    for canonical in set(CAMPUS_ALIASES.values()):
+        if compact(canonical) == c:
             return canonical
 
     return None
@@ -198,6 +211,45 @@ class MeritDocument:
     admission: str
 
 
+_ORDINAL_WORDS = {
+    "first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5,
+    "sixth": 6, "seventh": 7, "eighth": 8, "ninth": 9, "tenth": 10,
+    "eleventh": 11, "twelfth": 12,
+}
+
+# Programs unrelated to the UG closing-merit reports we care about, so we
+# don't accidentally pick up a PG/M.Sc/Ph.D "merit list" document that
+# happens to share wording.
+_EXCLUDE_KEYWORDS = ("postgraduate", "m.sc", "ms ", "ph.d", "phd")
+
+
+def _extract_list_number(combined_text: str) -> Optional[int]:
+    """Bug fix: UET has not used consistent title wording across merit
+    lists within the SAME admission cycle -- e.g. 'Merit List No. 1',
+    'Second Merit List', 'Minimum Merit - 3rd Merit List' have all been
+    used. Try digit-based patterns first, then fall back to spelled-out
+    ordinals, so a future list isn't silently missed just because UET
+    phrased the title differently than the last one did."""
+
+    for pattern in (
+        r"(\d+)\s*(?:st|nd|rd|th)?\s+merit\s*list",
+        r"merit\s*list\s*(?:no\.?|number)?\s*[:\-]?\s*(\d+)",
+    ):
+        match = re.search(pattern, combined_text, re.I)
+        if match:
+            return int(match.group(1))
+
+    word_match = re.search(
+        r"\b(" + "|".join(_ORDINAL_WORDS) + r")\s+merit\s*list",
+        combined_text,
+        re.I,
+    )
+    if word_match:
+        return _ORDINAL_WORDS[word_match.group(1).lower()]
+
+    return None
+
+
 def discover_merit_documents(session: requests.Session) -> list[MeritDocument]:
     response = fetch(DOWNLOADS_URL, session)
     soup = BeautifulSoup(response.text, "html.parser")
@@ -206,11 +258,24 @@ def discover_merit_documents(session: requests.Session) -> list[MeritDocument]:
 
     for heading in soup.find_all(["h3", "h4", "h5"]):
         heading_text = normalize(heading.get_text(" ", strip=True))
+        low = heading_text.lower()
 
-        if "minimum merit" not in heading_text.lower():
+        # Bug fix: the old filter required the literal substring
+        # "minimum merit", which only matches SOME of UET's own titles
+        # (e.g. it misses "Second Merit List Closing Merits" and
+        # "Merit List No. 1" -- both real titles UET has used for this
+        # same Fall 2026 cycle). Broaden to anything that looks like a
+        # closing-merit / minimum-aggregate report tied to a merit list,
+        # while excluding unrelated PG/Ph.D merit lists.
+        looks_relevant = (
+            "merit list" in low
+            or ("minimum" in low and ("merit" in low or "aggregate" in low))
+        )
+        if not looks_relevant:
+            continue
+        if any(kw in low for kw in _EXCLUDE_KEYWORDS):
             continue
 
-        # Search links until the next heading.
         for node in heading.find_all_next():
             if node is not heading and node.name in {"h3", "h4", "h5"}:
                 break
@@ -225,16 +290,11 @@ def discover_merit_documents(session: requests.Session) -> list[MeritDocument]:
                 continue
 
             combined = f"{heading_text} {text}"
+            list_number = _extract_list_number(combined)
 
-            match = re.search(
-                r"merit\s*list\s*(?:no\.?|number)?\s*(\d+)",
-                combined,
-                re.I,
-            )
-            if not match:
+            if list_number is None:
                 continue
 
-            list_number = int(match.group(1))
             url = urljoin(response.url, href)
 
             documents.append(
@@ -246,7 +306,6 @@ def discover_merit_documents(session: requests.Session) -> list[MeritDocument]:
                 )
             )
 
-    # Remove duplicate URLs.
     unique = {}
     for doc in documents:
         unique[doc.url] = doc
@@ -260,7 +319,6 @@ def choose_latest_document(documents: list[MeritDocument]) -> MeritDocument:
             "Could not find a UET Minimum Merit PDF on the downloads page."
         )
 
-    # Prefer the document whose admission title contains the newest year.
     def key(doc: MeritDocument):
         years = [int(x) for x in re.findall(r"20\d{2}", doc.admission + " " + doc.title)]
         year = max(years) if years else 0
@@ -284,25 +342,58 @@ def download_pdf(doc: MeritDocument, session: requests.Session) -> Path:
 # ---------------------------------------------------------------------------
 # PDF EXTRACTION
 # ---------------------------------------------------------------------------
-
-# Actual report structure:
-# Campus Discipline Category Session Type Closing Merit
 #
-# The attached UET Fall 2026 list demonstrates rows such as:
-# New Campus (KSK) Computer Science A1 Morning ECAT 79.74905
+# IMPORTANT (bug fix): this report is a real PDF *table*, not a text flow.
+# PyMuPDF's page.get_text("text") does NOT return one line per table row.
+# It returns one line per *table cell*, in row-major reading order:
 #
-# We therefore parse the closing merit from the END of each row rather than
-# relying on "Computer Science" or a CS-specific parser.
+#   'Faislabad Campus'
+#   'Chemical Engineering'
+#   'A1'
+#   'Morning'
+#   'ECAT'
+#   '64.43113'
+#   'Faislabad Campus'
+#   'Computer Engineering (NCEAC)'
+#   ...
+#
+# The previous implementation assumed each table row was a single text
+# line ("Faislabad Campus Chemical Engineering A1 Morning ECAT 64.43113")
+# and tried to reverse-parse that line with regexes anchored at the end.
+# Since no such combined line ever exists in the extracted text, every
+# call to parse_row() returned None and load_data()/load_latest_merit()
+# always raised "No merit rows were extracted from the PDF."
+#
+# The fix: after stripping repeated header/footer noise, group the
+# remaining per-cell lines into consecutive chunks of 6
+# (Campus, Discipline, Category, Session, Type, Closing Merit) and build
+# a MeritRecord straight from those 6 values -- no reverse-engineering
+# needed, and it no longer depends on program names never containing a
+# session/category/type-like word.
 
-CATEGORY_RE = r"(?:A1-M|A2-M|AP1-M|AP2-M|A1|A2|AP1|AP2|NM|M)"
-SESSION_RE = r"(?:Morning|Evening)"
-TYPE_RE = r"(?:ECAT|Non-ECAT)"
-MERIT_RE = r"(?:\d{1,3}(?:\.\d+)?)"
+# Bug fix: the report also uses single-letter quota codes (L, N, O, P, R,
+# S, T, ...) alongside the merit-based A1/A2/AP1/AP2/M/NM codes. The old
+# pattern only recognized the latter, so any row whose category was one
+# of those single letters failed validation and desynced the (already
+# broken) line-based row parser.
+CATEGORY_RE = r"(?:A1-M|A2-M|AP1-M|AP2-M|A1|A2|AP1|AP2|NM|M|[A-Z]{1,2})"
+
+# Bug fix: the report also contains "Afternoon" sessions (e.g. Business
+# Administration / BBIT / Remote Sensing rows), which the old
+# Morning|Evening-only pattern silently dropped.
+SESSION_VALUES = {"morning": "Morning", "evening": "Evening", "afternoon": "Afternoon"}
+TYPE_VALUES = {"ecat": "ECAT", "non-ecat": "Non-ECAT"}
+
+_HEADER_CELL_LABELS = {
+    "campus", "discipline", "category", "session", "type", "closing merit",
+}
 
 
 def is_header_or_noise(line: str) -> bool:
     low = line.lower()
 
+    if low in _HEADER_CELL_LABELS:
+        return True
     if "closing merit report" in low:
         return True
     if low.startswith("campus discipline"):
@@ -319,86 +410,43 @@ def is_header_or_noise(line: str) -> bool:
     return False
 
 
-def parse_row(line: str, page: int) -> Optional[MeritRecord]:
-    line = normalize(line)
+def build_record(
+    campus_raw: str,
+    program_raw: str,
+    category_raw: str,
+    session_raw: str,
+    type_raw: str,
+    merit_raw: str,
+    page: int,
+) -> Optional[MeritRecord]:
+    """Build a MeritRecord from one 6-cell (row) group, validating each
+    field against the values we actually expect in that column. Returns
+    None if the cells don't look like a real row (used to resync the
+    grouping if a page ever has stray/blank lines)."""
 
-    if not line or is_header_or_noise(line):
+    session = SESSION_VALUES.get(normalize(session_raw).lower())
+    if session is None:
         return None
 
-    # Strip a leading serial number if the PDF extraction contains one.
-    line = re.sub(r"^\d+\s+", "", line)
-
-    # Closing merit is the final numeric value.
-    merit_match = re.search(rf"({MERIT_RE})\s*$", line)
-    if not merit_match:
+    admission_type = TYPE_VALUES.get(normalize(type_raw).lower())
+    if admission_type is None:
         return None
 
-    closing_merit = float(merit_match.group(1))
+    category = normalize(category_raw)
+    if not re.fullmatch(CATEGORY_RE, category, re.I):
+        return None
 
-    # Basic sanity check.
+    merit_text = normalize(merit_raw)
+    try:
+        closing_merit = float(merit_text)
+    except ValueError:
+        return None
+
     if not (0 <= closing_merit <= 100):
         return None
 
-    body = line[:merit_match.start()].strip()
-
-    # Work backwards: Type, Session, Category are stable columns.
-    type_match = re.search(rf"\s({TYPE_RE})\s*$", body, re.I)
-    if not type_match:
-        return None
-
-    admission_type = type_match.group(1)
-    body = body[:type_match.start()].strip()
-
-    session_match = re.search(rf"\s({SESSION_RE})\s*$", body, re.I)
-    if not session_match:
-        return None
-
-    session = session_match.group(1)
-    body = body[:session_match.start()].strip()
-
-    category_match = re.search(rf"\s({CATEGORY_RE})\s*$", body, re.I)
-    if not category_match:
-        return None
-
-    category = category_match.group(1)
-    body = body[:category_match.start()].strip()
-
-    # Remaining text is "Campus Discipline".
-    # Identify campus using known canonical campus names.
-    campus = None
-    campus_end = None
-
-    campus_candidates = sorted(
-        set(CAMPUS_ALIASES.values()),
-        key=len,
-        reverse=True,
-    )
-
-    for candidate in campus_candidates:
-        if body.lower().startswith(candidate.lower()):
-            campus = candidate
-            campus_end = len(candidate)
-            break
-
-    if campus is None:
-        # Handle exact PDF spellings with a tolerant prefix match.
-        for candidate in campus_candidates:
-            if compact(body).startswith(compact(candidate)):
-                # Find candidate length in original text approximately.
-                prefix = re.match(
-                    re.escape(candidate).replace(r"\ ", r"\s+"),
-                    body,
-                    re.I,
-                )
-                if prefix:
-                    campus = candidate
-                    campus_end = prefix.end()
-                    break
-
-    if campus is None or campus_end is None:
-        return None
-
-    program = normalize(body[campus_end:])
+    campus = canonical_campus(campus_raw) or normalize(campus_raw)
+    program = normalize(program_raw)
 
     if not program:
         return None
@@ -407,7 +455,7 @@ def parse_row(line: str, page: int) -> Optional[MeritRecord]:
         campus=campus,
         program=program,
         category=category.upper(),
-        session=session.title(),
+        session=session,
         admission_type=admission_type,
         closing_merit=closing_merit,
         page=page,
@@ -423,10 +471,27 @@ def extract_all_rows(pdf_path: Path) -> list[MeritRecord]:
             page = document[page_index]
             text = page.get_text("text")
 
-            for raw_line in text.splitlines():
-                record = parse_row(raw_line, page_index + 1)
+            cells = [normalize(l) for l in text.splitlines()]
+            cells = [c for c in cells if c and not is_header_or_noise(c)]
+
+            i = 0
+            n = len(cells)
+            while i + 6 <= n:
+                record = build_record(*cells[i:i + 6], page=page_index + 1)
                 if record:
                     records.append(record)
+                    i += 6
+                else:
+                    # Not a valid 6-cell row starting here (e.g. stray
+                    # line) -- shift by one cell and try to resync
+                    # instead of silently dropping the rest of the page.
+                    i += 1
+
+            if i != n:
+                print(
+                    f"Warning: page {page_index + 1} had "
+                    f"{n - i} trailing unparsed cell(s): {cells[i:]}"
+                )
     finally:
         document.close()
 
@@ -441,10 +506,6 @@ def extract_all_rows(pdf_path: Path) -> list[MeritRecord]:
             record.session.lower(),
             record.admission_type.lower(),
         )
-
-        # If extraction finds the same row twice, retain one.
-        # If two different closing merits somehow occur for the same key,
-        # keep the first and warn later through validation.
         unique.setdefault(key, record)
 
     return sorted(
@@ -597,7 +658,9 @@ def parse_query_filters(query: str):
             break
 
     session = None
-    if re.search(r"\bevening\b", low):
+    if re.search(r"\bafternoon\b", low):
+        session = "Afternoon"
+    elif re.search(r"\bevening\b", low):
         session = "Evening"
     elif re.search(r"\bmorning\b", low):
         session = "Morning"
@@ -608,7 +671,6 @@ def parse_query_filters(query: str):
     elif re.search(r"\becat\b", low):
         admission_type = "ECAT"
 
-    # Detect known program aliases.
     program = None
     for alias, canonical in sorted(
         PROGRAM_ALIASES.items(),
@@ -679,13 +741,11 @@ def check_aggregate(
 
 
 def extract_user_aggregate(query: str) -> Optional[float]:
-    # Only treat a number as an aggregate if it looks like a percentage.
     numbers = re.findall(r"\b\d{1,3}(?:\.\d+)?\b", query)
 
     for n in numbers:
         value = float(n)
         if 0 <= value <= 100:
-            # Avoid treating list numbers or categories as aggregates.
             if "." in n or value >= 50:
                 return value
 
@@ -695,7 +755,6 @@ def extract_user_aggregate(query: str) -> Optional[float]:
 def run_query(records: list[MeritRecord], query: str) -> None:
     low = normalize(query).lower()
 
-    # Special: list all programs at a campus.
     if (
         ("program" in low or "programs" in low)
         and ("all" in low or "show" in low or "list" in low)
@@ -712,7 +771,6 @@ def run_query(records: list[MeritRecord], query: str) -> None:
             print(f"\nTotal programs: {len(programs)}")
             return
 
-    # Special: records below/above a merit threshold.
     threshold_match = re.search(
         r"\b(?:below|under|less than|above|over|greater than)\s+"
         r"(\d{1,3}(?:\.\d+)?)",
@@ -740,15 +798,12 @@ def run_query(records: list[MeritRecord], query: str) -> None:
         print_records(filtered)
         return
 
-    # Normal structured query.
     campus, program, category, session, admission_type = parse_query_filters(query)
 
-    # If no program was detected, use remaining query as a fuzzy program search
-    # only when it looks like the user supplied a program name.
     if not program:
         q = re.sub(
             r"\b(?:what|what is|show|find|merit|closing|minimum|for|at|the|"
-            r"campus|morning|evening|ecat|non[- ]?ecat)\b",
+            r"campus|morning|evening|afternoon|ecat|non[- ]?ecat)\b",
             " ",
             low,
         )
@@ -762,7 +817,6 @@ def run_query(records: list[MeritRecord], query: str) -> None:
         if q:
             candidates = find_program(records, q)
             if len(candidates) > 0:
-                # Use the actual program name if one dominant program matches.
                 program_names = sorted({r.program for r in candidates})
                 if len(program_names) == 1:
                     program = program_names[0]
@@ -809,29 +863,6 @@ def load_data() -> tuple[list[MeritRecord], MeritDocument, Path]:
 
     return records, latest, pdf_path
 
-
-# ---------------------------------------------------------------------------
-# COMPATIBILITY SHIM FOR retrieval.py
-# ---------------------------------------------------------------------------
-#
-# retrieval.py does `from merit import load_latest_merit` and expects a
-# dict shaped like:
-#
-#   {
-#       "data": [ {campus, program, category, session, type,
-#                  minimum_aggregate, page}, ... ],
-#       "source_url": ...,
-#       "merit_list_number": ...,
-#       "title": ...,
-#       "checked_at": ...,
-#   }
-#
-# This module's own MeritRecord uses different field names
-# (admission_type, closing_merit) because it's a general-purpose engine
-# (not CS-only). This shim runs the same discover -> download -> extract
-# pipeline as load_data() and translates the result into the field names
-# the rest of the app already relies on, without touching retrieval.py.
-# ---------------------------------------------------------------------------
 
 def load_latest_merit() -> dict:
 
