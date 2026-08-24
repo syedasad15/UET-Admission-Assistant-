@@ -5,4 +5,4 @@ chromadb
 sentence-transformers
 requests
 pymupdf
-BeautifulSoup
+beautifulsoup4
