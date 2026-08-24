@@ -242,14 +242,129 @@ def get_embedding_model():
 # GENERATE NORMAL ANSWER
 # ============================================================
 
+# def generate_answer(
+#     question,
+#     results,
+#     client,
+# ):
+
+#     if not results:
+
+#         return (
+#             "I couldn't find sufficiently relevant "
+#             "information in the UET admissions knowledge base "
+#             "for this question."
+#         )
+
+#     if client is None:
+
+#         return (
+#             "I found relevant UET admissions information, "
+#             "but the Gemini API key is not configured."
+#         )
+
+#     context_parts = []
+
+#     for index, result in enumerate(
+#         results,
+#         start=1,
+#     ):
+
+#         source_type = result.get(
+#             "source_type",
+#             "",
+#         )
+
+#         title = result.get(
+#             "title",
+#             "",
+#         )
+
+#         url = result.get(
+#             "url",
+#             "",
+#         )
+
+#         pdf_file = result.get(
+#             "pdf_file",
+#             "",
+#         )
+
+#         page = result.get(
+#             "page",
+#             None,
+#         )
+
+#         text = result.get(
+#             "text",
+#             "",
+#         )
+
+#         context_parts.append(
+#             f"""
+# Source #{index}
+# Title: {title}
+# Source type: {source_type}
+# PDF file: {pdf_file}
+# Page: {page}
+# URL: {url}
+
+# Content:
+# {text}
+# """
+#         )
+
+#     context = "\n\n".join(
+#         context_parts
+#     )
+
+#     prompt = f"""
+# You are the official-style UET Admissions Chatbot.
+
+# Answer the user's question using ONLY the retrieved
+# UET admissions evidence below.
+
+# Rules:
+
+# 1. Give the direct answer first.
+# 2. Do not invent facts.
+# 3. If the evidence is insufficient, clearly say so.
+# 4. Preserve important numbers exactly.
+# 5. If asked "how many", provide the count.
+# 6. If programs are listed, provide the relevant program names.
+# 7. Do not mention ChromaDB, embeddings, vector databases,
+#    retrieval pipelines, or internal implementation.
+# 8. Do not fabricate sources.
+# 9. Keep the answer concise but useful.
+
+# User question:
+# {question}
+
+# Retrieved UET evidence:
+# {context}
+# """
+
+#     response = client.models.generate_content(
+#         model=GEMINI_MODEL,
+#         contents=prompt,
+#     )
+
+#     if not response.text:
+
+#         return (
+#             "I was unable to generate an answer from "
+#             "the available UET information."
+#         )
+
+#     return response.text
+
+
 def generate_answer(
     question,
     results,
     client,
 ):
-
     if not results:
-
         return (
             "I couldn't find sufficiently relevant "
             "information in the UET admissions knowledge base "
@@ -257,7 +372,6 @@ def generate_answer(
         )
 
     if client is None:
-
         return (
             "I found relevant UET admissions information, "
             "but the Gemini API key is not configured."
@@ -265,40 +379,13 @@ def generate_answer(
 
     context_parts = []
 
-    for index, result in enumerate(
-        results,
-        start=1,
-    ):
-
-        source_type = result.get(
-            "source_type",
-            "",
-        )
-
-        title = result.get(
-            "title",
-            "",
-        )
-
-        url = result.get(
-            "url",
-            "",
-        )
-
-        pdf_file = result.get(
-            "pdf_file",
-            "",
-        )
-
-        page = result.get(
-            "page",
-            None,
-        )
-
-        text = result.get(
-            "text",
-            "",
-        )
+    for index, result in enumerate(results, start=1):
+        source_type = result.get("source_type", "")
+        title = result.get("title", "")
+        url = result.get("url", "")
+        pdf_file = result.get("pdf_file", "")
+        page = result.get("page", None)
+        text = result.get("text", "")
 
         context_parts.append(
             f"""
@@ -314,9 +401,7 @@ Content:
 """
         )
 
-    context = "\n\n".join(
-        context_parts
-    )
+    context = "\n\n".join(context_parts)
 
     prompt = f"""
 You are the official-style UET Admissions Chatbot.
@@ -344,20 +429,40 @@ Retrieved UET evidence:
 {context}
 """
 
-    response = client.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=prompt,
-    )
-
-    if not response.text:
-
-        return (
-            "I was unable to generate an answer from "
-            "the available UET information."
+    try:
+        response = client.models.generate_content(
+            model=GEMINI_MODEL,
+            contents=prompt,
         )
 
-    return response.text
+        if not response.text:
+            return (
+                "I was unable to generate an answer from "
+                "the available UET information."
+            )
 
+        return response.text
+
+    except Exception as error:
+        error_text = str(error).lower()
+
+        # Gemini quota / rate limit reached
+        if (
+            "resource_exhausted" in error_text
+            or "quota" in error_text
+            or "rate limit" in error_text
+            or "429" in error_text
+        ):
+            return (
+                "⚠️ The AI service has reached its usage limit "
+                "right now. Please try again later."
+            )
+
+        # Other Gemini/API errors
+        return (
+            "⚠️ Sorry, I couldn't generate a response right now. "
+            "Please try again later."
+        )
 
 # ============================================================
 # DISPLAY NORMAL SOURCES
