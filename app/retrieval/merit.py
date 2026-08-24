@@ -4,6 +4,7 @@ import re
 import sys
 import time
 from dataclasses import dataclass, asdict
+from datetime import datetime
 from pathlib import Path
 from typing import Iterable, Optional
 from urllib.parse import urljoin
@@ -17,8 +18,12 @@ from bs4 import BeautifulSoup
 # CONFIG
 # ---------------------------------------------------------------------------
 
-BASE_URL = "https://uet.edu.pk/"
-DOWNLOADS_URL = urljoin(BASE_URL, "downloads/")
+# NOTE: This MUST point at the UET Admissions Portal (the site the whole
+# rest of this project scrapes and cites), not the general uet.edu.pk
+# university site -- that domain does not carry the "Minimum Merit"
+# download sections this module depends on.
+BASE_URL = "https://admission.uet.edu.pk/"
+DOWNLOADS_URL = urljoin(BASE_URL, "downloads")
 
 CACHE_DIR = Path(__file__).resolve().parent / "uet_cache"
 CACHE_DIR.mkdir(exist_ok=True)
@@ -803,6 +808,62 @@ def load_data() -> tuple[list[MeritRecord], MeritDocument, Path]:
     validate_records(records)
 
     return records, latest, pdf_path
+
+
+# ---------------------------------------------------------------------------
+# COMPATIBILITY SHIM FOR retrieval.py
+# ---------------------------------------------------------------------------
+#
+# retrieval.py does `from merit import load_latest_merit` and expects a
+# dict shaped like:
+#
+#   {
+#       "data": [ {campus, program, category, session, type,
+#                  minimum_aggregate, page}, ... ],
+#       "source_url": ...,
+#       "merit_list_number": ...,
+#       "title": ...,
+#       "checked_at": ...,
+#   }
+#
+# This module's own MeritRecord uses different field names
+# (admission_type, closing_merit) because it's a general-purpose engine
+# (not CS-only). This shim runs the same discover -> download -> extract
+# pipeline as load_data() and translates the result into the field names
+# the rest of the app already relies on, without touching retrieval.py.
+# ---------------------------------------------------------------------------
+
+def load_latest_merit() -> dict:
+
+    session = get_session()
+
+    documents = discover_merit_documents(session)
+    latest = choose_latest_document(documents)
+    pdf_path = download_pdf(latest, session)
+    records = extract_all_rows(pdf_path)
+    validate_records(records)
+
+    data = [
+        {
+            "campus": r.campus,
+            "program": r.program,
+            "category": r.category,
+            "session": r.session,
+            "type": r.admission_type,
+            "minimum_aggregate": r.closing_merit,
+            "page": r.page,
+        }
+        for r in records
+    ]
+
+    return {
+        "data": data,
+        "pdf_file": str(pdf_path),
+        "source_url": latest.url,
+        "merit_list_number": latest.list_number,
+        "title": latest.admission,
+        "checked_at": datetime.now().isoformat(),
+    }
 
 
 def main() -> None:
