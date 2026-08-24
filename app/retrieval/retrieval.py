@@ -1,5 +1,3 @@
-
-
 import json
 import re
 from pathlib import Path
@@ -108,6 +106,15 @@ BGE_QUERY_PREFIX = (
 # ============================================================
 # CAMPUS ALIASES
 # ============================================================
+#
+# Bug fix: "Gujranwala"/"Gujaranwala" used to map to the canonical value
+# "Gujar anwala" (a typo -- stray space). merit.py's actual extracted
+# campus name for this campus is "Gujaranwala" (no space), so every
+# Gujranwala-related merit question was silently returning zero records,
+# since campus_matches() never found a substring match between
+# "gujar anwala" and "gujaranwala". Also added the "fsd"/"grw"
+# abbreviations merit.py already recognizes, for parity.
+# ============================================================
 
 CAMPUS_ALIASES = {
 
@@ -144,14 +151,20 @@ CAMPUS_ALIASES = {
     "faisalabad campus":
         "Faislabad Campus",
 
+    "fsd":
+        "Faislabad Campus",
+
     "gujranwala":
-        "Gujar anwala",
+        "Gujaranwala",
 
     "gujaranwala":
-        "Gujar anwala",
+        "Gujaranwala",
 
     "gujranwala campus":
-        "Gujar anwala",
+        "Gujaranwala",
+
+    "grw":
+        "Gujaranwala",
 
     "narowal":
         "Narowal Campus (NWL)",
@@ -167,10 +180,29 @@ CAMPUS_ALIASES = {
 # ============================================================
 # CATEGORY
 # ============================================================
+#
+# Bug fix: merit.py now extracts AP1, AP1-M, AP2, AP2-M, M, and the
+# single-letter quota codes L/N/O/P/R/S/T (confirmed present in the real
+# UET Fall 2026 report), but this pattern only recognized
+# A1-M|A2-M|A1|A2|NM. Any question naming one of the missing categories
+# used to silently fail to extract a category, so the category filter
+# never applied and results weren't narrowed the way the user asked.
+#
+# The single-letter codes are matched case-SENSITIVE and restricted to
+# the known set (L,N,O,P,R,S,T) -- NOT any uppercase letter, and NOT
+# case-insensitive -- because a naive `[A-Z]` with IGNORECASE matches
+# ordinary words like "a" (article) or "I" (pronoun) in normal
+# questions, e.g. "What is a good aggregate for CS Lahore?" would
+# otherwise misread "a" as category "A".
+# ============================================================
 
 CATEGORY_PATTERN = re.compile(
-    r"\b(A1-M|A2-M|A1|A2|NM)\b",
+    r"\b(AP1-M|AP2-M|A1-M|A2-M|AP1|AP2|A1|A2|NM|M)\b",
     re.IGNORECASE,
+)
+
+CATEGORY_SINGLE_LETTER_PATTERN = re.compile(
+    r"\b([LNOPRST])\b"
 )
 
 
@@ -182,6 +214,12 @@ CATEGORY_PATTERN = re.compile(
 #
 # The actual official program name comes from merit.py data.
 #
+# Bug fix / addition: merit.py's data now includes several programs that
+# had no alias here at all (Artificial Intelligence, Cybersecurity, Data
+# Science, and the Business* programs), so questions naming them by
+# their common name or abbreviation ("AI", "cyber", "DS", "BBA", "BBIT")
+# used to fail to extract a program and fall back to returning every
+# program at the requested campus instead of the one the user meant.
 # ============================================================
 
 PROGRAM_ALIASES = {
@@ -235,28 +273,67 @@ PROGRAM_ALIASES = {
         "Environmental Engineering",
 
     "industrial engineering":
-        "Industrial Engineering",
+        "Industrial & Manufacturing Engineering",
 
     "transportation engineering":
         "Transportation Engineering",
 
     "petroleum engineering":
-        "Petroleum Engineering",
+        "Petroleum & Gas Engineering",
 
     "mining engineering":
         "Mining Engineering",
 
     "mechatronics":
-        "Mechatronics",
+        "Mechatronics & Control Engineering",
 
     "biomedical engineering":
         "Biomedical Engineering",
 
     "food engineering":
-        "Food Engineering",
+        "Food Science & Technology",
 
     "metallurgical engineering":
-        "Metallurgical Engineering",
+        "Metallurgical & Materials Engineering",
+
+    "artificial intelligence":
+        "Artificial Intelligence",
+
+    "ai":
+        "Artificial Intelligence",
+
+    "cybersecurity":
+        "Cybersecurity",
+
+    "cyber security":
+        "Cybersecurity",
+
+    "cyber":
+        "Cybersecurity",
+
+    "data science":
+        "Data Science",
+
+    "ds":
+        "Data Science",
+
+    "business administration":
+        "Bachelor of Business Administration",
+
+    "bba":
+        "Bachelor of Business Administration",
+
+    "business information technology":
+        "Bachelor of Business Information Technology",
+
+    "bbit":
+        "Bachelor of Business Information Technology",
+
+    "business analytics":
+        "Business Analytics",
+
+    "business data analytics":
+        "Business Data Analytics",
 }
 
 
@@ -465,10 +542,17 @@ def extract_category(question):
         question
     )
 
-    if not match:
-        return None
+    if match:
+        return match.group(1).upper()
 
-    return match.group(1).upper()
+    match = CATEGORY_SINGLE_LETTER_PATTERN.search(
+        question
+    )
+
+    if match:
+        return match.group(1)
+
+    return None
 
 
 # ============================================================
