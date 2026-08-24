@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 import re
@@ -492,32 +491,8 @@ def text_match(value: str, query: str) -> bool:
 
     return q in v or compact(q) in compact(v)
 
-def load_latest_merit():
-    records, latest, pdf_path = load_data()
 
-    data = []
-
-    for record in records:
-        data.append({
-            "campus": record.campus,
-            "program": record.program,
-            "category": record.category,
-            "session": record.session,
-            "type": record.admission_type,
-            "closing_merit": record.closing_merit,
-            "page": record.page,
-        })
-
-    return {
-        "data": data,
-        "source_url": latest.url,
-        "pdf_file": str(pdf_path),
-        "checked_at": time.strftime(
-            "%Y-%m-%d %H:%M:%S"
-        ),
-    }
-    
-    def find_program(records: list[MeritRecord], query: str) -> list[MeritRecord]:
+def find_program(records: list[MeritRecord], query: str) -> list[MeritRecord]:
     q = normalize(query).lower()
 
     if q in PROGRAM_ALIASES:
@@ -825,18 +800,6 @@ def load_data() -> tuple[list[MeritRecord], MeritDocument, Path]:
     print(f"PDF       : {pdf_path}")
 
     records = extract_all_rows(pdf_path)
-    for r in records:
-    if (
-        r.campus == "New Campus (KSK)"
-        and r.program.lower() == "computer science"
-    ):
-        print(
-            r.category,
-            r.session,
-            r.admission_type,
-            r.closing_merit,
-            r.page,
-        )
     validate_records(records)
 
     return records, latest, pdf_path
