@@ -428,47 +428,44 @@ User question:
 Retrieved UET evidence:
 {context}
 """
-    try:
-        response = client.models.generate_content(
-            model=GEMINI_MODEL,
-            contents=prompt,
-        )
-    
-        if not response.candidates:
-            return (
-                "⚠️ Debug: no candidates returned. "
-                f"prompt_feedback={response.prompt_feedback}"
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
             )
     
-        candidate = response.candidates[0]
-        finish_reason = getattr(candidate, "finish_reason", None)
+            if not response.text:
+                return (
+                    "I was unable to generate an answer from "
+                    "the available UET information."
+                )
     
-        if finish_reason is not None and str(finish_reason) not in ("STOP", "1", "FinishReason.STOP"):
-            return f"⚠️ Debug: blocked/truncated, finish_reason={finish_reason}"
+            return response.text
     
-        if not response.text:
+        except Exception as error:
+            error_text = str(error).lower()
+    
+            if "503" in error_text or "unavailable" in error_text:
+                return (
+                    "⚠️ The AI service is temporarily overloaded. "
+                    "Please try again in a moment."
+                )
+    
+            if (
+                "resource_exhausted" in error_text
+                or "quota" in error_text
+                or "rate limit" in error_text
+                or "429" in error_text
+            ):
+                return (
+                    "⚠️ The AI service has reached its usage limit "
+                    "right now. Please try again later."
+                )
+    
             return (
-                "I was unable to generate an answer from "
-                "the available UET information."
+                "⚠️ Sorry, I couldn't generate a response right now. "
+                "Please try again later."
             )
-    
-        return response.text
-    
-    except Exception as error:
-        error_text = str(error).lower()
-    
-        if (
-            "resource_exhausted" in error_text
-            or "quota" in error_text
-            or "rate limit" in error_text
-            or "429" in error_text
-        ):
-            return (
-                "⚠️ The AI service has reached its usage limit "
-                "right now. Please try again later."
-            )
-    
-        return f"⚠️ Debug error: {error}"
     # try:
     #     response = client.models.generate_content(
     #         model=GEMINI_MODEL,
