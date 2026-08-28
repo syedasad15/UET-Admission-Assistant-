@@ -1235,14 +1235,24 @@ if question:
                     }
                 )
                 components.html(
-        """
-        <script>
+    """
+    <script>
+    function scrollToAnswer(attempts) {
+        try {
             var el = window.parent.document.getElementById('answer-anchor');
-            if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
-        </script>
-        """,
-        height=0,
-    )
+            if (el) {
+                el.scrollIntoView({behavior: 'smooth', block: 'start'});
+            }
+        } catch (e) {}
+        if (attempts > 0) {
+            setTimeout(function() { scrollToAnswer(attempts - 1); }, 300);
+        }
+    }
+    scrollToAnswer(6);
+    </script>
+    """,
+    height=0,
+)
             # =================================================
             # NORMAL SEMANTIC ROUTE
             # =================================================
@@ -1293,14 +1303,24 @@ if question:
                     }
                 )
                 components.html(
-        """
-        <script>
+    """
+    <script>
+    function scrollToAnswer(attempts) {
+        try {
             var el = window.parent.document.getElementById('answer-anchor');
-            if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
-        </script>
-        """,
-        height=0,
-    )
+            if (el) {
+                el.scrollIntoView({behavior: 'smooth', block: 'start'});
+            }
+        } catch (e) {}
+        if (attempts > 0) {
+            setTimeout(function() { scrollToAnswer(attempts - 1); }, 300);
+        }
+    }
+    scrollToAnswer(6);
+    </script>
+    """,
+    height=0,
+)
  # scroll the parent page back to the anchor, after sources render
                 
             # =================================================
