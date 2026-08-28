@@ -1237,18 +1237,32 @@ if question:
                 components.html(
     """
     <script>
-    function scrollToAnswer(attempts) {
-        try {
-            var el = window.parent.document.getElementById('answer-anchor');
+    (function() {
+        var doc = window.parent.document;
+        var debounceTimer = null;
+
+        function scrollToAnswer() {
+            var el = doc.getElementById('answer-anchor');
             if (el) {
-                el.scrollIntoView({behavior: 'smooth', block: 'start'});
+                el.scrollIntoView({behavior: 'auto', block: 'start'});
             }
-        } catch (e) {}
-        if (attempts > 0) {
-            setTimeout(function() { scrollToAnswer(attempts - 1); }, 300);
         }
-    }
-    scrollToAnswer(6);
+
+        var observer = new MutationObserver(function() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(function() {
+                scrollToAnswer();
+                observer.disconnect();
+            }, 250);
+        });
+
+        observer.observe(doc.body, { childList: true, subtree: true });
+
+        // Safety net: stop watching after 4s even if mutations never settle
+        setTimeout(function() {
+            observer.disconnect();
+        }, 4000);
+    })();
     </script>
     """,
     height=0,
@@ -1305,18 +1319,32 @@ if question:
                 components.html(
     """
     <script>
-    function scrollToAnswer(attempts) {
-        try {
-            var el = window.parent.document.getElementById('answer-anchor');
+    (function() {
+        var doc = window.parent.document;
+        var debounceTimer = null;
+
+        function scrollToAnswer() {
+            var el = doc.getElementById('answer-anchor');
             if (el) {
-                el.scrollIntoView({behavior: 'smooth', block: 'start'});
+                el.scrollIntoView({behavior: 'auto', block: 'start'});
             }
-        } catch (e) {}
-        if (attempts > 0) {
-            setTimeout(function() { scrollToAnswer(attempts - 1); }, 300);
         }
-    }
-    scrollToAnswer(6);
+
+        var observer = new MutationObserver(function() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(function() {
+                scrollToAnswer();
+                observer.disconnect();
+            }, 250);
+        });
+
+        observer.observe(doc.body, { childList: true, subtree: true });
+
+        // Safety net: stop watching after 4s even if mutations never settle
+        setTimeout(function() {
+            observer.disconnect();
+        }, 4000);
+    })();
     </script>
     """,
     height=0,
