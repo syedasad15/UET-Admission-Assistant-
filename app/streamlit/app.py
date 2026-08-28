@@ -1255,6 +1255,9 @@ if question:
             scroller.scrollTo({ top: targetY, behavior: 'auto' });
         }
 
+        // Run immediately — covers the case where nothing mutates after this
+        scrollToAnswer();
+
         var observer = new MutationObserver(function() {
             clearTimeout(debounceTimer);
             debounceTimer = setTimeout(function() {
@@ -1265,7 +1268,6 @@ if question:
 
         observer.observe(doc.body, { childList: true, subtree: true });
 
-        // safety net if mutations never settle
         setTimeout(function() { observer.disconnect(); }, 4000);
     })();
     </script>
@@ -1342,6 +1344,9 @@ if question:
             scroller.scrollTo({ top: targetY, behavior: 'auto' });
         }
 
+        // Run immediately — covers the case where nothing mutates after this
+        scrollToAnswer();
+
         var observer = new MutationObserver(function() {
             clearTimeout(debounceTimer);
             debounceTimer = setTimeout(function() {
@@ -1352,7 +1357,6 @@ if question:
 
         observer.observe(doc.body, { childList: true, subtree: true });
 
-        // safety net if mutations never settle
         setTimeout(function() { observer.disconnect(); }, 4000);
     })();
     </script>
