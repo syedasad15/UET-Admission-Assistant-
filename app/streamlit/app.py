@@ -1237,18 +1237,37 @@ if question:
                 components.html(
     """
     <script>
-    function scrollToAnswer(attempts) {
-        try {
-            var el = window.parent.document.getElementById('answer-anchor');
-            if (el) {
-                el.scrollIntoView({behavior: 'auto', block: 'start'});
-            }
-        } catch (e) {}
-        if (attempts > 0) {
-            setTimeout(function() { scrollToAnswer(attempts - 1); }, 120);
+    (function() {
+        var doc = window.parent.document;
+        var debounceTimer = null;
+
+        function getHeaderOffset() {
+            var header = doc.querySelector('header[data-testid="stHeader"]');
+            return (header ? header.offsetHeight : 50) + 16;
         }
-    }
-    setTimeout(function() { scrollToAnswer(5); }, 80);
+
+        function scrollToAnswer() {
+            var el = doc.getElementById('answer-anchor');
+            if (!el) return;
+            var rect = el.getBoundingClientRect();
+            var scroller = doc.scrollingElement || doc.documentElement;
+            var targetY = scroller.scrollTop + rect.top - getHeaderOffset();
+            scroller.scrollTo({ top: targetY, behavior: 'auto' });
+        }
+
+        var observer = new MutationObserver(function() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(function() {
+                scrollToAnswer();
+                observer.disconnect();
+            }, 300);
+        });
+
+        observer.observe(doc.body, { childList: true, subtree: true });
+
+        // safety net if mutations never settle
+        setTimeout(function() { observer.disconnect(); }, 4000);
+    })();
     </script>
     """,
     height=0,
@@ -1305,18 +1324,37 @@ if question:
                 components.html(
     """
     <script>
-    function scrollToAnswer(attempts) {
-        try {
-            var el = window.parent.document.getElementById('answer-anchor');
-            if (el) {
-                el.scrollIntoView({behavior: 'auto', block: 'start'});
-            }
-        } catch (e) {}
-        if (attempts > 0) {
-            setTimeout(function() { scrollToAnswer(attempts - 1); }, 120);
+    (function() {
+        var doc = window.parent.document;
+        var debounceTimer = null;
+
+        function getHeaderOffset() {
+            var header = doc.querySelector('header[data-testid="stHeader"]');
+            return (header ? header.offsetHeight : 50) + 16;
         }
-    }
-    setTimeout(function() { scrollToAnswer(5); }, 80);
+
+        function scrollToAnswer() {
+            var el = doc.getElementById('answer-anchor');
+            if (!el) return;
+            var rect = el.getBoundingClientRect();
+            var scroller = doc.scrollingElement || doc.documentElement;
+            var targetY = scroller.scrollTop + rect.top - getHeaderOffset();
+            scroller.scrollTo({ top: targetY, behavior: 'auto' });
+        }
+
+        var observer = new MutationObserver(function() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(function() {
+                scrollToAnswer();
+                observer.disconnect();
+            }, 300);
+        });
+
+        observer.observe(doc.body, { childList: true, subtree: true });
+
+        // safety net if mutations never settle
+        setTimeout(function() { observer.disconnect(); }, 4000);
+    })();
     </script>
     """,
     height=0,
