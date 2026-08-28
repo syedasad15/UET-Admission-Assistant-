@@ -1197,15 +1197,15 @@ if question:
                             merit_response,
                     }
                 )
-    components.html(
-        """
-        <script>
-            var el = window.parent.document.getElementById('answer-anchor');
-            if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
-        </script>
-        """,
-        height=0,
-    )
+                components.html(
+                    """
+                    <script>
+                        var el = window.parent.document.getElementById('answer-anchor');
+                        if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
+                    </script>
+                    """,
+                    height=0,
+                )
             # =================================================
             # NORMAL SEMANTIC ROUTE
             # =================================================
@@ -1256,15 +1256,15 @@ if question:
                     }
                 )
  # scroll the parent page back to the anchor, after sources render
-    components.html(
-        """
-        <script>
-            var el = window.parent.document.getElementById('answer-anchor');
-            if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
-        </script>
-        """,
-        height=0,
-    )
+                components.html(
+                    """
+                    <script>
+                        var el = window.parent.document.getElementById('answer-anchor');
+                        if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
+                    </script>
+                    """,
+                    height=0,
+                )
             # =================================================
             # UNKNOWN ROUTE
             # =================================================
