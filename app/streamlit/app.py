@@ -1,4 +1,4 @@
-import streamlit.components.v1 as components
+
 
 
 import os
@@ -1177,7 +1177,7 @@ if question:
                         {},
                     )
                 )
-                st.markdown('<div id="answer-anchor"></div>', unsafe_allow_html=True)
+                
                 display_merit_response(
                     merit_response
                 )
@@ -1197,15 +1197,7 @@ if question:
                             merit_response,
                     }
                 )
-                components.html(
-                    """
-                    <script>
-                        var el = window.parent.document.getElementById('answer-anchor');
-                        if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
-                    </script>
-                    """,
-                    height=0,
-                )
+                
             # =================================================
             # NORMAL SEMANTIC ROUTE
             # =================================================
@@ -1235,7 +1227,7 @@ if question:
                         results,
                         client,
                     )
-                    st.markdown('<div id="answer-anchor"></div>', unsafe_allow_html=True)
+                    
                 st.markdown(
                     answer
                 )
@@ -1256,15 +1248,7 @@ if question:
                     }
                 )
  # scroll the parent page back to the anchor, after sources render
-                components.html(
-                    """
-                    <script>
-                        var el = window.parent.document.getElementById('answer-anchor');
-                        if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
-                    </script>
-                    """,
-                    height=0,
-                )
+                
             # =================================================
             # UNKNOWN ROUTE
             # =================================================
